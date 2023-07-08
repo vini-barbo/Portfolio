@@ -1,47 +1,61 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <section class="1">
+      MEET BARBOSA
+    </section>
+    <section class="2">
+      MEET BARBOSA
+    </section>
+    <section class="3">
+      MEET BARBOSA
+    </section>
+    <section class="4">
+      MEET BARBOSA
+    </section>
+    <section class="5">
+      MEET BARBOSA
+    </section>
+
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
   display: block;
-  margin: 0 auto 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+main{
+  width: 100vw;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  margin-top: 40px;
 }
+
+section{  
+  width: 50vw;
+  text-align: center;
+  background-color: #eceff1;
+  border-radius: 20px;
+  height: 40vh;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+
 </style>
