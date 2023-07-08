@@ -4,7 +4,7 @@
 
 <template>
   <main>
-    <section class="1">
+    <section class="meetbarbosa_1">
       MEET BARBOSA
     </section>
     <section class="2">
@@ -55,6 +55,10 @@ section{
   height: 40vh;
   overflow: hidden;
   margin-top: 40px;
+}
+
+section.meetbarbosa_1{
+  background-color: red;
 }
 
 
