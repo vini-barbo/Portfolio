@@ -1,23 +1,35 @@
-<script setup>
+<script>
+
+export default{
+  data(){
+   return{
+    section_animation : ["width: 60vw; background-color: #eceff1;"],
+   }
+  },
+
+  methods : {
+    change_section_style_big(){
+      this.section_animation = ["width: 70vw; background-color: #eceff1;"]
+    }
+  }
+
+
+}
+
 
 </script>
 
 <template>
   <main>
-    <section class="meetbarbosa_1">
-      MEET BARBOSA
+    <section class="meetbarbosa_1" on-mousedown="change_section_style_big" style="section_animation" >
     </section>
     <section class="2">
-      MEET BARBOSA
     </section>
     <section class="3">
-      MEET BARBOSA
     </section>
     <section class="4">
-      MEET BARBOSA
     </section>
     <section class="5">
-      MEET BARBOSA
     </section>
 
   </main>
@@ -53,13 +65,17 @@ section{
   background-color: #eceff1;
   border-radius: 20px;
   height: 40vh;
-  overflow: hidden;
   margin-top: 40px;
+  transition: 1s; 
+  transition-timing-function: ease;
 }
 
-section.meetbarbosa_1{
-  background-color: red;
+section:hover{
+  width: 55vw;
+  height: 45vh;
 }
+
+
 
 
 </style>
