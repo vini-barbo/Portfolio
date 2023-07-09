@@ -1,20 +1,17 @@
 <script>
 import apple_section from './components/apple_section.vue';
+import meet_barbosa from './components/MeetBarbosa.vue';
 
 export default{
   name:'app',
 
-  components: { apple_section },
+  components: { apple_section, meet_barbosa },
 
     data() {
         return {
-            section_animation: ["width: 60vw; background-color: #eceff1;"],
         };
     },
     methods: {
-        change_section_style_big() {
-            this.section_animation = ["width: 70vw; background-color: #eceff1;"];
-        }
     },
     
 }
@@ -24,9 +21,7 @@ export default{
 
 <template>
   <main>
-    <apple_section>
-    </apple_section>
-
+    <meet_barbosa sectionStyleWidth="80vw" sectionStyleHeight="80vh"></meet_barbosa>
   </main>
 </template>
 
@@ -36,22 +31,25 @@ export default{
 
 *{
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   padding: 0;
+  border: 0;
   display: block;
 }
 
 
 main{
-  width: 100vw;
-  border: 3px solid black;
+  margin-left: 0;
+  width: 98vw;
+  border: 0px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   overflow: hidden;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 

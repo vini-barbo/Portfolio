@@ -1,13 +1,23 @@
 <script>
     export default{
         props:['sectionStyleWidth','sectionStyleHeight'],
-        name:'apple_section'
+        name:'meet_barbosa'
     }
 </script>
 
 <template>
     <section :style="{ 'width':sectionStyleWidth, 'height':sectionStyleHeight}">
-        butico
+        <div>
+            <h1>MEET BARBOSA</h1>
+            <h2>Front-end developer</h2>
+        </div>
+        <div>
+            <ul>
+                <li>Linkedin_icon</li>
+                <li>Github_icon</li>
+                <li>email_icon</li>
+            </ul>
+        </div>
     </section>
 
 </template>
