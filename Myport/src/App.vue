@@ -66,13 +66,15 @@ section{
   border-radius: 20px;
   height: 40vh;
   margin-top: 40px;
-  transition: 1s; 
+  transition: 0.5s; 
   transition-timing-function: ease;
 }
 
 section:hover{
-  width: 55vw;
-  height: 45vh;
+  width: 52vw;
+  height: 42vh;
+  background-color: white;
+  box-shadow: 0.5px 0.5px 2px 2px #7a7a7a;
 }
 
 
