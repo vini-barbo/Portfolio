@@ -1,19 +1,22 @@
 <script>
+import apple_section from './components/apple_section.vue';
 
 export default{
-  data(){
-   return{
-    section_animation : ["width: 60vw; background-color: #eceff1;"],
-   }
-  },
+  name:'app',
 
-  methods : {
-    change_section_style_big(){
-      this.section_animation = ["width: 70vw; background-color: #eceff1;"]
-    }
-  }
+  components: { apple_section },
 
-
+    data() {
+        return {
+            section_animation: ["width: 60vw; background-color: #eceff1;"],
+        };
+    },
+    methods: {
+        change_section_style_big() {
+            this.section_animation = ["width: 70vw; background-color: #eceff1;"];
+        }
+    },
+    
 }
 
 
@@ -21,16 +24,8 @@ export default{
 
 <template>
   <main>
-    <section class="meetbarbosa_1" on-mousedown="change_section_style_big" style="section_animation" >
-    </section>
-    <section class="2">
-    </section>
-    <section class="3">
-    </section>
-    <section class="4">
-    </section>
-    <section class="5">
-    </section>
+    <apple_section>
+    </apple_section>
 
   </main>
 </template>
@@ -58,26 +53,6 @@ main{
   overflow: hidden;
   margin-top: 40px;
 }
-
-section{  
-  width: 50vw;
-  text-align: center;
-  background-color: #eceff1;
-  border-radius: 20px;
-  height: 40vh;
-  margin-top: 40px;
-  transition: 0.5s; 
-  transition-timing-function: ease;
-}
-
-section:hover{
-  width: 52vw;
-  height: 42vh;
-  background-color: white;
-  box-shadow: 0.5px 0.5px 2px 2px #7a7a7a;
-}
-
-
 
 
 </style>
