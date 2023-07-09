@@ -7,17 +7,17 @@
 
 <template>
     <section :style="{ 'width':sectionStyleWidth, 'height':sectionStyleHeight}">
-        <div>
+    <main>
+        <div class="text">
             <h1>MEET BARBOSA</h1>
             <h2>Front-end developer</h2>
         </div>
-        <div>
-            <ul>
-                <li>Linkedin_icon</li>
-                <li>Github_icon</li>
-                <li>email_icon</li>
-            </ul>
+        <div class="icons">
+                <button class="fa-brands fa-linkedin"></button>
+                <button class="fab fa-github"></button>
+                <button class="fa fa-envelope" aria-hidden="true"></button>
         </div>
+    </main>
     </section>
 
 </template>
@@ -37,5 +37,28 @@ section:hover{
     background-color: white;
     box-shadow: 0.5px 0.5px 2px 2px #ded5d5;
   }
+
+main{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main div{
+    font-size: 2rem;
+}
+
+div.text{
+    margin: 0;
+}
+
+div.icons{
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    font-size: 6rem;
+}
 
 </style>

@@ -1,6 +1,6 @@
 <script>
-import apple_section from './components/apple_section.vue';
-import meet_barbosa from './components/MeetBarbosa.vue';
+import apple_section from './components/apple_section/apple_section.vue';
+import meet_barbosa from './components/apple_section/MeetBarbosa.vue';
 
 export default{
   name:'app',
