@@ -13,9 +13,15 @@
             <h2>Front-end developer</h2>
         </div>
         <div class="icons">
-                <button class="fa-brands fa-linkedin"></button>
-                <button class="fab fa-github"></button>
-                <button class="fa fa-envelope" aria-hidden="true"></button>
+                <span>
+                    <button class="fa-brands fa-linkedin"></button>
+                </span>
+                <span>
+                    <button class="fab fa-github"></button>
+                </span>
+                <span>
+                    <button class="fa fa-envelope" aria-hidden="true"></button>
+                </span>
         </div>
     </main>
     </section>
@@ -39,6 +45,8 @@ section:hover{
   }
 
 main{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-content: center;
     align-items: center;
@@ -54,11 +62,15 @@ div.text{
 }
 
 div.icons{
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    width: 100%;
+    position: relative;
+    top: 30%;
     font-size: 6rem;
+    display: flex;
+    align-items: center;    
+}
+
+span + span{
+    margin-left: 30%;
 }
 
 </style>
