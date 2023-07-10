@@ -13,15 +13,15 @@
             <h2>Front-end developer</h2>
         </div>
         <div class="icons">
-                <span>
-                    <button class="fa-brands fa-linkedin"></button>
-                </span>
-                <span>
-                    <button class="fab fa-github"></button>
-                </span>
-                <span>
-                    <button class="fa fa-envelope" aria-hidden="true"></button>
-                </span>
+            <span>
+                <button class="fab fa-github"></button>
+            </span>
+            <span>
+                <button class="fa-brands fa-linkedin"></button>
+            </span>
+            <span>
+                <button class="fa fa-envelope" aria-hidden="true"></button>
+            </span>
         </div>
     </main>
     </section>
@@ -62,15 +62,14 @@ div.text{
 }
 
 div.icons{
-    position: relative;
-    top: 30%;
+    width: 60%;
     font-size: 6rem;
     display: flex;
-    align-items: center;    
+    justify-content: space-around;
+
 }
 
-span + span{
-    margin-left: 30%;
+span{
 }
 
 </style>

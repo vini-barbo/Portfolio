@@ -1,11 +1,12 @@
 <script>
-import apple_section from './components/apple_section/apple_section.vue';
 import meet_barbosa from './components/apple_section/MeetBarbosa.vue';
+import meet_tecno from './components/apple_section/MeetTecno.vue';
+
 
 export default{
   name:'app',
 
-  components: { apple_section, meet_barbosa },
+  components: { meet_tecno, meet_barbosa },
 
     data() {
         return {
@@ -22,6 +23,8 @@ export default{
 <template>
   <main>
     <meet_barbosa sectionStyleWidth="80vw" sectionStyleHeight="80vh"></meet_barbosa>
+    <p> what I know</p>
+    <meet_tecno sectionStyleWidth="80vw" sectionStyleHeight="40vh"></meet_tecno>
   </main>
 </template>
 

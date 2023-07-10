@@ -7,7 +7,7 @@
 
 <template>
     <section :style="{ 'width':sectionStyleWidth, 'height':sectionStyleHeight}">
-        butico
+        test
     </section>
 
 </template>
