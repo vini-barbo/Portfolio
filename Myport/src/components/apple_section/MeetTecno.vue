@@ -10,25 +10,33 @@
         <main>
             <div class="icons">
                 <span>
-                    <button class="fab fa-github">Github</button>
+                    <p>VUE.Js</p>
+                    <i class="fa-brands fa-vuejs"></i>
                 </span>
                 <span>
-                    <button class="fa-brands fa-linkedin"></button>
+                    <p>CSS3</p>
+                    <i class="fab fa-css3"></i>
+                    
                 </span>
                 <span>
-                    <button class="fa fa-envelope" aria-hidden="true"></button>
+                    <p>HTML5</p>
+                    <i class="fab fa-html5"></i>
                 </span>
                 <span>
-                    <button class="fab fa-github"></button>
+                    <p>JavaScript</p>
+                    <i class="fa-brands fa-js"></i>
+                </span>
+		        <span>
+                    <p>Python</p>
+                    <i class="fab fa-python"></i>
                 </span>
                 <span>
-                    <button class="fab fa-github"></button>
+                    <p>SQL</p>
+                    <i class="fas fa-database"></i>
                 </span>
                 <span>
-                    <button class="fab fa-github"></button>
-                </span>
-                <span>
-                    <button class="fab fa-github"></button>
+                    <p>Docker</p>
+                    <i class="fa-brands fa-docker"></i>
                 </span>
             </div>
         </main>
@@ -66,11 +74,16 @@ main div{
 }
 
 div.icons{
-    width: 60%;
-    font-size: 6rem;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 }
 
+p{
+    font-size: 2rem;
+}
 </style>

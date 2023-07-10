@@ -23,8 +23,8 @@ export default{
 <template>
   <main>
     <meet_barbosa sectionStyleWidth="80vw" sectionStyleHeight="80vh"></meet_barbosa>
-    <p> what I know</p>
-    <meet_tecno sectionStyleWidth="80vw" sectionStyleHeight="40vh"></meet_tecno>
+    <p> the Tech I know</p>
+    <meet_tecno sectionStyleWidth="80vw" sectionStyleHeight="30vh"></meet_tecno>
   </main>
 </template>
 
@@ -43,7 +43,6 @@ export default{
 
 
 main{
-  margin-left: 0;
   width: 98vw;
   border: 0px solid black;
   display: flex;
@@ -55,5 +54,10 @@ main{
   padding-bottom: 40px;
 }
 
-
+p{
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-weight: bold;
+}
 </style>
