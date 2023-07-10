@@ -48,6 +48,7 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
+    
     align-content: center;
     align-items: center;
     flex-direction: column;
@@ -58,7 +59,7 @@ main div{
 }
 
 div.text{
-    margin: 0;
+    margin-bottom: 20%;
 }
 
 div.icons{
