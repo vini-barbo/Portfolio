@@ -1,12 +1,15 @@
 <script>
-import meet_barbosa from './components/apple_section/MeetBarbosa.vue';
-import meet_tecno from './components/apple_section/MeetTecno.vue';
-import SlideSelector from './components/apple_section/SlideSelector.vue';
+import HeaderApp from "./components/app/header.vue"
+import CertificationApp from "./components/apple_section/Certifications.vue"
+import ContactApp from "./components/apple_section/Contact.vue"
+import AboutApp from "./components/apple_section/About.vue"
+import MainApp from "./components/apple_section/Main.vue"
+import SkillsApp from "./components/apple_section/Skills.vue"
 
 export default{
   name:'app',
 
-  components: { meet_tecno, meet_barbosa, SlideSelector },
+  components: {HeaderApp, CertificationApp, ContactApp , MainApp, AboutApp , SkillsApp },
 
     data() {
         return {
@@ -21,13 +24,17 @@ export default{
 </script>
 
 <template>
-  <main>
-    <meet_barbosa></meet_barbosa>
-    <SlideSelector></SlideSelector>
+  <main class="content">
+    <HeaderApp></HeaderApp>
+    <MainApp></MainApp>
+    <AboutApp></AboutApp>
+    <SkillsApp></SkillsApp>
+    <CertificationApp></CertificationApp>
+    <ContactApp></ContactApp>
   </main>
 </template>
 
-<style scoped>
+<style>
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
 
@@ -39,17 +46,21 @@ export default{
   border: 0;
 }
 
-meet_barbosa{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-SlideSelector{
-  width: 100%;
-}
+.bar{
+  width: 90vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
 
+  background-color: #f5f3f3;
+  border-radius: 10px;
+}
 
 </style>

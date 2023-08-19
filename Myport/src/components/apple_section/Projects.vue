@@ -1,61 +1,39 @@
 <script>
     export default{
-        name:'meet_barbosa'
+        name:'ProjectsApp'
     }
 </script>
 
 <template>
-    <section>
-    <main>
-        <div class="text">
-            <h1>MEET BARBOSA</h1>
-            <h2>Front-end developer for smart companies</h2>
-            <div class="icons">
+<main class="bar">
+    <div class="text" >
+            <h1>I'm Vinicius Barbosa</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi nisi modi assumenda rem sequi at enim saepe aperiam, dolores, aspernatur vero illum soluta dolor obcaecati! Soluta excepturi repudiandae eum?</p>
+    </div>
+    <div class="icons">
                 <button  href="/" target="_blank"><i class="fab fa-github"></i></button>
                 <button  href="/" target="_blank"><i class="fa-brands fa-linkedin"></i></button>
                 <button  href="/" target="_blank" > <i class="fa fa-envelope" aria-hidden="true"></i></button>
-            </div>
-        </div>
-    </main>
-    </section>
+    </div>
+
+</main>
 </template>
 
 <style scoped>
 /*Stylization of the main part*/
-section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    width: 90vw;
-    height: 70vh;
-    background-color: #eceff1;
-    border-radius: 20px;
-    text-align: center;
-  }
   
-section:hover{
-    background-color: white;
-    box-shadow: 0.5px 0.5px 2px 2px #ded5d5;
-  }
 
-main{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    gap: 0;
-    
-}
+
 
 /*text section*/
 
-h1,h2,div.icons{
-    text-align: start;
-    margin:0;
-    margin-left: 2%;
-    width: 70%;
+.text{
+    width: 40%;
+}
+
+p{
+    text-align: left;
+    text-justify: distribute;
 }
 
 h1{

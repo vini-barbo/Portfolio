@@ -1,13 +1,11 @@
 <script>
     export default{
-        props:['sectionStyleWidth','sectionStyleHeight'],
-        name:'meet_tecno'
+        name:'contactApp'
     }
 </script>
 
 <template>
-    <section :style="{ 'width':sectionStyleWidth, 'height':sectionStyleHeight}">
-        <main>
+        <main class="bar">
             <div class="icons">
                 <span>
                     <p>VUE.Js</p>
@@ -40,7 +38,6 @@
                 </span>
             </div>
         </main>
-        </section>
 
 </template>
 
