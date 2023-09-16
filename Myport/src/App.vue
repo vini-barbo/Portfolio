@@ -1,36 +1,31 @@
 <script>
-import HeaderApp from "./components/app/header.vue"
-import CertificationApp from "./components/apple_section/Certifications.vue"
-import ContactApp from "./components/apple_section/Contact.vue"
-import AboutApp from "./components/apple_section/About.vue"
-import MainApp from "./components/apple_section/Main.vue"
-import SkillsApp from "./components/apple_section/Skills.vue"
+import headerApp from "./components/header.vue"
+import skillApp from "./components/skill.vue"
+import projectsApp from "./components/projects.vue"
+import contactApp from "./components/contact.vue"
+import footerApp from "./components/footer.vue"
 
 export default{
   name:'app',
-
-  components: {HeaderApp, CertificationApp, ContactApp , MainApp, AboutApp , SkillsApp },
-
-    data() {
-        return {
-        };
-    },
-    methods: {
-    },
-    
+  components:{
+    headerApp,
+    skillApp,
+    projectsApp,
+    contactApp,
+    footerApp
+  }
 }
 
 
 </script>
 
 <template>
-  <main class="content">
-    <HeaderApp></HeaderApp>
-    <MainApp></MainApp>
-    <AboutApp></AboutApp>
-    <SkillsApp></SkillsApp>
-    <CertificationApp></CertificationApp>
-    <ContactApp></ContactApp>
+  <main class="app">
+    <headerApp></headerApp>
+    <skillApp></skillApp>
+    <projectsApp></projectsApp>
+    <contactApp></contactApp>
+    <footerApp></footerApp>
   </main>
 </template>
 
@@ -46,11 +41,12 @@ export default{
   border: 0;
 }
 
-.content{
+.app{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color:  linear-gradient(to bottom, #edecf9 , #8bd4f8) ;
 }
 
 .bar{
@@ -61,6 +57,14 @@ export default{
 
   background-color: #f5f3f3;
   border-radius: 10px;
+}
+
+.content{
+  width: 90dvw;
+  height: 95dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 </style>
