@@ -46,7 +46,7 @@ export default{
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background-color:  linear-gradient(to bottom, #edecf9 , #8bd4f8) ;
+  
 }
 
 .bar{
@@ -55,7 +55,7 @@ export default{
   display: flex;
   justify-content: space-between;
 
-  background-color: #f5f3f3;
+  background: #c0dce3;
   border-radius: 10px;
 }
 

@@ -7,14 +7,15 @@ export default {
 <template>
   <main class="content">
     <section class="content-text">
-      <div class="title">Lorem ipsumm</div>
+      <h1>Skills</h1>
     </section>
     <section class="content-icons">
-        <div>I</div>
-        <div>I</div>
-        <div>I</div>
-        <div>I</div>
-        <div>I</div>
+      <i class="fa-brands fa-vuejs"></i>
+      <i class="fa-brands fa-node"></i>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-solid fa-database"></i>
     </section>
   </main>
 </template>
@@ -25,10 +26,21 @@ export default {
 .content{
     height: 40dvh;
     flex-direction: column;
+    gap : 30px
+}
+
+.content-text{
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .content-icons{
+  width: 100%;
+  font-size: 4rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 </style>

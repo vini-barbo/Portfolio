@@ -1,3 +1,4 @@
+@ -1,74 +0,0 @@
 <script>
 export default {
   name: 'headerApp'
