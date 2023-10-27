@@ -24,14 +24,6 @@ export default {
     gap: 20px;
 }
 
-h1,h2{
-  color: black;
-
-}
-
-h1{
-  font-size: 3rem;
-}
 
 h2{
   font-size: 2rem;
