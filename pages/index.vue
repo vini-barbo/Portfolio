@@ -1,6 +1,7 @@
 <script lang="ts" setup></script>
 <template>
-  <main>
+  <main class="flex flex-col gap-5 pt-3">
+    <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
     <Aboutme></Aboutme>
     <Skills></Skills>
