@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <template>
   <button
-    class="bg-green-primary-600 text-white"
+    class="bg-green-primary-600 text-white roboto-bold"
     :class="[
       'bg-green-500',
       {
