@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 <template>
   <NavbarApp class="bg-white"></NavbarApp>
-  <main class="flex flex-col gap-5 pt-3 w-full bg-[#f5f5f7]">
+  <main class="flex flex-col gap-5 pt-3 w-full bg-[#cececf]">
     <HeaderApp></HeaderApp>
     <Aboutme></Aboutme>
     <Skills></Skills>

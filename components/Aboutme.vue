@@ -1,26 +1,25 @@
 <template>
   <UIContentArea>
-    <div class="flex w-full justify-start flex-col gap-3">
-      <section
-        class="flex flex-wrap w-full min-h-[20dvh] justify-center align-middle roboto-medium"
+    <section
+      class="flex flex-wrap w-full min-h-[30dvh] justify-center align-middle roboto-medium gap-3"
+    >
+      <div
+        class="flex flex-col w-1/2 min-w-[30dvh] justify-center items-center"
       >
-        <div class="flex flex-col w-1/2 h-full justify-center items-center">
-          <span class="flex flex-col h-full justify-start gap-8">
-            <h2>About me</h2>
-            <h3>
-              I am a Brazilian <a>Full Stack developer </a>
-              <p></p>
-              actively pursuing <a>remote job</a>
-              <p></p>
-              opportunities abroad<a>.</a>
-            </h3>
-          </span>
-        </div>
-        <div class="flex w-1/2 justify-center items-center">
-          <img src="/apresentation.svg" class="h-full max-h-[50dvh]" />
-        </div>
-      </section>
-    </div>
+        <span class="flex flex-col h-full justify-start gap-8">
+          <h2>About me</h2>
+          <h3>
+            I' am a Brazilian
+            <p></p>
+            <a>Full Stack</a> developer actively pursuing
+            <a>remote jobs</a> opportunities abroad<a>.</a>
+          </h3>
+        </span>
+      </div>
+      <div class="flex w-1/2 min-w-[30dvh] justify-center items-center">
+        <img src="/apresentation.svg" class="h-full max-h-[50dvh]" />
+      </div>
+    </section>
   </UIContentArea>
 </template>
 
@@ -41,7 +40,7 @@ h2 {
   font-weight: 500;
 }
 h3 {
-  font-size: 200%;
+  font-size: 170%;
   font-weight: 400;
 }
 h4 {
@@ -50,6 +49,7 @@ h4 {
 }
 
 span {
+  text-align: center;
   color: #2f2e41;
 }
 </style>

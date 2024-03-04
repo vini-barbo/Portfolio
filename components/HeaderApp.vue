@@ -33,16 +33,17 @@ span {
   width: 100%;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
 }
 
 h1 {
   color: #6c63ff;
-  font-size: 450%;
+  font-size: 300%;
   font-weight: 700;
 }
 h2 {
   color: #2f2e41;
-  font-size: 300%;
+  font-size: 200%;
   font-weight: 500;
 }
 h3 {
