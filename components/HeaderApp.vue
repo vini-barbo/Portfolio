@@ -28,17 +28,6 @@
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Gabarito&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Madimi+One&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-.gradient {
-  background: rgb(236, 150, 181);
-  background: linear-gradient(
-    117deg,
-    rgba(236, 150, 181, 1) 0%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(191, 228, 236, 1) 100%
-  );
-  backdrop-filter: blur(20px);
-  backdrop-filter: opacity(50%);
-}
 
 span {
   width: 100%;
@@ -52,6 +41,7 @@ h1 {
   font-weight: 700;
 }
 h2 {
+  color: #2f2e41;
   font-size: 300%;
   font-weight: 500;
 }
