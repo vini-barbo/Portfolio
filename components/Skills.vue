@@ -1,7 +1,7 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col justify-start">
-      <div>Tech I know</div>
+    <section class="flex flex-col h-full justify-start gap-8 text-center">
+      <div><h2>My stack</h2></div>
       <aside class="cardSpace">
         <div class="card">
           <div>Node.JS</div>
@@ -13,12 +13,6 @@
           <div>TypeScript</div>
           <div class="cardImage">
             <img src="/typescript-2.svg" alt="" />
-          </div>
-        </div>
-        <div class="card">
-          <div>Git & Github</div>
-          <div class="cardImage">
-            <img src="/github.svg" alt="" />
           </div>
         </div>
         <div class="card">
@@ -57,5 +51,13 @@
 
 .cardSpace {
   @apply flex flex-wrap justify-around gap-5;
+  color: #2f2e41;
+  font-weight: 600;
+}
+
+h2 {
+  color: #6c63ff;
+  font-size: 300%;
+  font-weight: 600;
 }
 </style>

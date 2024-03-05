@@ -6,6 +6,8 @@
     <Aboutme></Aboutme>
     <Skills></Skills>
     <Contact></Contact>
+    <Projects></Projects>
+    <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
 

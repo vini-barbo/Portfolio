@@ -39,6 +39,7 @@ h2 {
   font-size: 300%;
   font-weight: 500;
 }
+
 h3 {
   font-size: 170%;
   font-weight: 400;
