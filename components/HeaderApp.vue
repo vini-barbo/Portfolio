@@ -1,24 +1,20 @@
 <template>
   <div>
     <UIContentArea>
-      <section
-        class="flex flex-row-reverse flex-wrap w-full min-h-[30dvh] justify-center align-middle roboto-medium"
-      >
-        <div
-          class="flex flex-col w-1/2 min-w-[30dvh] aspect-square justify-center items-center gap-5"
-        >
-          <span>
-            <h1>Vinicius Barbosa</h1>
-            <h2>FullStack developer</h2>
+      <section class="itemSpace">
+        <div class="itemText">
+          <span class="flex flex-col w-[98%] justify-center h-[100%]">
+            <h4>Hey, I'm</h4>
+            <h2><a>Vinicius</a> Barbosa</h2>
+            <h2><a>FullStack</a> developer</h2>
+            <h4>I can make your project becomes <a>reality</a></h4>
+            <span>
+              <UIButton text="Check my resume" />
+            </span>
           </span>
         </div>
-        <div class="flex w-1/2 min-w-[30dvh] justify-center items-center">
-          <div style="border: 4px solid #6c63ff" class="rounded-full">
-            <img
-              src="/public/myPhoto.png"
-              class="h-full max-h-[50dvh] aspect-square rounded-full"
-            />
-          </div>
+        <div class="itemImage" style="max-width: 60dvh">
+          <img src="/myphotoedited.png" alt="" />
         </div>
       </section>
     </UIContentArea>
@@ -32,25 +28,48 @@ span {
   width: 100%;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
 }
 
 h1 {
-  color: #6c63ff;
-  font-size: 300%;
+  font-size: 250%;
   font-weight: 700;
 }
 h2 {
-  color: #2f2e41;
-  font-size: 200%;
-  font-weight: 500;
+  font-size: clamp(2dvh, 8vw, 7dvh);
+  font-weight: 600;
 }
 h3 {
-  font-size: 200%;
+  font-size: 15vw;
   font-weight: 300;
 }
 h4 {
-  font-size: 200%;
-  font-weight: 400;
+  font-size: clamp(1dvh, 4vw, 3dvh);
+  font-weight: 500;
+}
+
+a {
+  color: #5e3bee;
+}
+
+section div {
+  @apply flex  grow;
+}
+
+.itemSpace {
+  @apply flex flex-wrap  justify-center gap-5;
+}
+
+.itemImage {
+  @apply flex justify-center;
+}
+
+.itemText {
+  @apply flex justify-start;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 </style>

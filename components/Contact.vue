@@ -1,5 +1,5 @@
 <template>
-  <UIContentArea :shadow="false">
+  <UIContentArea color="#f5fcff">
     <section class="flex flex-col h-full justify-start gap-8 text-center">
       <div><h2>Contact me!</h2></div>
       <aside class="cardSpace">
@@ -57,7 +57,7 @@
 }
 
 h2 {
-  color: #6c63ff;
+  color: #1953d1;
   font-size: 300%;
   font-weight: 600;
 }

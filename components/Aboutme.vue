@@ -1,5 +1,5 @@
 <template>
-  <UIContentArea>
+  <UIContentAreaClean>
     <section
       class="flex flex-wrap w-full min-h-[30dvh] justify-center align-middle roboto-medium gap-3"
     >
@@ -20,22 +20,22 @@
         <img src="/apresentation.svg" class="h-full max-h-[50dvh]" />
       </div>
     </section>
-  </UIContentArea>
+  </UIContentAreaClean>
 </template>
 
 <style scoped>
 a {
-  color: #6c63ff;
+  color: #1953d1;
 }
 
 h1 {
-  color: #6c63ff;
+  color: #1953d1;
   font-size: 450%;
   font-weight: 700;
 }
 
 h2 {
-  color: #6c63ff;
+  color: #1953d1;
   font-size: 300%;
   font-weight: 500;
 }
@@ -51,6 +51,6 @@ h4 {
 
 span {
   text-align: center;
-  color: #2f2e41;
+  color: #6e6e73;
 }
 </style>

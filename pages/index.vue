@@ -1,18 +1,21 @@
 <script lang="ts" setup></script>
 <template>
-  <NavbarApp class="bg-white"></NavbarApp>
-  <main class="flex flex-col gap-5 pt-3 w-full bg-[#cececf]">
+  <main class="flex flex-col w-full bg-[#f5f5f7]">
+    <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
     <Aboutme></Aboutme>
     <Skills></Skills>
-    <Contact></Contact>
     <Projects></Projects>
+    <Contact></Contact>
     <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +23,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .roboto-thin {

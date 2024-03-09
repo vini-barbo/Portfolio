@@ -56,7 +56,7 @@
 }
 
 h2 {
-  color: #6c63ff;
+  color: #1953d1;
   font-size: 300%;
   font-weight: 600;
 }

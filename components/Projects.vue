@@ -1,11 +1,39 @@
 <template>
-  <UIContentArea>
+  <UIContentAreaClean>
     <section class="flex flex-col h-full justify-start text-center">
       <div><h2>My Projects</h2></div>
       <aside class="cardSpace">
-        <div class="card" v-for="c in 5">
+        <div class="card">
           <div class="cardImage">
-            <img src="/nodejs-2.svg" alt="" />
+            <img src="/nuxt-2.svg " alt="" />
+          </div>
+          <div class="cardTextSpace">
+            <div>
+              <h1>This portfolio</h1>
+            </div>
+            <div>
+              <h2></h2>
+              Status: <a style="color: green">Done</a>
+            </div>
+            <div>
+              <h2></h2>
+              Stack: Vue3 | Node | Typescript | AWS
+            </div>
+            <div class="cardLinkButton">
+              <div class="linkButton">
+                <img src="/screen.svg" alt="" />
+                <div class="linkButtonText">Demo</div>
+              </div>
+              <div class="linkButton">
+                <img src="/github.svg" alt="" />
+                <div class="linkButtonText">Repo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImage">
+            <img src="/spotify-2.svg" alt="" />
           </div>
           <div class="cardTextSpace">
             <div>
@@ -13,7 +41,7 @@
             </div>
             <div>
               <h2></h2>
-              Status: In progress
+              Status: <a style="color: #febe00">In progress</a>
             </div>
             <div>
               <h2></h2>
@@ -21,7 +49,7 @@
             </div>
             <div class="cardLinkButton">
               <div class="linkButton">
-                <img src="/linkedin-icon-2.svg" alt="" />
+                <img src="/screen.svg" alt="" />
                 <div class="linkButtonText">Demo</div>
               </div>
               <div class="linkButton">
@@ -33,7 +61,7 @@
         </div>
       </aside>
     </section>
-  </UIContentArea>
+  </UIContentAreaClean>
 </template>
 
 <style scoped>
@@ -71,9 +99,14 @@
   box-shadow: 1px 1px 1px 2px rgb(120, 120, 120, 0.5);
 }
 
+h1 {
+  color: #1953d1;
+  font-size: 200%;
+  font-weight: 700;
+}
 h2 {
-  color: #6c63ff;
-  font-size: 300%;
-  font-weight: 600;
+  color: #2f2e41;
+  font-size: 200%;
+  font-weight: 500;
 }
 </style>

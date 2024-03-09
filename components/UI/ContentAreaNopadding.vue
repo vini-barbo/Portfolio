@@ -1,19 +1,18 @@
 <script setup lang="ts">
 interface IProps {
-  color: string;
+  isShadowActivate: boolean;
 }
 
 const props = withDefaults(defineProps<IProps>(), {
-  color: "white",
+  isShadowActivate: true,
 });
 </script>
 
 <template>
-  <div
-    class="flex justify-center w-full"
-    :style="{ backgroundColor: props.color }"
-  >
-    <div class="flex justify-center w-[100%] rounded-md p-5 transition-all">
+  <div class="flex justify-center w-full">
+    <div
+      class="flex justify-center w-[100%] rounded-md transition-all bg-white"
+    >
       <slot> </slot>
     </div>
   </div>
