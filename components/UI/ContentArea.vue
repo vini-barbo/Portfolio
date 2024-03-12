@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface IProps {
-  color: string;
+  color?: string;
 }
 
 const props = withDefaults(defineProps<IProps>(), {

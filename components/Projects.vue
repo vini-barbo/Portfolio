@@ -1,5 +1,5 @@
 <template>
-  <UIContentAreaClean>
+  <UIContentArea>
     <section class="flex flex-col h-full justify-start text-center">
       <div><h2>My Projects</h2></div>
       <aside class="cardSpace">
@@ -12,12 +12,10 @@
               <h1>This portfolio</h1>
             </div>
             <div>
-              <h2></h2>
-              Status: <a style="color: green">Done</a>
+              <h2>Status: <mark style="color: green">Done</mark></h2>
             </div>
             <div>
-              <h2></h2>
-              Stack: Vue3 | Node | Typescript | AWS
+              <h2>Stack: Vue3 | Node | Typescript | AWS</h2>
             </div>
             <div class="cardLinkButton">
               <div class="linkButton">
@@ -40,28 +38,26 @@
               <h1>Spotify Clone</h1>
             </div>
             <div>
-              <h2></h2>
-              Status: <a style="color: #febe00">In progress</a>
+              <h2>Status: <mark style="color: #febe00">In progress</mark></h2>
             </div>
             <div>
-              <h2></h2>
-              Stack: Node | React | Typescript | PostgresSQl
+              <h2>Stack: Node | React | Typescript | PostgresSQl</h2>
             </div>
             <div class="cardLinkButton">
               <div class="linkButton">
                 <img src="/screen.svg" alt="" />
-                <div class="linkButtonText">Demo</div>
+                <div class="linkButtonText"><h2>Demo</h2></div>
               </div>
               <div class="linkButton">
                 <img src="/github.svg" alt="" />
-                <div class="linkButtonText">Repo</div>
+                <div class="linkButtonText"><h2>Repo</h2></div>
               </div>
             </div>
           </div>
         </div>
       </aside>
     </section>
-  </UIContentAreaClean>
+  </UIContentArea>
 </template>
 
 <style scoped>
@@ -78,10 +74,11 @@
 }
 
 .card {
-  @apply flex flex-col w-[75%]  text-center  rounded-md;
-  aspect-ratio: 1/1.5;
+  @apply flex flex-col   text-center  rounded-md;
+  aspect-ratio: 1/1.6;
   box-shadow: 1px 1px 1px 1px rgb(120, 120, 120, 0.5);
   overflow: hidden;
+  width: clamp(2vh, 60%, 200px);
 }
 
 .cardImage {
@@ -101,12 +98,16 @@
 
 h1 {
   color: #1953d1;
-  font-size: 200%;
+  font-size: 100%;
   font-weight: 700;
 }
+
 h2 {
-  color: #2f2e41;
-  font-size: 200%;
-  font-weight: 500;
+  font-size: 80%;
+  font-weight: 600;
+}
+
+mark {
+  background-color: white;
 }
 </style>

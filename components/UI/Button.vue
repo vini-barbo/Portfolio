@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<IProps>(), {
   <button
     class="bg-green-primary-600 text-white roboto-bold"
     :class="[
-      'bg-[#5e3bee] hover:bg-white hover:border-solid hover:border-[#5e3bee] hover:text-[#5e3bee] transition-all',
+      'bg-main-mark2 hover:bg-white hover:border-solid hover:border-[#5e3bee] hover:text-[#5e3bee] transition-all',
       {
         '!bg-red-500': props.color === 'red',
         '!bg-transparent !text-black': props.color === 'clean',

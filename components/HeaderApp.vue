@@ -1,13 +1,13 @@
 <template>
   <div>
-    <UIContentArea>
+    <UIContentArea color="#f5fcff">
       <section class="itemSpace">
         <div class="itemText">
           <span class="flex flex-col w-[98%] justify-center h-[100%]">
             <h4>Hey, I'm</h4>
-            <h2><a>Vinicius</a> Barbosa</h2>
-            <h2><a>FullStack</a> developer</h2>
-            <h4>I can make your project becomes <a>reality</a></h4>
+            <h2><mark>Vinicius</mark> Barbosa</h2>
+            <h2><mark>FullStack</mark> developer</h2>
+            <h4>I can make your project becomes <mark>reality</mark></h4>
             <span>
               <UIButton text="Check my resume" />
             </span>
@@ -47,8 +47,8 @@ h4 {
   font-weight: 500;
 }
 
-a {
-  color: #5e3bee;
+mark {
+  @apply bg-transparent text-main-mark2;
 }
 
 section div {
@@ -56,7 +56,7 @@ section div {
 }
 
 .itemSpace {
-  @apply flex flex-wrap  justify-center gap-5;
+  @apply flex flex-wrap  justify-center gap-5 w-[90%];
 }
 
 .itemImage {

@@ -1,34 +1,30 @@
 <template>
-  <UIContentArea>
-    <section class="flex flex-col h-full justify-start gap-8 text-center">
-      <div><h2>My stack</h2></div>
+  <UIContentArea color="#f5fcff">
+    <section class="flex flex-wrap h-full justify-start gap-8 text-center">
       <aside class="cardSpace">
         <div class="card">
-          <div>Node.JS</div>
+          <div><h4>Node.JS</h4></div>
           <div class="cardImage">
             <img src="/nodejs-2.svg" alt="" />
           </div>
         </div>
         <div class="card">
-          <div>TypeScript</div>
+          <div><h4>TypeScript</h4></div>
           <div class="cardImage">
             <img src="/typescript-2.svg" alt="" />
           </div>
         </div>
         <div class="card">
-          <div>Vue</div>
+          <div><h4>Vue</h4></div>
           <div class="cardImage">
             <img src="/vue-9.svg" alt="" />
           </div>
         </div>
+
         <div class="card">
-          <div>Nuxt</div>
-          <div class="cardImage">
-            <img src="/nuxt-2.svg" alt="" />
+          <div>
+            <h4>Postgres</h4>
           </div>
-        </div>
-        <div class="card">
-          <div>PostgresSql</div>
           <div class="cardImage">
             <img src="/postgresql.svg" alt="" />
           </div>
@@ -40,9 +36,10 @@
 
 <style scoped>
 .card {
-  @apply flex flex-col w-[35%] text-center p-5 rounded-md;
+  @apply flex flex-col-reverse  text-center p-1 rounded-md;
+  width: clamp(40px, 20%, 20vh);
   aspect-ratio: 1/1.2;
-  box-shadow: 1px 1px 1px 1px rgb(120, 120, 120, 0.5);
+  
 }
 
 .cardImage {
@@ -50,14 +47,20 @@
 }
 
 .cardSpace {
-  @apply flex flex-wrap justify-around gap-5;
+  @apply flex flex-wrap justify-around gap-3;
   color: #2f2e41;
   font-weight: 600;
 }
 
 h2 {
-  color: #1953d1;
+  color: #5e3bee;
   font-size: 300%;
   font-weight: 600;
+  text-align: left;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 80%;
 }
 </style>

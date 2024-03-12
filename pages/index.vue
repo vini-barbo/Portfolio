@@ -3,10 +3,10 @@
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
-    <Aboutme></Aboutme>
     <Skills></Skills>
-    <Projects></Projects>
-    <Contact></Contact>
+    <Aboutmenew></Aboutmenew>
+    <UISoftskills></UISoftskills>
+
     <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
@@ -19,6 +19,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 * {
   margin: 0;
