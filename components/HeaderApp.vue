@@ -1,9 +1,9 @@
 <template>
   <div>
     <UIContentArea color="#f5fcff">
-      <section class="itemSpace">
-        <div class="itemText">
-          <span class="flex flex-col w-[98%] justify-center h-[100%]">
+      <section class="grid sm:grid-cols-2">
+        <div>
+          <span>
             <h4>Hey, I'm</h4>
             <h2><mark>Vinicius</mark> Barbosa</h2>
             <h2><mark>FullStack</mark> developer</h2>
@@ -13,7 +13,7 @@
             </span>
           </span>
         </div>
-        <div class="itemImage" style="max-width: 60dvh">
+        <div>
           <img src="/myphotoedited.png" alt="" />
         </div>
       </section>

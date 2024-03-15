@@ -1,14 +1,18 @@
 <template>
   <UIContentArea>
-    <section class="flex flex-wrap h-full justify-start gap-8 text-center">
+    <section class="flex flex-wrap justify-start gap-8 text-center">
       <aside class="cardSpace">
         <div class="card" v-for="c in 4">
           <div class="cardImage">
-            <img src="/nodejs-2.svg" alt="" />
+            <img src="/bachelor.svg" alt="" />
           </div>
           <div>
-            <h2>Moreno & alto</h2>
-            <h4>!loren loren loren loren loren loren loren loren loren</h4>
+            <h2>Experience as a Teacher</h2>
+            <h4>
+              I bring valuable teaching experience to the table, enabling me to
+              explain complex technical concepts clearly and supportively to
+              diverse audiences.
+            </h4>
           </div>
         </div>
       </aside>
@@ -18,9 +22,7 @@
 
 <style scoped>
 .card {
-  @apply flex flex-col text-center p-3 rounded-md gap-2 bg-main-blue;
-  width: 150px;
-  aspect-ratio: 1/1.8;
+  @apply flex flex-col text-center px-3 py-6 rounded-md gap-2 bg-main-blue grow max-w-[30dvh] w-[40%];
 }
 
 .cardImage {
@@ -28,13 +30,11 @@
 }
 
 .cardSpace {
-  @apply flex flex-wrap justify-around gap-3;
-  color: #2f2e41;
-  font-weight: 600;
+  @apply flex flex-wrap justify-between w-full gap-3;
 }
 
 h2 {
-  @apply font-bold text-left  text-[110%];
+  @apply font-bold text-left  text-[100%];
 }
 
 h4 {

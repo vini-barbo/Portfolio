@@ -7,7 +7,7 @@
           <div class="cardImage">
             <img src="/nodejs-2.svg" alt="" />
           </div>
-        </div>
+        </div> 
         <div class="card">
           <div><h4>TypeScript</h4></div>
           <div class="cardImage">
@@ -20,7 +20,6 @@
             <img src="/vue-9.svg" alt="" />
           </div>
         </div>
-
         <div class="card">
           <div>
             <h4>Postgres</h4>
@@ -39,7 +38,6 @@
   @apply flex flex-col-reverse  text-center p-1 rounded-md;
   width: clamp(40px, 20%, 20vh);
   aspect-ratio: 1/1.2;
-  
 }
 
 .cardImage {
