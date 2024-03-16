@@ -3,9 +3,9 @@
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
-    <Skills></Skills>
+
     <Aboutmenew></Aboutmenew>
-    <UISoftskills></UISoftskills>
+    <Skills></Skills>
 
     <NavbarApp class="bg-white"></NavbarApp>
   </main>

@@ -1,4 +1,4 @@
-import Softskills from './UI/Softskills.vue';
+
 <template>
   <div>
     <UIContentArea>

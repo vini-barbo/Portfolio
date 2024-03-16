@@ -1,13 +1,15 @@
 <template>
-  <UIContentArea color="#f5fcff">
-    <section class="flex flex-wrap h-full justify-start gap-8 text-center">
-      <aside class="cardSpace">
+  <UIContentArea>
+    <section class="w-full flex flex-col gap-4 sm:gap-8 sm:mx-8">
+      <h2>My skills</h2>
+      <h1>My Expertise</h1>
+      <aside class="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div class="card">
           <div><h4>Node.JS</h4></div>
           <div class="cardImage">
             <img src="/nodejs-2.svg" alt="" />
           </div>
-        </div> 
+        </div>
         <div class="card">
           <div><h4>TypeScript</h4></div>
           <div class="cardImage">
@@ -29,36 +31,25 @@
           </div>
         </div>
       </aside>
+      <UISoftskill2></UISoftskill2>
     </section>
   </UIContentArea>
 </template>
 
 <style scoped>
 .card {
-  @apply flex flex-col-reverse  text-center p-1 rounded-md;
-  width: clamp(40px, 20%, 20vh);
-  aspect-ratio: 1/1.2;
+  @apply flex flex-col-reverse gap-2 text-center p-1 rounded-md w-[150px] sm:w-[180px];
 }
 
 .cardImage {
   @apply h-full flex justify-center items-center;
 }
 
-.cardSpace {
-  @apply flex flex-wrap justify-around gap-3;
-  color: #2f2e41;
-  font-weight: 600;
-}
-
-h2 {
-  color: #5e3bee;
-  font-size: 300%;
-  font-weight: 600;
-  text-align: left;
-}
-
 h4 {
-  font-weight: 600;
-  font-size: 80%;
+  @apply font-bold text-xl sm:text-[2vw];
+}
+
+h1 {
+  @apply font-bold text-4xl sm:text-[5vw] sm:leading-[2.8rem];
 }
 </style>
