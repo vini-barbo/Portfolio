@@ -1,12 +1,9 @@
-<script lang="ts" setup></script>
 <template>
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
-
-    <Aboutmenew></Aboutmenew>
-    <Skills></Skills>
-
+    <Softskills></Softskills>
+    <Aboutme></Aboutme>
     <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
@@ -104,5 +101,12 @@ img {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.subtitle {
+  @apply font-semibold text-2xl sm:text-[3vw] sm:leading-[2.8rem] mt-2;
+}
+.title {
+  @apply font-bold text-4xl sm:text-[5vw] sm:leading-[2.8rem] my-4;
 }
 </style>

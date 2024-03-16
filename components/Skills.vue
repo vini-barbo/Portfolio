@@ -1,8 +1,8 @@
 <template>
   <UIContentArea>
     <section class="w-full flex flex-col gap-4 sm:gap-8 sm:mx-8">
-      <h2>My skills</h2>
-      <h1>My Expertise</h1>
+      <h2 class="subtitle">My skills</h2>
+      <h1 class="title">My Expertise</h1>
       <aside class="grid grid-cols-2 sm:grid-cols-4 gap-6">
         <div class="card">
           <div><h4>Node.JS</h4></div>
@@ -31,7 +31,6 @@
           </div>
         </div>
       </aside>
-      <UISoftskill2></UISoftskill2>
     </section>
   </UIContentArea>
 </template>
@@ -47,9 +46,5 @@
 
 h4 {
   @apply font-bold text-xl sm:text-[2vw];
-}
-
-h1 {
-  @apply font-bold text-4xl sm:text-[5vw] sm:leading-[2.8rem];
 }
 </style>
