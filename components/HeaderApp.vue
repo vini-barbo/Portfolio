@@ -1,10 +1,10 @@
 <template>
   <div>
     <UIContentArea color="#f5fcff">
-      <section class="grid gap-3 sm:grid-cols-2">
+      <section class="grid gap-3 md:grid-cols-2">
         <div>
           <span
-            class="flex flex-col gap-3 sm:gap-9 sm:h-full sm:justify-center"
+            class="flex flex-col gap-3 md:gap-9 md:h-full md:justify-center"
           >
             <h2>Hey, I'm</h2>
             <h1><mark>Vinicius</mark> Barbosa</h1>
@@ -25,10 +25,10 @@
 
 <style scoped>
 h2 {
-  @apply font-semibold text-2xl sm:text-[3vw] sm:leading-[2.8rem];
+  @apply font-semibold text-2xl md:text-[3vw] md:leading-[2.8rem];
 }
 h1 {
-  @apply font-bold text-3xl sm:text-[4vw] sm:leading-[2.8rem];
+  @apply font-bold text-3xl md:text-[4vw] md:leading-[2.8rem];
 }
 
 mark {

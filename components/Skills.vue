@@ -1,9 +1,9 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col gap-4 sm:gap-8 sm:mx-8">
+    <section class="w-full flex flex-col gap-4 md:gap-8 md:mx-8">
       <h2 class="subtitle">My skills</h2>
       <h1 class="title">My Expertise</h1>
-      <aside class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <aside class="grid grid-cols-2 md:grid-cols-4 gap-6">
         <div class="card">
           <div><h4>Node.JS</h4></div>
           <div class="cardImage">
@@ -37,7 +37,7 @@
 
 <style scoped>
 .card {
-  @apply flex flex-col-reverse gap-2 text-center p-1 rounded-md w-[150px] sm:w-[180px];
+  @apply flex flex-col-reverse gap-2 text-center p-1 rounded-md w-[150px] md:w-[180px];
 }
 
 .cardImage {
@@ -45,6 +45,6 @@
 }
 
 h4 {
-  @apply font-bold text-xl sm:text-[2vw];
+  @apply font-bold text-xl md:text-[2vw];
 }
 </style>

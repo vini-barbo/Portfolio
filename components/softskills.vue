@@ -1,9 +1,9 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col gap-4 sm:gap-8 sm:mx-8">
-      <h2>My skills</h2>
-      <h1>My Expertise</h1>
-      <aside class="grid sm:grid-cols-4 gap-6">
+    <section class="w-full flex flex-col gap-4 md:gap-8 md:mx-8">
+      <h2 class="subtitle">My skills</h2>
+      <h1 class="title">My Expertise</h1>
+      <aside class="grid md:grid-cols-4 gap-6">
         <div class="card" v-for="c in 4">
           <div class="cardImage">
             <img src="/bachelor.svg" alt="" />
@@ -24,7 +24,7 @@
 
 <style scoped>
 .card {
-  @apply flex flex-col gap-2 text-center p-3 rounded-md w-[1fr] sm:w-[1fr] bg-main-blue;
+  @apply flex flex-col gap-2 text-center p-3 rounded-md w-[1fr] md:w-[1fr] bg-main-blue;
 }
 
 .cardImage {
@@ -36,14 +36,11 @@
 }
 
 h3 {
-  @apply font-bold text-xl sm:text-[2vw];
+  @apply font-bold text-xl md:text-[2vw];
 }
 
 h4 {
   @apply font-normal;
 }
 
-h1 {
-  @apply font-bold text-4xl sm:text-[5vw] sm:leading-[2.8rem];
-}
 </style>

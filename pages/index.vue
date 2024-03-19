@@ -4,6 +4,7 @@
     <HeaderApp></HeaderApp>
     <Softskills></Softskills>
     <Aboutme></Aboutme>
+    <ProjectsNew></ProjectsNew>
     <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
@@ -17,18 +18,27 @@
 @tailwind components;
 @tailwind utilities;
 
-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
 * {
   margin: 0;
   padding: 0;
   font-family: "roboto", sans-serif;
   font-weight: 600;
   font-style: normal;
+}
+
+.subtitle {
+  @apply font-medium text-xl md:text-[2vw] md:leading-[2.8rem] mt-1;
+}
+.title {
+  @apply font-bold text-4xl md:text-[5vw] md:leading-[2.8rem] mb-4;
+}
+
+.regularText {
+  @apply font-normal text-lg text-main-fontBlack;
+}
+
+.regularText mark {
+  @apply text-[#31bbf7] bg-transparent px-0.5 py-0.5;
 }
 
 .roboto-thin {
@@ -103,10 +113,9 @@ img {
   font-style: italic;
 }
 
-.subtitle {
-  @apply font-semibold text-2xl sm:text-[3vw] sm:leading-[2.8rem] mt-2;
-}
-.title {
-  @apply font-bold text-4xl sm:text-[5vw] sm:leading-[2.8rem] my-4;
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 </style>
