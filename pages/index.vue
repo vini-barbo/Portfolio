@@ -3,8 +3,10 @@
     <NavbarApp></NavbarApp>
     <HeaderApp></HeaderApp>
     <Softskills></Softskills>
+    <Skills></Skills>
     <Aboutme></Aboutme>
     <ProjectsNew></ProjectsNew>
+    <ContactNew></ContactNew>
     <NavbarApp class="bg-white"></NavbarApp>
   </main>
 </template>
@@ -27,18 +29,18 @@
 }
 
 .subtitle {
-  @apply font-medium text-xl md:text-[2vw] md:leading-[2.8rem] mt-1;
+  @apply font-medium text-xl md:text-[2vw] md:leading-[1.3rem] mt-1 text-main-fontBlack;
 }
 .title {
-  @apply font-bold text-4xl md:text-[5vw] md:leading-[2.8rem] mb-4;
+  @apply font-bold text-4xl md:text-[3.3vw] md:leading-[1rem] mb-4 text-main-fontBlack;
 }
 
 .regularText {
-  @apply font-normal text-lg text-main-fontBlack;
+  @apply font-normal text-lg text-main-fontBlack md:text-xl;
 }
 
 .regularText mark {
-  @apply text-[#31bbf7] bg-transparent px-0.5 py-0.5;
+  @apply text-main-mark3 bg-transparent px-0.5 py-0.5;
 }
 
 .roboto-thin {

@@ -23,6 +23,10 @@
 </template>
 
 <style scoped>
+* {
+  @apply text-main-fontBlack;
+}
+
 .card {
   @apply flex flex-col gap-2 text-center p-3 rounded-md w-[1fr] md:w-[1fr] bg-main-blue;
 }
@@ -42,5 +46,4 @@ h3 {
 h4 {
   @apply font-normal;
 }
-
 </style>

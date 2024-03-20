@@ -1,30 +1,39 @@
 <template>
   <UIContentArea>
     <section class="w-full flex flex-col gap-4 md:gap-8 md:mx-8">
-      <h2 class="subtitle">My skills</h2>
-      <h1 class="title">My Expertise</h1>
-      <aside class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <h1 class="title">My Stack</h1>
+      <aside class="grid grid-cols-1 md:grid-cols-4 gap-3">
         <div class="card">
-          <div><h4>Node.JS</h4></div>
-          <div class="cardImage">
-            <img src="/nodejs-2.svg" alt="" />
+          <div class="cardText">
+            <h4>TypeScript</h4>
+            <p>This tech is made with code and love by they developers</p>
           </div>
-        </div>
-        <div class="card">
-          <div><h4>TypeScript</h4></div>
           <div class="cardImage">
             <img src="/typescript-2.svg" alt="" />
           </div>
         </div>
         <div class="card">
-          <div><h4>Vue</h4></div>
+          <div class="cardText">
+            <h4>Node</h4>
+            <p>This tech is made with code and love by they developers</p>
+          </div>
           <div class="cardImage">
-            <img src="/vue-9.svg" alt="" />
+            <img src="/nodejs-2.svg" alt="" />
           </div>
         </div>
         <div class="card">
-          <div>
-            <h4>Postgres</h4>
+          <div class="cardText">
+            <h4>Vue</h4>
+            <p>This tech is made with code and love by they developers</p>
+          </div>
+          <div class="cardImage">
+            <img src="/vue.svg" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardText">
+            <h4>PostgresSql</h4>
+            <p>This tech is made with code and love by they developers</p>
           </div>
           <div class="cardImage">
             <img src="/postgresql.svg" alt="" />
@@ -36,15 +45,27 @@
 </template>
 
 <style scoped>
+* {
+  @apply text-main-fontBlack;
+}
+
 .card {
-  @apply flex flex-col-reverse gap-2 text-center p-1 rounded-md w-[150px] md:w-[180px];
+  @apply flex items-center justify-between  gap-5  p-4 rounded-md md:flex-col border border-main-mark3;
 }
 
 .cardImage {
-  @apply h-full flex justify-center items-center;
+  @apply h-16 aspect-square flex  justify-center items-center;
+}
+
+.cardText {
+  @apply mb-5 flex flex-col gap-3;
 }
 
 h4 {
   @apply font-bold text-xl md:text-[2vw];
+}
+
+p {
+  @apply font-normal;
 }
 </style>

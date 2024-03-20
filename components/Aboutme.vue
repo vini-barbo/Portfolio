@@ -6,9 +6,9 @@
           <img src="/myphotoedited.png" alt="" />
         </div>
 
-        <span class="flex flex-col w-[100%] md:w-[80%] justify-start  gap-3 ">
-          <h2 class="subtitle">About</h2>
-          <h1 class="title">About me</h1>
+        <span class="flex flex-col w-[100%] md:w-[80%] justify-start  gap-3">
+          <h2 class="subtitle md:ml-1">About</h2>
+          <h1 class="title md:my-5">About me</h1>
           <p class="regularText">
             As a <mark>mid-level developer</mark> with a passion for technology
             and innovation,
