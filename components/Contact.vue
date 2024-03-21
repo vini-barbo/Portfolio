@@ -7,7 +7,7 @@
             Get in touch
           </h2>
           <h1 class="title md:my-5 text-center md:text-left">
-            Send me a messege
+            Send me a message
           </h1>
         </div>
 

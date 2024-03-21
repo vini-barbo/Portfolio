@@ -3,7 +3,7 @@
     <NavbarApp class="bg-white"></NavbarApp>
     <HeaderApp></HeaderApp>
     <Softskills></Softskills>
-    <Skills></Skills>
+    <HardSkills></HardSkills>
     <Aboutme></Aboutme>
     <Projects></Projects>
     <Contact></Contact>

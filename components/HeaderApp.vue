@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UIContentArea color="#f5fcff">
+    <UIContentArea color="#f5fcff" >
       <section class="grid gap-3 md:grid-cols-2">
         <div>
           <span
