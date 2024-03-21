@@ -1,4 +1,5 @@
 <template>
+  
   <UIContentArea color="#f5fcff">
     <section class="flex flex-col h-full justify-start gap-8 text-center">
       <div><h2>Contact me!</h2></div>
