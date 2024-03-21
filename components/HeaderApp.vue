@@ -11,7 +11,7 @@
             <h1><mark>FullStack</mark> developer</h1>
             <h2>I can make your project becomes <mark>reality</mark></h2>
             <span>
-              <UIButton text="Check my resume" />
+              <UIButton text="Check my resume" color="clean" />
             </span>
           </span>
         </div>
@@ -25,10 +25,10 @@
 
 <style scoped>
 h2 {
-  @apply font-semibold text-2xl md:text-[3vw] md:leading-[2.8rem];
+  @apply font-semibold text-[20px] md:text-[3vw] md:leading-[2.8rem];
 }
 h1 {
-  @apply font-bold text-3xl md:text-[4vw] md:leading-[2.8rem];
+  @apply font-bold text-4xl md:text-[4vw] md:leading-[2.8rem];
 }
 
 mark {
