@@ -1,11 +1,12 @@
 <template>
   <main class="flex flex-col w-full bg-[#f5f5f7]">
+    <NavbarApp class="bg-white"></NavbarApp>
     <HeaderApp></HeaderApp>
     <Softskills></Softskills>
     <Skills></Skills>
     <Aboutme></Aboutme>
-    <ProjectsNew></ProjectsNew>
-    <ContactNew></ContactNew>
+    <Projects></Projects>
+    <Contact></Contact>
     <footerApp></footerApp>
   </main>
 </template>
