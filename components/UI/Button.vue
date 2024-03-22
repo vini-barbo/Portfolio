@@ -16,12 +16,11 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <template>
   <button
-    class="bg-green-primary-600 text-white roboto-bold"
+    class="bg-green-primary-600 text-main-fontBlack roboto-bold border border-transparent"
     :class="[
-      ' hover:bg-white hover:border-solid hover:border-[#5e3bee] hover:text-[#5e3bee] transition-all',
+      ' text-white bg-main-mark2 hover:bg-white hover:border-solid hover:border hover:border-[#5e3bee] hover:text-[#5e3bee] transition-all',
       {
-        '!bg-red-500': props.color === 'red',
-        '!bg-transparent !text-black': props.color === 'clean',
+        '!bg-transparent !text-black !border-transparent': props.color === 'clean',
         '!bg-white !text-black': props.color === 'white',
         '!bg-gray-400 !text-gray-600': props.isDisabled,
         'text-[12px] py-2 px-3 rounded-lg font-normal': props.size === 'xs',

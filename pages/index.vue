@@ -2,7 +2,7 @@
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp class="bg-white"></NavbarApp>
     <HeaderApp></HeaderApp>
-    <Softskills></Softskills>
+    <SoftSkills></SoftSkills>
     <HardSkills></HardSkills>
     <Aboutme></Aboutme>
     <Projects></Projects>
