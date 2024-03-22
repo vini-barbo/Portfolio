@@ -33,10 +33,9 @@ h1 {
   @apply font-bold text-4xl md:text-[4vw] md:leading-[2.8rem];
 }
 
-h1 mark{
+h1 mark {
   @apply font-bold text-3xl md:text-[4vw] md:leading-[2.8rem];
 }
-
 
 mark {
   @apply bg-transparent text-main-mark2;
