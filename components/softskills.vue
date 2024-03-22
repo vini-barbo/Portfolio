@@ -2,7 +2,7 @@
   <UIContentArea>
     <section class="w-full flex flex-col gap-4 md:gap-8 md:mx-8">
       <h2 class="subtitle">My skills</h2>
-      <h1 class="title">My Expertise</h1>
+      <h1 class="title">Expertise</h1>
       <aside class="grid md:grid-cols-4 gap-6">
         <div class="card" v-for="c in 4">
           <div class="cardImage">

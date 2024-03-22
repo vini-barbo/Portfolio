@@ -4,6 +4,7 @@
     <HeaderApp></HeaderApp>
     <SoftSkills></SoftSkills>
     <HardSkills></HardSkills>
+    <Experience></Experience>
     <Aboutme></Aboutme>
     <Projects></Projects>
     <Contact></Contact>
