@@ -28,7 +28,7 @@
 }
 
 .card {
-  @apply flex flex-col gap-2 text-center p-3 rounded-md w-[1fr] md:w-[1fr] bg-main-blue;
+  @apply flex flex-col gap-2 text-center p-3 rounded-md w-[1fr] md:w-[1fr] bg-main-blue shadow-md;
 }
 
 .cardImage {

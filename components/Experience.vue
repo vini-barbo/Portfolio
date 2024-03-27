@@ -1,26 +1,27 @@
 <template>
   <UIContentArea color="#f5fcff">
     <section class="w-full flex flex-col gap-1 md:gap-8 md:mx-8">
-      <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <div class="card md:!hidden" v-for="c in 3">
-          <div class="cardTextSide">
-            <div class="cardImage">
-              <img src="/github.svg" alt="" />
-            </div>
-          </div>
-          <div class="cardImageSide">
-            <h4>UFRPE</h4>
-            <p>In this company I worked as a Teacher</p>
+      <h1 class="title">Field experience</h1>
+      <aside class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="card">
+          <div class="cardImage">
+            <img src="public/arena-logo.jpeg" alt="" class="rounded-md" />
           </div>
         </div>
-
-        <div class="hidden md:flex md:flex-col md:text-center md:gap-2" v-for="c in 3">
-          <h4>Arena Fantasy</h4>
-          <div class="cardImage">
-            <img src="/github.svg" alt="" />
+        <div class="card px-0.5">
+          <div class="cardImage w-full">
+            <img src="public/datapriority-logo.png" alt="" />
           </div>
-          <p>In this company I worked as a <br>Front-end Developer</p>
-
+        </div>
+        <div class="card">
+          <div class="cardImage">
+            <img src="public/UFRPE-logo.png" alt="" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="cardImage">
+            <img src="public/cesar-logo.webp" alt="" />
+          </div>
         </div>
       </aside>
     </section>
@@ -41,15 +42,11 @@
 }
 
 .card {
-  @apply flex items-center justify-between  gap-5  p-4 rounded-md md:flex-col;
-}
-
-.cardMd {
-  @apply flex items-center justify-between  gap-5  p-4 rounded-md md:flex-col;
+  @apply flex items-center justify-between  gap-5  p-2 rounded-md flex-col bg-white shadow-md;
 }
 
 .cardImage {
-  @apply h-16 aspect-square flex  justify-center items-center;
+  @apply h-20 aspect-square flex  justify-center items-center md:h-32;
 }
 
 h4 {
