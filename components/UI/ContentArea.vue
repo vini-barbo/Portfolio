@@ -9,18 +9,12 @@ const props = withDefaults(defineProps<IProps>(), {
 </script>
 
 <template>
-  <div
+  <section
     class="flex justify-center w-full"
     :style="{ backgroundColor: props.color }"
   >
     <div class="flex justify-center w-[100%] rounded-md p-5 transition-all">
       <slot> </slot>
     </div>
-  </div>
+  </section>
 </template>
-
-<style scoped>
-.shadow {
-  @apply shadow-lg hover:shadow-2xl;
-}
-</style>
