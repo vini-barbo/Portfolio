@@ -1,8 +1,8 @@
 <template>
   <UIContentArea color="#f5fcff">
-    <section class="w-full flex flex-col gap-1 md:gap-8 md:mx-8">
+    <section class="w-full flex flex-col gap-1 md:gap-8">
       <h1 class="title">Field experience</h1>
-      <aside class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8">
+      <aside class="w-full grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-8">
         <div class="card">
           <div class="cardImage">
             <img src="public/arena-logo.jpeg" alt="" class="rounded-md" />

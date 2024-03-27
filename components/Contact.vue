@@ -1,6 +1,6 @@
 <template>
   <UIContentArea color="#f5fcff">
-    <section class="grid md:grid-cols-2 md:mx-8 gap-2 md:gap-32">
+    <section class="grid md:grid-cols-2  gap-2 md:gap-32">
       <aside class="flex flex-col gap-4">
         <div class="gridHeader">
           <h2 class="subtitle text-center md:ml-1 md:text-left md:mb-4">

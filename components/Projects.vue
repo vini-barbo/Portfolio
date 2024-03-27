@@ -1,6 +1,6 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col gap-4 md:gap-8 md:mx-8">
+    <section class="w-full flex flex-col gap-4 md:gap-8 ">
       <h2 class="subtitle">My projects</h2>
       <h1 class="title">My Portfolio</h1>
       <aside class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4">

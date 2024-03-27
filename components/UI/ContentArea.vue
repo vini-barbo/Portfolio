@@ -10,11 +10,9 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <template>
   <section
-    class="flex justify-center w-full"
+    class="flex justify-center w-full p-5 md:px-11"
     :style="{ backgroundColor: props.color }"
   >
-    <div class="flex justify-center w-[100%] rounded-md p-5 transition-all">
-      <slot> </slot>
-    </div>
+    <slot> </slot>
   </section>
 </template>
