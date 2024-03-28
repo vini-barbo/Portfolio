@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UIContentArea color="#f5fcff">
+    <UIContentArea color="blue" class="flex flex-col gap-12">
       <section class="grid gap-3 md:gap-8 md:grid-cols-2">
         <div>
           <img src="/myphotoedited.png" alt="" />
@@ -30,8 +30,12 @@
             <mark>high-quality solutions.</mark>
           </p>
         </span>
+
       </section>
+      <Experience >
+      </Experience>
     </UIContentArea>
+
   </div>
 </template>
 

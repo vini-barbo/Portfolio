@@ -1,5 +1,5 @@
 <template>
-  <UIContentArea color="#f5fcff">
+  <UIContentArea color="blue">
     <section class="grid md:grid-cols-2  gap-2 md:gap-32">
       <aside class="flex flex-col gap-4">
         <div class="gridHeader">
