@@ -2,44 +2,58 @@
   <UIContentArea>
     <section class="w-full flex flex-col gap-4 md:gap-8">
       <h1 class="title">Stack</h1>
-      <aside class="grid grid-cols-1 md:grid-cols-4 gap-3">
+      <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div class="card">
-          <div class="cardText">
-            <h4>TypeScript</h4>
-            <p>A JavaScript superset with static typing for better productivity.</p>
-          </div>
-          <div class="cardImage">
-            <img src="/typescript-2.svg" alt="" />
+          <h4>Backend</h4>
+          <div class="cardGrid grid-cols-2">
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img class="rounded-md" src="/typescript.svg" alt="" />
+              </div>
+              <p>TypeScript</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/nodejs.svg" alt="" />
+              </div>
+              <p>NodeJs</p>
+            </div>
           </div>
         </div>
         <div class="card">
-          <div class="cardText">
-            <h4>Node</h4>
-            <p>
-              A powerful JavaScript runtime for scalable server-side
-              applications.
-            </p>
-          </div>
-          <div class="cardImage">
-            <img src="/nodejs-2.svg" alt="" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardText">
-            <h4>Vue</h4>
-            <p>A flexible JavaScript framework for user interfaces.</p>
-          </div>
-          <div class="cardImage">
-            <img src="/vue.svg" alt="" />
+          <h4>Frontend</h4>
+          <div class="cardGrid grid-cols-2">
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/vue.svg" alt="" />
+              </div>
+              <p>Vue</p>
+            </div>
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/tailwind.svg" alt="" />
+              </div>
+              <p>Tailwind</p>
+            </div>
           </div>
         </div>
         <div class="card">
-          <div class="cardText">
-            <h4>PostgresSql</h4>
-            <p>A reliable open-source database management system.</p>
-          </div>
-          <div class="cardImage">
-            <img src="/postgresql.svg" alt="" />
+          <h4>Database</h4>
+          <div class="cardGrid grid-cols-2">
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/postgresql.svg" alt="" />
+              </div>
+              <p>PostgresSql</p>
+            </div>
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/prisma.svg" alt="" />
+              </div>
+              <p>Prisma</p>
+            </div>
           </div>
         </div>
       </aside>
@@ -52,20 +66,24 @@
   @apply text-main-fontBlack;
 }
 
+.cardGrid {
+  @apply grid gap-9 text-center md:gap-8;
+}
+
 .card {
-  @apply flex items-center justify-between  gap-5  p-4 rounded-md md:flex-col border border-main-mark3;
+  @apply flex flex-col items-center gap-7 p-3 rounded-md border md:gap-10 border-main-mark3;
+}
+
+.imagePlace {
+  @apply flex flex-col justify-center align-middle gap-2 text-center;
 }
 
 .cardImage {
-  @apply h-16 aspect-square flex  justify-center items-center;
-}
-
-.cardText {
-  @apply mb-5 flex flex-col gap-3;
+  @apply h-20 md:h-24 aspect-square flex  justify-center items-center;
 }
 
 h4 {
-  @apply font-bold text-xl md:text-[2vw];
+  @apply font-bold text-2xl md:text-[2vw];
 }
 
 p {
