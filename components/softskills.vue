@@ -28,9 +28,8 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
           <div class="cardText">
             <h3>Open to learn new subjects</h3>
             <h4>
-              I bring valuable teaching experience to the table, enabling me to
-              explain complex technical concepts clearly and supportively to
-              diverse audiences.
+              I am always eager to learn new technologies. With no limitations
+              in my tech stack, I can adapt to any environment.
             </h4>
           </div>
         </div>
@@ -41,9 +40,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
           <div class="cardText">
             <h3>Strong Teamwork Mindset</h3>
             <h4>
-              I bring valuable teaching experience to the table, enabling me to
-              explain complex technical concepts clearly and supportively to
-              diverse audiences.
+              A strong teamwork mindset is vital. It means valuing each team member, communicating openly, and prioritizing a healthy environment
             </h4>
           </div>
         </div>
@@ -52,11 +49,9 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
             <img src="/workfromhome.svg" alt="" />
           </div>
           <div class="cardText">
-            <h3>Openness to Work Remotely</h3>
+            <h3>Flexibility to remote work</h3>
             <h4>
-              I bring valuable teaching experience to the table, enabling me to
-              explain complex technical concepts clearly and supportively to
-              diverse audiences.
+              Flexibility in remote work is crucial. It means adapting to new environments, staying connected, and managing tasks independently.
             </h4>
           </div>
         </div>

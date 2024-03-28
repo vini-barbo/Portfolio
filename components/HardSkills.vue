@@ -1,12 +1,12 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col gap-4 md:gap-8 ">
+    <section class="w-full flex flex-col gap-4 md:gap-8">
       <h1 class="title">Stack</h1>
       <aside class="grid grid-cols-1 md:grid-cols-4 gap-3">
         <div class="card">
           <div class="cardText">
             <h4>TypeScript</h4>
-            <p>This tech is made with code and love by they developers</p>
+            <p>A JavaScript superset with static typing for better productivity.</p>
           </div>
           <div class="cardImage">
             <img src="/typescript-2.svg" alt="" />
@@ -15,7 +15,10 @@
         <div class="card">
           <div class="cardText">
             <h4>Node</h4>
-            <p>This tech is made with code and love by they developers</p>
+            <p>
+              A powerful JavaScript runtime for scalable server-side
+              applications.
+            </p>
           </div>
           <div class="cardImage">
             <img src="/nodejs-2.svg" alt="" />
@@ -24,7 +27,7 @@
         <div class="card">
           <div class="cardText">
             <h4>Vue</h4>
-            <p>This tech is made with code and love by they developers</p>
+            <p>A flexible JavaScript framework for user interfaces.</p>
           </div>
           <div class="cardImage">
             <img src="/vue.svg" alt="" />
@@ -33,7 +36,7 @@
         <div class="card">
           <div class="cardText">
             <h4>PostgresSql</h4>
-            <p>This tech is made with code and love by they developers</p>
+            <p>A reliable open-source database management system.</p>
           </div>
           <div class="cardImage">
             <img src="/postgresql.svg" alt="" />
