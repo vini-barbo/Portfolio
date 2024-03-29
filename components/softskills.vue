@@ -78,10 +78,10 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
 }
 
 h3 {
-  @apply font-bold text-xl md:text-[2vw];
+  @apply font-bold text-xl md:text-[1.5vw] 2xl:leading-normal;
 }
 
 h4 {
-  @apply font-normal;
+  @apply font-normal md:text-xl md:leading-8 lg:leading-10;
 }
 </style>

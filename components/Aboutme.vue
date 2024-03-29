@@ -1,8 +1,8 @@
 <template>
   <div>
     <UIContentArea color="blue" class="flex flex-col gap-12">
-      <section class="grid gap-3 md:gap-8 md:grid-cols-2">
-        <div>
+      <section class="grid gap-2 md:gap-8 md:grid-cols-2 ">
+        <div class="2xl:max-h-[40vw] 2xl:aspect-square flex justify-end">
           <img src="/myphotoedited.png" alt="" />
         </div>
 

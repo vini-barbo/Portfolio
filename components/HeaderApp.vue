@@ -1,10 +1,10 @@
 <template>
   <div>
     <UIContentArea color="blue">
-      <section class="grid gap-3 md:grid-cols-2">
+      <section class="grid gap-3 md:grid-cols-2 gap-y-8">
         <div>
           <span
-            class="flex flex-col gap-3 md:gap-9 md:h-full md:justify-center"
+            class="flex flex-col gap-3 md:gap-9 md:h-full md:justify-center 2xl:gap-14"
           >
             <h2>Hey, I'm</h2>
             <h1><mark>Vinicius Barbosa</mark></h1>
@@ -13,11 +13,11 @@
               I can make your <mark>idea</mark> becomes <mark>reality</mark>
             </h2>
             <span>
-              <UIButton text="Check my resume" />
+              <UIButton text="Check my resume" class="md:scale-150 md:ml-8" />
             </span>
           </span>
         </div>
-        <div>
+        <div class="2xl:max-h-[40vw] 2xl:aspect-square">
           <img src="/myphotoedited.png" alt="" />
         </div>
       </section>

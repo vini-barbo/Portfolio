@@ -32,7 +32,7 @@
   @apply font-medium text-xl md:text-[2vw] md:leading-[1.3rem] mt-1 md:mb-4 text-main-fontBlack;
 }
 .title {
-  @apply font-bold text-4xl md:text-[3.3vw] md:leading-[1rem] mb-4 md:mb-8 text-main-fontBlack ;
+  @apply font-bold text-4xl md:text-[3.3vw] md:leading-[1rem] mb-4 md:mb-8 text-main-fontBlack;
 }
 
 .regularText {
