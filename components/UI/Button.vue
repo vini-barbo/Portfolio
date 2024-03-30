@@ -16,7 +16,7 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <template>
   <button
-    class="bg-green-primary-600 text-main-fontBlack roboto-bold border border-transparent"
+    class="bg-green-primary-600 text-main-fontBlack roboto-bold border border-transparent md:text-xl 2xl:text-2xl 2xl:px-8 2xl:py-5"
     :class="[
       ' text-white bg-main-mark2 hover:bg-white hover:border-solid hover:border hover:border-[#5e3bee] hover:text-[#5e3bee] transition-all',
       {

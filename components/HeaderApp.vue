@@ -13,7 +13,7 @@
               I can make your <mark>idea</mark> becomes <mark>reality</mark>
             </h2>
             <span>
-              <UIButton text="Check my resume" class="md:scale-150 md:ml-8" />
+              <UIButton text="Check my resume" />
             </span>
           </span>
         </div>
