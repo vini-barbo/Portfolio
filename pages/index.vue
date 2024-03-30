@@ -29,14 +29,15 @@
 }
 
 .subtitle {
-  @apply font-medium text-xl md:text-[2vw] md:leading-[1.3rem] mt-1 md:mb-4 text-main-fontBlack;
+  @apply font-medium text-xl md:text-[2vw] 2xl:text-[1.8vw] md:leading-[1.3rem] mt-1 md:mb-4 text-main-fontBlack;
 }
 .title {
-  @apply font-bold text-4xl md:text-[3.3vw] md:leading-[1rem] mb-4 md:mb-8 text-main-fontBlack;
+  @apply font-bold text-4xl md:text-[3.3vw] 2xl:text-[2.8vw] md:leading-[1rem] mb-4 md:mb-8 text-main-fontBlack;
 }
 
 .regularText {
-  @apply font-normal text-lg text-main-fontBlack md:text-xl;
+  @apply font-normal text-lg text-main-fontBlack md:text-xl 
+  2xl:text-2xl 2xl:leading-10;
 }
 
 .regularText mark {

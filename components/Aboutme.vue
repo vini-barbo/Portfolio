@@ -2,13 +2,16 @@
   <div>
     <UIContentArea color="blue" class="flex flex-col gap-12">
       <section class="grid gap-2 md:gap-8 md:grid-cols-2 ">
-        <div class="2xl:max-h-[40vw] 2xl:aspect-square flex justify-end">
-          <img src="/myphotoedited.png" alt="" />
+          <div class="w-full h-full">
+            <div class="2xl:max-h-[20vw] 2xl:aspect-square 2xl:flex 2xl:justify-end">
+              <img src="/myphotoedited.png" alt="" />
+            </div>
+          
         </div>
 
-        <span class="flex flex-col w-[100%] md:w-[80%] justify-start  gap-3">
+        <span class="flex flex-col w-[100%] md:w-[80%] justify-start  gap-3 2xl:max-h-[20vw] 2xl:aspect-square">
           <h2 class="subtitle md:ml-1">About</h2>
-          <h1 class="title md:my-5">About me</h1>
+          <h1 class="title md:my-5 2xl:my-8">About me</h1>
           <p class="regularText">
             As a <mark>mid-level developer</mark> with a passion for technology
             and innovation,
