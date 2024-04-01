@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<IProps>(), {
 
 <template>
   <section
-    class="flex justify-center w-full p-5 md:px-11"
+    class="flex justify-center w-full p-5 md:px-11 "
     :class="{
       'md:py-20': props.padding === 'normal',
       'bg-main-blue': props.color === 'blue',

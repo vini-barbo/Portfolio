@@ -1,10 +1,34 @@
 <template>
   <UIContentArea>
-    <section class="w-full flex flex-col gap-4 md:gap-8 ">
+    <section class="w-full flex flex-col gap-4 md:gap-8">
       <h2 class="subtitle">My projects</h2>
       <h1 class="title">My Portfolio</h1>
-      <aside class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-        <div class="card">
+      <aside
+        class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4 gap-y-5"
+      >
+        <div class="card2 p-4  shadow-md shadow-stone-300   rounded-lg">
+          <div class="card2Image ">
+            <img src="/projectsample.png" alt="" />
+          </div>
+          <div class="card2Text flex flex-col gap-2">
+            <div class="card2TextTitle ">
+              <h3>Spotify Clone</h3>
+              <p><mark class="text-yellow-400">In progress</mark></p>
+            </div>
+            made with:
+            <div class="cardTechs">
+              <div>Node</div>
+              <div>React</div>
+              <div>Typescript</div>
+              <div>Postgres</div>
+            </div>
+          </div>
+          <div class="card2Button">
+            <UIButton text="View demo"></UIButton>
+          </div>
+        </div>
+
+        <!-- <div class="card" >
           <div class="cardImage">
             <img src="/projectsample.png" alt="" />
           </div>
@@ -67,7 +91,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </aside>
     </section>
   </UIContentArea>
@@ -95,8 +119,7 @@
 }
 
 .card {
-  @apply flex flex-col  shadow-md gap-1  rounded-md w-[1fr]
-  md:w-[4fr];
+  @apply flex flex-col  shadow-md gap-1 h-[550px] rounded-md 2xl:h-[550px] aspect-[1/1.5];
 }
 
 .cardImage {
@@ -111,7 +134,7 @@
   @apply flex gap-10 text-base mt-4 uppercase ml-1 h-9;
 }
 
-.cardTextTitle{
+.cardTextTitle {
   @apply text-[12px] mt-2;
 }
 
