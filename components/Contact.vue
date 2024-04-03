@@ -1,7 +1,7 @@
 <template>
-  <UIContentArea color="blue">
-    <section class="grid md:grid-cols-2  gap-2 md:gap-32">
-      <aside class="flex flex-col gap-4">
+  <UIContentArea >
+    <section class="grid md:grid-cols-1  gap-32 ">
+      <!-- <aside class="flex flex-col gap-4">
         <div class="gridHeader">
           <h2 class="subtitle text-center md:ml-1 md:text-left md:mb-4">
             Get in touch
@@ -21,14 +21,14 @@
             <textarea name="" id="" cols="30" rows="10"></textarea>
           </div>
         </form>
-      </aside>
+      </aside> -->
       <aside class="flex flex-col gap-4">
         <div class="gridHeader">
           <h2 class="subtitle text-center md:ml-1 md:text-left md:mb-4">
-            Also
+            Get in touch
           </h2>
           <h1 class="title md:my-5 text-center md:text-left">
-            Check my socials
+            Send me a message
           </h1>
         </div>
         <div class="grid grid-cols-2 gap-5 text-center">
@@ -62,7 +62,7 @@
               "
             />
             <div
-              class="border p-3 rounded-md"
+              class="border p-3 rounded-md flex items-center"
               style="
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
@@ -88,7 +88,7 @@
 
 input,
 textarea {
-  @apply py-2.5 rounded-md px-1 w-full border border-main-mark3;
+  @apply py-2.5 md:py-4 rounded-md px-1 w-full border border-main-mark3;
 }
 
 form div {

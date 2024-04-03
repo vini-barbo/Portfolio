@@ -2,9 +2,10 @@
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp class="bg-white"></NavbarApp>
     <HeaderApp></HeaderApp>
+    <Aboutme></Aboutme>
     <SoftSkills></SoftSkills>
     <HardSkills></HardSkills>
-    <Aboutme></Aboutme>
+    
     <Projects></Projects>
     <Contact></Contact>
     <footerApp></footerApp>
@@ -36,8 +37,8 @@
 }
 
 .regularText {
-  @apply font-normal text-lg text-main-fontBlack md:text-xl 
-  2xl:text-2xl 2xl:leading-10;
+  @apply font-normal text-lg text-main-fontBlack md:text-2xl 
+  2xl:text-3xl 2xl:leading-10;
 }
 
 .regularText mark {
@@ -116,7 +117,8 @@
   font-style: italic;
 }
 
-img {
+img,
+svg {
   width: 100%;
   height: 100%;
   display: block;

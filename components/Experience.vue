@@ -1,6 +1,6 @@
 <template>
   <section class="w-full flex flex-col gap-1 md:gap-8">
-    <h1 class="title">Field experience</h1>
+    <h1 class="subtitle">Companies I have worked</h1>
     <aside class="w-full grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-6 md:gap-8 ">
       <div class="card">
         <div class="cardImage">
@@ -40,7 +40,7 @@
 }
 
 .card {
-  @apply flex items-center justify-between  gap-5  p-2 rounded-md flex-col bg-white shadow-md md:py-4;
+  @apply flex items-center justify-between  gap-5  p-2 rounded-md flex-col  md:py-4;
 }
 
 .cardImage {
