@@ -38,7 +38,7 @@
 
 .regularText {
   @apply font-normal text-lg text-main-fontBlack md:text-2xl 
-  2xl:text-3xl 2xl:leading-10;
+  2xl:text-4xl 2xl:leading-[48px];
 }
 
 .regularText mark {

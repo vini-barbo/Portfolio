@@ -17,7 +17,7 @@
             </span>
           </span>
         </div>
-        <div class="2xl:max-h-[40vw] 2xl:aspect-square">
+        <div class="2xl:max-h-[40vw] 2xl:aspect-square md:p-14">
           <img src="/myphotoedited.png" alt="" />
         </div>
       </section>

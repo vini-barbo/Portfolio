@@ -109,7 +109,7 @@
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true">
+            <UIButton text="Check the repo" class="group" :icon="true" :disabled="true">
               <svg
                 width="800px"
                 height="800px"
@@ -153,7 +153,7 @@
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true">
+            <UIButton text="Check the repo" class="group" :icon="true" :disabled="true">
               <svg
                 width="800px"
                 height="800px"
