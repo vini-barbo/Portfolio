@@ -5,19 +5,22 @@ export default {
   content: [],
   theme: {
     extend: {
-      colors:{
-        main:{
+      colors: {
+        main: {
           mark: '#c9e1eb',
           mark2: '#5e3bee',
           mark3: '#31bbf7',
           blue: '#f5fcff',
           fontBlack: '#1c1e53'
-
         }
+      },
+      screens: {
+        'md': '980px',
       }
     },
 
   },
+
   plugins: [
 
   ],
