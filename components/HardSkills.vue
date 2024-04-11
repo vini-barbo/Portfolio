@@ -1,7 +1,7 @@
 <template>
   <UIContentArea :padding="'less'">
-    <section class="w-full flex flex-col gap-4 md:gap-8">
-      <h1 class="title">Tech stack</h1>
+    <section class="w-full flex flex-col gap-4 md:gap-8 md:my-5">
+      <h1 class="title">{{$t('hardSkillsTechStack')}}</h1>
       <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div class="card">
           <h4>Backend</h4>
@@ -52,7 +52,7 @@
               <div class="cardImage">
                 <img src="/prisma.svg" alt="" />
               </div>
-              <p>Prisma</p>
+              <p>PrismaORM</p>
             </div>
           </div>
         </div>

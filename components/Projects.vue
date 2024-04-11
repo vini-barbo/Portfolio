@@ -1,15 +1,15 @@
 <template>
   <UIContentArea :color="'blue'">
     <section class="w-full flex flex-col gap-4 md:gap-8">
-      <h2 class="subtitle">My projects</h2>
-      <h1 class="title">My Portfolio</h1>
+      <h2 class="subtitle">{{ $t('projectsMyprojects') }}</h2>
+      <h1 class="title">{{ $t('projectsMyPortfolio') }}</h1>
       <aside class="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4 gap-y-5">
         <div class="card">
           <img src="/projectsample.png" alt="" />
           <div class="cardText">
             <div class="card2TextTitle">
-              <h3>Spotify Clone</h3>
-              <p><mark class="text-yellow-400">In progress</mark></p>
+              <h3>{{ $t('projectsSpotifyClone') }}</h3>
+              <p><mark class="text-yellow-400">{{ $t('projectsInProgress') }}</mark></p>
             </div>
             <div class="cardTechs">
               <div>Node</div>
@@ -19,14 +19,19 @@
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true" size="xs">
+            <UIButton :text="$t('projectsCheckTheRepo')" @click="navigateTo('https://github.com/vini-barbo/SpotifyCloneServer', {
+              external: true,
+              open: {
+                target: '_blank',
+              }
+            })"  class="group" :icon="true" size="xs">
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="group-hover:stroke-main-mark2"
                   d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"
                   stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </UIButton>
-            <UIButton class="hidden" text="Check the repo" :color="'clean'" :size="'sm'" :icon="true" size="xs">
+            <UIButton class="hidden" :text="$t('projectsCheckTheRepo')" :color="'clean'" :icon="true" size="xs">
               <img src="/github_black.svg" alt="" />
             </UIButton>
           </div>
@@ -35,8 +40,8 @@
           <img src="/projectsample.png" alt="" />
           <div class="cardText">
             <div class="card2TextTitle">
-              <h3>This portfolio</h3>
-              <p><mark class="text-yellow-400">In progress</mark></p>
+              <h3>{{ $t('projectsThisPortfolio') }}</h3>
+              <p><mark class="text-yellow-400 invisible">{{ $t('projectsInProgress') }}</mark></p>
             </div>
             <div class="cardTechs">
               <div>Node</div>
@@ -46,14 +51,19 @@
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true" size="xs">
+            <UIButton :text="$t('projectsCheckTheRepo')" @click="navigateTo('https://github.com/vini-barbo/Portfolio', {
+              external: true,
+              open: {
+                target: '_blank',
+              }
+            })" class="group" :icon="true" size="xs">
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="group-hover:stroke-main-mark2"
                   d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"
                   stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </UIButton>
-            <UIButton class="hidden" text="Check the repo" :color="'clean'" :size="'sm'" :icon="true" size="xs">
+            <UIButton class="hidden" :text="$t('projectsCheckTheRepo')" :color="'clean'" :icon="true" size="xs">
               <img src="/github_black.svg" alt="" />
             </UIButton>
           </div>
@@ -63,25 +73,25 @@
           <img src="/projectsample.png" alt="" />
           <div class="cardText">
             <div class="card2TextTitle">
-              <h3>There's a lot more coming</h3>
-              <p><mark class="text-yellow-400">stay tuned</mark></p>
+              <h3>{{ $t('projectsMoreComing') }}</h3>
+              <p><mark class="text-yellow-400">{{ $t('projectsStayTuned') }}</mark></p>
             </div>
             <div class="cardTechs">
-              <div>To</div>
-              <div>see</div>
-              <div>the</div>
-              <div>updates</div>
+              <div>{{ $t('projectsTo') }}</div>
+              <div>{{ $t('projectsSee') }}</div>
+              <div>{{ $t('projectsThe') }}</div>
+              <div>{{ $t('projectsUpdates') }}</div>
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true" size="xs" :disabled="true">
+            <UIButton :text="$t('projectsCheckTheRepo')" class="group" :icon="true" size="xs" :disabled="true">
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="group-hover:stroke-main-mark2"
                   d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"
                   stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </UIButton>
-            <UIButton class="hidden" text="Check the repo" :color="'clean'" :size="'sm'" :icon="true" size="xs">
+            <UIButton class="hidden" :text="$t('projectsCheckTheRepo')"  :color="'clean'" :icon="true" size="xs">
               <img src="/github_black.svg" alt="" />
             </UIButton>
           </div>
@@ -91,25 +101,25 @@
           <img src="/projectsample.png" alt="" />
           <div class="cardText">
             <div class="card2TextTitle">
-              <h3>There's a lot more coming</h3>
-              <p><mark class="text-yellow-400">stay tuned</mark></p>
+              <h3>{{ $t('projectsMoreComing') }}</h3>
+              <p><mark class="text-yellow-400">{{ $t('projectsStayTuned') }}</mark></p>
             </div>
             <div class="cardTechs">
-              <div>To</div>
-              <div>see</div>
-              <div>the</div>
-              <div>updates</div>
+              <div>{{ $t('projectsTo') }}</div>
+              <div>{{ $t('projectsSee') }}</div>
+              <div>{{ $t('projectsThe') }}</div>
+              <div>{{ $t('projectsUpdates') }}</div>
             </div>
           </div>
           <div class="cardButton">
-            <UIButton text="Check the repo" class="group" :icon="true" size="xs" :disabled="true">
+            <UIButton :text="$t('projectsCheckTheRepo')" class="group" :icon="true" size="xs" :disabled="true">
               <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="group-hover:stroke-main-mark2"
                   d="M20 4L12 12M20 4V8.5M20 4H15.5M19 12.5V16.8C19 17.9201 19 18.4802 18.782 18.908C18.5903 19.2843 18.2843 19.5903 17.908 19.782C17.4802 20 16.9201 20 15.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V8.2C4 7.0799 4 6.51984 4.21799 6.09202C4.40973 5.71569 4.71569 5.40973 5.09202 5.21799C5.51984 5 6.07989 5 7.2 5H11.5"
                   stroke="#ffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </UIButton>
-            <UIButton class="hidden" text="Check the repo" :color="'clean'" :size="'sm'" :icon="true" size="xs">
+            <UIButton class="hidden" :text="$t('projectsCheckTheRepo')" :color="'clean'" :icon="true" size="xs">
               <img src="/github_black.svg" alt="" />
             </UIButton>
           </div>

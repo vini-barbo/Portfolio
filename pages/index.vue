@@ -3,9 +3,7 @@
     <NavbarApp class="bg-white"></NavbarApp>
     <HeaderApp></HeaderApp>
     <Aboutme></Aboutme>
-    <SoftSkills></SoftSkills>
     <HardSkills></HardSkills>
-    
     <Projects></Projects>
     <Contact></Contact>
     <footerApp></footerApp>
@@ -32,13 +30,13 @@
 .subtitle {
   @apply font-medium text-xl md:text-[2vw] 2xl:text-[1.8vw] md:leading-[1.3rem] mt-1 md:mb-4 text-main-fontBlack;
 }
+
 .title {
   @apply font-bold text-4xl md:text-[3.3vw] 2xl:text-[2.8vw] md:leading-[1rem] mb-4 md:mb-8 text-main-fontBlack;
 }
 
 .regularText {
-  @apply font-normal text-lg text-main-fontBlack md:text-2xl 
-  2xl:text-4xl 2xl:leading-[48px];
+  @apply font-normal text-lg text-main-fontBlack md:text-2xl md:leading-[40px] 2xl:text-4xl 2xl:leading-[55px];
 }
 
 .regularText mark {

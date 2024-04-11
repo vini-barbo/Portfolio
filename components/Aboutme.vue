@@ -1,41 +1,54 @@
 <script setup lang="ts">
-const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
+const { locale } = useI18n()
+const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
 
 </script>
 
 <template>
   <div>
-    <UIContentArea  color="blue" class="flex flex-col gap-12 ">
+    <UIContentArea color="blue" class="flex flex-col gap-12 ">
 
       <section class="grid gap-1 md:gap-8 md:grid-cols-1">
-        <span class="flex flex-col w-[100%] md:w-[80%] justify-start  gap-3 2xl:max-h-[20vw] 2xl:aspect-square">
-          <h2 class="subtitle md:ml-1">About</h2>
-          <h1 class="title md:my-5 2xl:my-8">About me</h1>
-          <p class="regularText 2xl:w-[50%]">
-            As a <mark>mid-level developer</mark> with a passion for technology
-            and innovation,
-            <p class="regularText xl:!hidden"></p>
-            I am driven by the opportunity to
-            <mark>work remotely overseas</mark>
-            and contribute to impactful projects worldwide.
-          </p>
-          <p class="regularText">
+        <span class="flex flex-col w-[100%] md:w-[50%] md:text-justify 2xl:w-[70%] justify-start  gap-3">
+          <h2 class="subtitle md:ml-1">{{$t('aboutAbout')}}</h2>
+          <h1 class="title md:my-5 2xl:my-8">{{$t('aboutAboutMe')}}</h1>
+          <p v-if="String(locale) == 'en'" class="regularText 2xl:w-[90%]">
 
-            With <mark> over {{ yearsOfExperience }} year{{ yearsOfExperience < 1 ? 's' : ''}} of experience</mark> in <mark>Vue</mark> as
-            Frontend and <mark>Node</mark> as Backend , I have honed my skills
-            in <mark>creating, deploying, and supporting</mark> a wide range of
-            applications.
+            I am a <mark>mid-level full-stack developer</mark> based <mark> in Brazil</mark>. I also have <mark>experience
+              with
+              teaching</mark>. As a result I have the <mark>ability</mark> not only to <mark>create</mark> customized and
+            consistent
+            <mark> software</mark> but
+            also to <mark>teach</mark>
+            and
+            <mark>explain</mark> complex subjects to <mark>clients or coworkers.</mark>
+            <br>
+            Furthermore, I have <mark> over {{ yearsOfExperience }} year{{ yearsOfExperience > 1 ? 's' : '' }} of
+              experience</mark> in the field, having <mark>provided services</mark> to more than <mark>four
+              companies</mark> , which has given me solid <mark>knowledge</mark> in <mark>project development.</mark> I am
+            eager
+            and
+            <mark>available</mark> to
+            <mark>work remotely.</mark>
           </p>
-          <p class="regularText">
-            Whether it's<mark>developing</mark> robust backend systems, crafting
-            intuitive user interfaces, or optimizing performance, I am adept at
-            tackling complex challenges and delivering
-            <mark>high-quality solutions.</mark>
+          <p v-else-if="String(locale) == 'pt'" class="regularText 2xl:w-[90%]">
+
+            Sou um <mark>desenvolvedor pleno</mark> com experiência com <mark>docência.</mark> Tenho a
+            <mark>habilidade </mark> de não apenas de <mark>criar softwares</mark> consistentes, mas também de
+            <mark>ensinar e explicar</mark>
+            assuntos complexos para <mark>clientes ou colegas de trabalho.</mark>
+          <p></p>
+          Além disso, acumulo <mark>mais de {{ yearsOfExperience }} ano{{ yearsOfExperience > 1 ? 's' : '' }} de
+            experiência</mark> na área, com <mark>serviços prestados</mark> para mais de <mark>quatro
+            empresas</mark> , o que me proporcionou sólido <mark>conhecimento</mark> conhecimento no <mark>desenvolvimento
+            de projetos.</mark> Estou motivado e
+          <mark>disponível</mark>
+          para <mark>trabalhar remotamente</mark>
           </p>
         </span>
-        
-              <Experience  class="2xl:mt-20">
-      </Experience>
+
+        <Experience class="2xl:mt-20">
+        </Experience>
 
       </section>
 
