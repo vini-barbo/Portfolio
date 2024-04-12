@@ -1,12 +1,12 @@
 <template>
   <main class="flex flex-col w-full bg-[#f5f5f7]">
     <NavbarApp class="bg-white"></NavbarApp>
-    <HeaderApp></HeaderApp>
-    <Aboutme></Aboutme>
-    <HardSkills></HardSkills>
-    <Projects></Projects>
-    <Contact></Contact>
-    <footerApp></footerApp>
+    <HeaderApp id="contact"></HeaderApp>
+    <Aboutme id="aboutme"></Aboutme>
+    <HardSkills id="hardskill"></HardSkills>
+    <Projects id="project"></Projects>
+    <Contact id="contact"></Contact>
+    <FooterApp></FooterApp>
   </main>
 </template>
 

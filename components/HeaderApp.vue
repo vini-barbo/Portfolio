@@ -8,9 +8,10 @@
             <h1><mark>Vinicius Barbosa</mark></h1>
             <h1>{{ $t('role') }}</h1>
             <h2>
-              {{ $t('headerSubtitle1') }} <mark>{{ $t('headerSubtitle2') }}</mark> {{ $t('headerSubtitle3') }}<mark>&nbsp{{
-                $t('headerSubtitle4')
-              }}</mark>
+              {{ $t('headerSubtitle1') }} <mark>{{ $t('headerSubtitle2') }}</mark> {{ $t('headerSubtitle3')
+              }}<mark>&nbsp{{
+  $t('headerSubtitle4')
+}}</mark>
             </h2>
             <span>
               <UIButton :text="$t('resume')" />

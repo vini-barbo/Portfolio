@@ -47,7 +47,7 @@ const copyToClipboard = async () => {
           <img class="cardImage " src="/copy.svg" alt="Linkedin link" />
         </aside>
 
-        <a class="card" href="https://wa.me//5581993531750?text=Vi%20o%20seu%20perfil%20e%20gostaria%20de%20conversar."
+        <a class="card" href="https://wa.me//5581993531750?text=Vi%20o%20seu%20portfólio%20e%20gostaria%20de%20conversar."
           target="_blank">
           <img class="cardImage" src="/whatsapp.svg" alt="Linkedin link" />
           <span class="cardText">+55 (81) 9 93531750</span>

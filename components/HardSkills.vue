@@ -1,7 +1,7 @@
 <template>
   <UIContentArea :padding="'less'">
     <section class="w-full flex flex-col gap-4 md:gap-8 md:my-5">
-      <h1 class="title">{{$t('hardSkillsTechStack')}}</h1>
+      <h1 class="title">{{ $t('hardSkillsTechStack') }}</h1>
       <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div class="card">
           <h4>Backend</h4>
@@ -79,7 +79,7 @@
 }
 
 .cardImage {
-  @apply h-20 md:h-24 aspect-square flex  justify-center items-center;
+  @apply h-20 md:h-24 aspect-square flex justify-center items-center;
 }
 
 h4 {

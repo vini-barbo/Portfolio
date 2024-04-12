@@ -58,7 +58,7 @@ export default defineI18nConfig(() => ({
             projectsThe: "as",
             projectsUpdates: "novidades",
             projectsGetTouch: "Entre em contato",
-            projectsContactMe: "contate-me"
+            projectsContactMe: "Contate-me"
         }
     }
 }))

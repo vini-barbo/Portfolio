@@ -47,7 +47,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
           </p>
         </span>
 
-        <Experience class="2xl:mt-20">
+        <Experience id="companies" class="2xl:mt-20">
         </Experience>
 
       </section>
