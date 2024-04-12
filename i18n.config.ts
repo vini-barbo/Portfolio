@@ -51,7 +51,7 @@ export default defineI18nConfig(() => ({
             projectsInProgress: 'Em progresso',
             projectsThisPortfolio: 'Esse portfólio',
             projectsCheckTheRepo: 'Veja o repositório',
-            projectsMoreComing: "Vem mais por a[i",
+            projectsMoreComing: "Vem mais por aí",
             projectsStayTuned: "fique ligado",
             projectsTo: "Para",
             projectsSee: "ver",

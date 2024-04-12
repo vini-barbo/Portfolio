@@ -4,22 +4,22 @@
     <aside class="w-full grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-6 md:gap-8 ">
       <div class="card">
         <div class="cardImage">
-          <img src="public/arena-logo.jpeg" alt="" class="rounded-md" />
+          <img src="public/arena-logo.jpeg" alt="Company logo arena fantasy" class="rounded-md" />
         </div>
       </div>
       <div class="card px-0.5">
         <div class="cardImage w-full">
-          <img src="public/datapriority-logo.png" alt="" />
+          <img src="public/datapriority-logo.png" alt="Company logo data priority" />
         </div>
       </div>
       <div class="card">
         <div class="cardImage">
-          <img src="public/UFRPE-logo.png" alt="" />
+          <img src="public/UFRPE-logo.png" alt="University UFRPE logo " />
         </div>
       </div>
       <div class="card">
         <div class="cardImage">
-          <img src="public/cesar-logo.webp" alt="" />
+          <img src="public/cesar-logo.webp" alt="Company logo Cesar School" />
         </div>
       </div>
     </aside>

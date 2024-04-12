@@ -13,13 +13,13 @@
   $t('headerSubtitle4')
 }}</mark>
             </h2>
-            <span>
+            <a href="/curriculum_Vinicius_Barbosa.pdf" download>
               <UIButton :text="$t('resume')" />
-            </span>
+            </a>
           </span>
         </div>
         <div class="2xl:max-h-[40vw] 2xl:aspect-square md:p-14">
-          <img src="/myphotoedited.png" alt="" />
+          <img src="/myphotoedited.png" alt="A professional photo of vinicius barbosa" />
         </div>
       </section>
     </UIContentArea>

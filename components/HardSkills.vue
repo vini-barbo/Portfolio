@@ -8,13 +8,13 @@
           <div class="cardGrid grid-cols-2">
             <div class="imagePlace">
               <div class="cardImage">
-                <img class="rounded-md" src="/typescript.svg" alt="" />
+                <img class="rounded-md" src="/typescript.svg" alt="TypeScript logo" />
               </div>
               <p>TypeScript</p>
             </div>
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/nodejs.svg" alt="" />
+                <img src="/nodejs.svg" alt="Node logo" />
               </div>
               <p>NodeJs</p>
             </div>
@@ -25,14 +25,14 @@
           <div class="cardGrid grid-cols-2">
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/vue.svg" alt="" />
+                <img src="/vue.svg" alt="Vue logo" />
               </div>
               <p>Vue</p>
             </div>
 
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/tailwind.svg" alt="" />
+                <img src="/tailwind.svg" alt="Tailwind logo" />
               </div>
               <p>Tailwind</p>
             </div>
@@ -43,14 +43,14 @@
           <div class="cardGrid grid-cols-2">
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/postgresql.svg" alt="" />
+                <img src="/postgresql.svg" alt="postgres logo" />
               </div>
               <p>PostgresSql</p>
             </div>
 
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/prisma.svg" alt="" />
+                <img src="/prisma.svg" alt="prismaORM logo" />
               </div>
               <p>PrismaORM</p>
             </div>
