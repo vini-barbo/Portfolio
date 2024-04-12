@@ -11,4 +11,10 @@ export default defineNuxtConfig({
       AMBIENCE_API: process.env.NUXT_PUBLIC_AMBIENCE_API,
     },
   },
+  app:{
+    head:{
+      title: 'Vinicius Barbosa',
+    }
+  }
+
 });

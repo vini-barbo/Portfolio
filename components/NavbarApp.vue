@@ -8,7 +8,7 @@ const { locale, setLocale } = useI18n()
     <div class="flex w-full justify-between">
       <UIButton text="Vinicius Barbosa" color="clean" />
       <div class="flex gap-3">
-        <UIButton @click="setLocale('en')" text="EN" :color="String(locale) == 'en' ? 'clean' : undefined" icon="true">
+        <UIButton @click="setLocale('en')" text="EN" :color="String(locale) == 'en' ? undefined : 'clean'" :icon="true">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1235" height="650"
             viewBox="0 0 7410 3900">
             <rect width="7410" height="3900" fill="#b22234" />
@@ -37,7 +37,7 @@ const { locale, setLocale } = useI18n()
             </g>
           </svg>
         </UIButton>
-        <UIButton @click="setLocale('pt')" :color="String(locale) == 'pt' ? 'clean' : undefined" text="PT" icon="true">
+        <UIButton @click="setLocale('pt')" :color="String(locale) == 'pt' ?  undefined : 'clean' " text="PT" :icon="true">
           <svg width="1060" height="742" version="1.1" viewBox="-2100 -1470 4200 2940" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>

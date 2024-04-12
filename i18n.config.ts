@@ -37,7 +37,7 @@ export default defineI18nConfig(() => ({
             welcome: 'Olá, eu sou',
             role: 'Desenvolvedor FullStack',
             headerSubtitle1: "Comigo a sua",
-            headerSubtitle2: "idea",
+            headerSubtitle2: "ideia",
             headerSubtitle3: "vira",
             headerSubtitle4: "realidade",
             resume: 'Veja meu currículo',
