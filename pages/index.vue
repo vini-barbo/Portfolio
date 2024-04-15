@@ -28,7 +28,7 @@
 }
 
 .subtitle {
-  @apply font-medium text-xl md:text-[2vw] 2xl:text-[1.8vw] md:leading-[1.3rem] mt-1 md:mb-4 text-main-fontBlack;
+  @apply hidden font-medium text-xl md:text-[2vw] 2xl:text-[1.8vw] md:leading-[1.3rem] mt-1 md:mb-1 text-main-fontBlack;
 }
 
 .title {

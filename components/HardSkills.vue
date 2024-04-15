@@ -1,6 +1,9 @@
 <template>
   <UIContentArea :padding="'less'">
     <section class="w-full flex flex-col gap-4 md:gap-8 md:my-5">
+      <h2 class="subtitle text-center md:ml-1 md:text-left md:mb-4">
+        {{ $t('projectsGetTouch') }}
+      </h2>
       <h1 class="title">{{ $t('hardSkillsTechStack') }}</h1>
       <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
         <div class="card">

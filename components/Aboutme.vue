@@ -18,7 +18,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
               with
               teaching.</mark> As a result I have the <mark>ability</mark> not only to <mark>create</mark> customized and
             consistent
-            <mark> software</mark> but
+            <mark>software</mark> but
             also to <mark>teach</mark>
             and
             <mark>explain</mark> complex subjects to <mark>clients or coworkers.</mark>
