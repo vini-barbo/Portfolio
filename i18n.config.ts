@@ -30,7 +30,7 @@ export default defineI18nConfig(() => ({
             projectsThe: "the",
             projectsUpdates: "updates",
             projectsGetTouch: "Get in touch",
-            projectsContactMe: "Contact me",
+            projectsContactMe: "Click on the panel to find out more about me!",
             contactCopySucessful: 'The email has been saved in your Clipboard.',
             contactCopyFailed: 'Unable to copy the email.',
 
@@ -61,7 +61,7 @@ export default defineI18nConfig(() => ({
             projectsThe: "as",
             projectsUpdates: "novidades",
             projectsGetTouch: "Entre em contato",
-            projectsContactMe: "Contate-me",
+            projectsContactMe: "Clique nos paineis para me conhecer melhor!",
             contactCopySucessful: 'O email foi copiado com sucesso.',
             contactCopyFailed: 'Falha na hora de copiar email.',
         }

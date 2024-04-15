@@ -34,11 +34,14 @@ const copyToClipboard = async () => {
         <a href="https://www.linkedin.com/in/vinicius-barbosa-8204604b/" target="_blank" class="imgPlaceholder"
           style="  background-image: url('/linkedin-profile.png'); ">
           <img class="imgPlaceholderIcon" src="/linkedin-icon-2.svg" alt="">
+          <img class="imgPlaceholderIcon2" src="/click.gif" alt="">
         </a>
 
         <a href="https://github.com/vini-barbo" target="_blank" class="imgPlaceholder"
           style="  background-image: url('/git-profile.jpg');">
           <img class="imgPlaceholderIcon" src="/github.svg" alt="">
+          <img class="imgPlaceholderIcon2" src="/click.gif" alt="">
+
         </a>
       </aside>
 
@@ -81,17 +84,23 @@ const copyToClipboard = async () => {
 }
 
 .imgPlaceholder {
-  @apply aspect-video w-full block relative rounded-md shadow-lg hover:shadow-2xl hover:scale-105 hover:z-20 transition-all cursor-pointer md:aspect-video;
+  @apply aspect-video w-full block relative rounded-md shadow-lg shadow-gray-700 hover:shadow-2xl hover:scale-105 hover:z-20 transition-all cursor-pointer md:aspect-video;
   background-size: cover;
 }
 
-.imgPlaceholderIcon {
+.imgPlaceholderIcon2 {
   @apply h-[60px] w-[60px] right-[-5%] bottom-[-5%] md:right-[-2%] md:bottom-[-2%] md:h-[80px] md:w-[80px];
   position: absolute;
   border-radius: 40px;
 
 }
 
+.imgPlaceholderIcon {
+  @apply h-[60px] w-[60px] left-[-5%] bottom-[-5%] md:right-[-2%] md:bottom-[-2%] md:h-[80px] md:w-[80px];
+  position: absolute;
+  border-radius: 40px;
+
+}
 
 .animate-pulse-custom {
   animation: pulse 2s;
@@ -121,7 +130,6 @@ form div {
 .cardText {
   @apply md:text-2xl md:w-[100%] md:text-left;
 }
-
 
 
 .cardImage {

@@ -26,7 +26,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
           <mark>explain</mark> complex subjects to <mark>clients or coworkers.</mark>
           <br>
           Moreover, I have accumulated <mark> over {{ yearsOfExperience }} year{{ yearsOfExperience > 1 ? 's' : '' }} of
-            experience</mark> in the field, having <mark>provided services</mark> to more than <mark>four
+            experience</mark> in the field, having <mark>provided services</mark> to more than <mark>three
             companies,</mark> which has given me solid <mark>knowledge</mark> in <mark>project development.</mark>
           <p></p>
           And I
@@ -44,7 +44,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
           topicos complexos para <mark>clientes ou colegas de trabalho.</mark>
           <p></p>
           Além disso, tenho <mark>mais de {{ yearsOfExperience }} ano{{ yearsOfExperience > 1 ? 's' : '' }} de
-            experiência</mark> na área, com <mark>serviços prestados</mark> para mais de <mark>quatro
+            experiência</mark> na área, com <mark>serviços prestados</mark> para mais de <mark>três
             empresas,</mark> o que me proporcionou sólido <mark>conhecimento</mark> no <mark>desenvolvimento
             de projetos.</mark>
           <p></p>
