@@ -1,12 +1,16 @@
 <script setup lang="ts">
+const { locale } = useI18n()
+
 const sleep = (delay: number) =>
   new Promise((resolve) => setTimeout(resolve, delay));
-const statusSuccess = "The content has been saved in your Clipboard";
-const statusFailed = "Failed to copy for the Clipboard";
+
+const statusSuccess = locale.value == 'pt' ? 'O email foi copiado com sucesso.' : 'The email has been saved in your Clipboard.';
+const statusFailed = locale.value == 'pt' ? 'Falha na hora de copiar email.' : 'Unable to copy the email.';
 const copyStatus: Ref<typeof statusSuccess | typeof statusFailed | ""> =
   ref("");
 
 const copyToClipboard = async () => {
+
   try {
     await navigator.clipboard.writeText("vinicius2508@hotmail.com");
     copyStatus.value = statusSuccess;
@@ -22,9 +26,9 @@ const copyToClipboard = async () => {
   <UIContentArea>
     <section class="w-full flex flex-col gap-4 md:gap-8">
       <h2 class="subtitle text-center md:ml-1 md:text-left md:mb-4">
-        {{$t('projectsGetTouch')}}
+        {{ $t('projectsGetTouch') }}
       </h2>
-      <h1 class="title md:my-5 text-center md:text-left">{{$t('projectsContactMe')}}</h1>
+      <h1 class="title md:my-5 text-center md:text-left">{{ $t('projectsContactMe') }}</h1>
 
       <aside class="grid md:grid-cols-2 gap-7 2xl:max-h-[40vw] md:p-1">
         <a href="https://www.linkedin.com/in/vinicius-barbosa-8204604b/" target="_blank" class="imgPlaceholder"

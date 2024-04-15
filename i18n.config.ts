@@ -2,15 +2,16 @@ import { Experience, Projects } from "#build/components";
 
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: 'en',
+    locale: 'pt',
+    fallbackLocale: 'en',
     messages: {
         en: {
             welcome: "Hey, I'm",
             role: 'FullStack developer',
-            headerSubtitle1: "I can make your",
+            headerSubtitle1: "I can turn your",
             headerSubtitle2: "idea",
-            headerSubtitle3: "becomes",
-            headerSubtitle4: "reality",
+            headerSubtitle3: "into",
+            headerSubtitle4: "reality.",
             resume: 'Check my resume',
             aboutAbout: 'About',
             aboutAboutMe: 'About me',
@@ -29,7 +30,9 @@ export default defineI18nConfig(() => ({
             projectsThe: "the",
             projectsUpdates: "updates",
             projectsGetTouch: "Get in touch",
-            projectsContactMe: "Contact me"
+            projectsContactMe: "Contact me",
+            contactCopySucessful: 'The email has been saved in your Clipboard.',
+            contactCopyFailed: 'Unable to copy the email.',
 
 
         },
@@ -39,7 +42,7 @@ export default defineI18nConfig(() => ({
             headerSubtitle1: "Comigo a sua",
             headerSubtitle2: "ideia",
             headerSubtitle3: "vira",
-            headerSubtitle4: "realidade",
+            headerSubtitle4: "realidade.",
             resume: 'Veja meu currículo',
             aboutAbout: 'Sobre',
             aboutAboutMe: 'Sobre mim',
@@ -58,7 +61,10 @@ export default defineI18nConfig(() => ({
             projectsThe: "as",
             projectsUpdates: "novidades",
             projectsGetTouch: "Entre em contato",
-            projectsContactMe: "Contate-me"
+            projectsContactMe: "Contate-me",
+            contactCopySucessful: 'O email foi copiado com sucesso.',
+            contactCopyFailed: 'Falha na hora de copiar email.',
         }
-    }
+    },
+
 }))

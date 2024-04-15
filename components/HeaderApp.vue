@@ -3,11 +3,11 @@
     <UIContentArea color="blue">
       <section class="grid gap-3 md:grid-cols-2 gap-y-8">
         <div>
-          <span class="flex flex-col gap-3 md:gap-9 md:h-full md:justify-center 2xl:gap-14">
+          <span class="flex flex-col gap-3 md:gap-9 md:h-full md:justify-center 2xl:gap-14 w-full">
             <h2>{{ $t('welcome') }}</h2>
             <h1><mark>Vinicius Barbosa</mark></h1>
             <h1>{{ $t('role') }}</h1>
-            <h2>
+            <h2 class="w-max">
               {{ $t('headerSubtitle1') }} <mark>{{ $t('headerSubtitle2') }}</mark> {{ $t('headerSubtitle3')
               }}<mark>&nbsp{{
   $t('headerSubtitle4')
