@@ -30,7 +30,7 @@ const copyToClipboard = async () => {
       </h2>
       <h1 class="title md:my-5 text-center md:text-left">{{ $t('projectsContactMe') }}</h1>
 
-      <aside class="grid md:grid-cols-2 gap-7 2xl:max-h-[40vw] md:p-1">
+      <aside class="grid md:grid-cols-2 gap-7 md:gap-20 2xl:max-h-[40vw] md:p-1 ">
         <a href="https://www.linkedin.com/in/vinicius-barbosa-8204604b/" target="_blank" class="imgPlaceholder"
           style="  background-image: url('/linkedin-profile.png'); ">
           <img class="imgPlaceholderIcon" src="/linkedin-icon-2.svg" alt="">
@@ -45,7 +45,7 @@ const copyToClipboard = async () => {
         </a>
       </aside>
 
-      <div class="grid md:grid-cols-2 gap-7 2xl:max-h-[40vw] md:p-1">
+      <div class="grid md:grid-cols-2 gap-7 md:gap-20 2xl:max-h-[40vw] md:p-1">
         <aside class="card " @click="
           copyToClipboard()
           ">
