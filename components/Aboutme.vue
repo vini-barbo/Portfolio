@@ -50,7 +50,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
           <p></p>
           Ademais, estou aberto e
           <mark>disponível</mark>
-          para <mark>trabalhar remotamente e presencialmente</mark>
+          para <mark>trabalhar remotamente e presencialmente.</mark>
           </p>
         </span>
 
