@@ -20,7 +20,7 @@
               <div class="cardImage">
                 <img src="/spring.svg" alt="Springboot logo" />
               </div>
-              <p>Spring Boot</p>
+              <p>Spring</p>
             </div>
 
             <div class="imagePlace">
