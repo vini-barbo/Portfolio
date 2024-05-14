@@ -1,5 +1,3 @@
-import { Experience, Projects } from "#build/components";
-
 export default defineI18nConfig(() => ({
     legacy: false,
     locale: 'pt',
@@ -33,6 +31,7 @@ export default defineI18nConfig(() => ({
             projectsContactMe: "Click on the panel to find out more about me!",
             contactCopySucessful: 'The email has been saved in your Clipboard.',
             contactCopyFailed: 'Unable to copy the email.',
+            hardSkillsInfra: 'Infrastructure'
 
 
         },
@@ -64,6 +63,7 @@ export default defineI18nConfig(() => ({
             projectsContactMe: "Clique nos paineis para me conhecer melhor!",
             contactCopySucessful: 'O email foi copiado com sucesso.',
             contactCopyFailed: 'Falha na hora de copiar email.',
+            hardSkillsInfra: 'Infraestrutura'
         }
     },
 

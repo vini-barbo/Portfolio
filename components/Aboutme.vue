@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
-const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2022));
+const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
 
 </script>
 

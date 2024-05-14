@@ -5,10 +5,10 @@
         {{ $t('projectsGetTouch') }}
       </h2>
       <h1 class="title">{{ $t('hardSkillsTechStack') }}</h1>
-      <aside class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <aside class="grid grid-cols-1 md:grid-cols-2 gap-3 2xl:gap-10">
         <div class="card">
           <h4>Backend</h4>
-          <div class="cardGrid grid-cols-2">
+          <div class="cardGrid grid-cols-2 md:grid-cols-4">
             <div class="imagePlace">
               <div class="cardImage">
                 <img class="rounded-md" src="/typescript.svg" alt="TypeScript logo" />
@@ -20,6 +20,18 @@
                 <img src="/nodejs.svg" alt="Node logo" />
               </div>
               <p>NodeJs</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img class="rounded-md" src="/java.svg" alt="TypeScript logo" />
+              </div>
+              <p>Java</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/spring.svg" alt="Node logo" />
+              </div>
+              <p>Springboot</p>
             </div>
           </div>
         </div>
@@ -59,6 +71,24 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <h4>{{ $t('hardSkillsInfra') }}</h4>
+          <div class="cardGrid grid-cols-2">
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/aws.svg" alt="postgres logo" />
+              </div>
+              <p>AWS</p>
+            </div>
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/docker.svg" alt="prismaORM logo" />
+              </div>
+              <p>Docker</p>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
   </UIContentArea>
@@ -70,7 +100,7 @@
 }
 
 .cardGrid {
-  @apply grid gap-9 text-center md:gap-8;
+  @apply grid gap-9 text-center md:gap-10;
 }
 
 .card {
@@ -78,11 +108,11 @@
 }
 
 .imagePlace {
-  @apply flex flex-col justify-center align-middle gap-2 text-center;
+  @apply flex flex-col justify-center align-middle gap-2  text-center;
 }
 
 .cardImage {
-  @apply h-20 md:h-24 aspect-square flex justify-center items-center;
+  @apply h-20 md:h-24 2xl:h-36 aspect-square flex justify-center items-center;
 }
 
 h4 {
