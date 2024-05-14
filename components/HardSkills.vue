@@ -9,6 +9,20 @@
         <div class="card">
           <h4>Backend</h4>
           <div class="cardGrid grid-cols-2 md:grid-cols-4">
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img class="rounded-md" src="/java.svg" alt="Java logo" />
+              </div>
+              <p>Java</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/spring.svg" alt="Springboot logo" />
+              </div>
+              <p>Spring Boot</p>
+            </div>
+
             <div class="imagePlace">
               <div class="cardImage">
                 <img class="rounded-md" src="/typescript.svg" alt="TypeScript logo" />
@@ -20,18 +34,6 @@
                 <img src="/nodejs.svg" alt="Node logo" />
               </div>
               <p>NodeJs</p>
-            </div>
-            <div class="imagePlace">
-              <div class="cardImage">
-                <img class="rounded-md" src="/java.svg" alt="TypeScript logo" />
-              </div>
-              <p>Java</p>
-            </div>
-            <div class="imagePlace">
-              <div class="cardImage">
-                <img src="/spring.svg" alt="Node logo" />
-              </div>
-              <p>Springboot</p>
             </div>
           </div>
         </div>
@@ -100,7 +102,7 @@
 }
 
 .cardGrid {
-  @apply grid gap-9 text-center md:gap-10;
+  @apply grid gap-9 text-center md:gap-10 2xl:gap-16;
 }
 
 .card {
