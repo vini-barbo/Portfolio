@@ -6,37 +6,42 @@
       </h2>
       <h1 class="title">{{ $t('hardSkillsTechStack') }}</h1>
       <aside class="grid grid-cols-1 md:grid-cols-2 gap-3 2xl:gap-10">
+
+
         <div class="card">
-          <h4>Backend</h4>
+          <h4>{{ $t('ai') }}</h4>
           <div class="cardGrid grid-cols-2 md:grid-cols-4">
 
             <div class="imagePlace">
               <div class="cardImage">
-                <img class="rounded-md" src="/java.svg" alt="Java logo" />
+                <img class="rounded-md" src="/python.svg" alt="python logo" />
               </div>
-              <p>Java</p>
+              <p>Python</p>
             </div>
             <div class="imagePlace">
               <div class="cardImage">
-                <img src="/spring.svg" alt="Springboot logo" />
+                <img src="/jupyter.svg" alt="jupyterlogo" />
               </div>
-              <p>Spring</p>
+              <p>Jupyter</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/pandas.svg" alt="jupyterlogo" />
+              </div>
+              <p>Pandas</p>
+            </div>
+            <div class="imagePlace ">
+              <div class="cardImage">
+                <img src="/numpy.svg" alt="jupyterlogo" />
+              </div>
+              <p>NumPy</p>
             </div>
 
-            <div class="imagePlace">
-              <div class="cardImage">
-                <img class="rounded-md" src="/typescript.svg" alt="TypeScript logo" />
-              </div>
-              <p>TypeScript</p>
-            </div>
-            <div class="imagePlace">
-              <div class="cardImage">
-                <img src="/nodejs.svg" alt="Node logo" />
-              </div>
-              <p>NodeJs</p>
-            </div>
           </div>
         </div>
+
+
+
         <div class="card">
           <h4>Frontend</h4>
           <div class="cardGrid grid-cols-2">
@@ -91,6 +96,38 @@
             </div>
           </div>
         </div>
+
+        <div class="card md:col-span-2">
+          <h4>Backend</h4>
+          <div class="cardGrid grid-cols-2 md:grid-cols-4">
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img class="rounded-md" src="/java.svg" alt="Java logo" />
+              </div>
+              <p>Java</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/spring.svg" alt="Springboot logo" />
+              </div>
+              <p>Spring</p>
+            </div>
+
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img class="rounded-md" src="/typescript.svg" alt="TypeScript logo" />
+              </div>
+              <p>TypeScript</p>
+            </div>
+            <div class="imagePlace">
+              <div class="cardImage">
+                <img src="/nodejs.svg" alt="Node logo" />
+              </div>
+              <p>NodeJs</p>
+            </div>
+          </div>
+        </div>
       </aside>
     </section>
   </UIContentArea>
@@ -110,7 +147,7 @@
 }
 
 .imagePlace {
-  @apply flex flex-col justify-center align-middle gap-2  text-center;
+  @apply flex flex-col justify-center align-middle gap-2 text-center;
 }
 
 .cardImage {
