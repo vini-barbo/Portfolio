@@ -14,7 +14,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
           <h1 class="title md:my-5 2xl:my-8">{{ $t('aboutAboutMe') }}</h1>
           <p v-if="String(locale) == 'en'" class="regularText 2xl:w-[90%]">
 
-            I am a <mark>mid-level full-stack developer</mark> based <mark> in Brazil.</mark>
+            I am a <mark>junior-level full-stack developer</mark> based <mark> in Brazil.</mark>
           <p></p>
           I also have <mark>experience
             with
@@ -36,7 +36,7 @@ const yearsOfExperience = ref(Math.abs(new Date().getFullYear() - 2023));
           </p>
           <p v-else-if="String(locale) == 'pt'" class="regularText 2xl:w-[90%]">
 
-            Sou um <mark>desenvolvedor pleno</mark> com experiência em <mark>docência.</mark>
+            Sou um <mark>desenvolvedor junior</mark> com experiência em <mark>docência.</mark>
           <p></p>
           Tenho a
           <mark>habilidade</mark> de não apenas <mark>criar softwares</mark> consistentes, mas também para
