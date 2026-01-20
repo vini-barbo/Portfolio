@@ -1,75 +1,11 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+  # Portfolio Design for Fullstack Developer
 
-## Setup
+  This is a code bundle for Portfolio Design for Fullstack Developer. The original project is available at https://www.figma.com/design/mZp5M0jzvoqbzmxxnvLeCk/Portfolio-Design-for-Fullstack-Developer.
 
-Make sure to install the dependencies:
+  ## Running the code
 
-```bash
-# npm
-npm install
+  Run `npm i` to install the dependencies.
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+  Run `npm run dev` to start the development server.
+  
