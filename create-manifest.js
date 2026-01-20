@@ -6,11 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const manifest = {
-  version: 1,
-  framework: {
-    name: 'react',
-    version: '18.0.0'
-  }
+  version: 1
 };
 
 const distPath = join(__dirname, 'dist');
