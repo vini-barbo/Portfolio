@@ -1,0 +1,1 @@
+Note: The actual image file needs to be manually saved to /home/vinicius/microfrotend/scripted-mfe/port/Portfolio/public/profile.jpg
