@@ -9,6 +9,9 @@ frontend:
       commands:
         - echo "Building React app with Vite..."
         - npm run build
+        - echo "Creating deploy manifest..."
+        - mkdir -p .amplify-hosting
+        - cp .amplify-hosting/deploy-manifest.json dist/ || echo '{"version":1}' > dist/deploy-manifest.json
         - echo "Build completed successfully"
         - ls -la dist/
   artifacts:
