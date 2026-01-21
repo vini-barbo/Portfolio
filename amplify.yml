@@ -7,11 +7,8 @@ frontend:
     build:
       commands:
         - npm run build
-        - mkdir -p .amplify-hosting/static
-        - cp -r dist/* .amplify-hosting/static/
-        - cp .amplify-hosting/deploy-manifest.json dist/
   artifacts:
-    baseDirectory: .amplify-hosting
+    baseDirectory: dist
     files:
       - '**/*'
   cache:
