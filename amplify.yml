@@ -15,8 +15,11 @@ frontend:
         - echo "=== Build concluído ==="
         - echo "=== Verificando diretório dist ==="
         - ls -la dist/
-        - echo "=== Verificando assets ==="
-        - ls -la dist/assets/
+        - echo "=== Criando deploy-manifest.json ==="
+        - echo '{"version":1,"framework":{"name":"react","version":"vite"}}' > dist/deploy-manifest.json
+        - echo "=== Verificando arquivos ==="
+        - ls -la dist/
+        - cat dist/deploy-manifest.json
         - echo "=== Processo de build finalizado ==="
   artifacts:
     baseDirectory: dist
