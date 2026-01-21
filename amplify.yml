@@ -3,13 +3,26 @@ frontend:
   phases:
     preBuild:
       commands:
+        - echo "=== Habilitando corepack ==="
         - corepack enable
+        - echo "=== Instalando dependências ==="
         - npx --yes nypm i
+        - echo "=== Dependências instaladas ==="
     build:
       commands:
+        - echo "=== Iniciando build ==="
         - npm run build
+        - echo "=== Build concluído ==="
+        - echo "=== Verificando diretório dist ==="
+        - ls -la dist/
+        - echo "=== Criando diretório .amplify-hosting/static ==="
         - mkdir -p .amplify-hosting/static
+        - echo "=== Copiando arquivos do dist para .amplify-hosting/static ==="
         - cp -r dist/* .amplify-hosting/static/
+        - echo "=== Verificando arquivos copiados ==="
+        - ls -la .amplify-hosting/
+        - ls -la .amplify-hosting/static/
+        - echo "=== Processo de build finalizado ==="
   artifacts:
     baseDirectory: .amplify-hosting
     files:
