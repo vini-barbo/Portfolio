@@ -15,14 +15,10 @@ frontend:
         - echo "=== Build concluído ==="
         - echo "=== Verificando diretório dist ==="
         - ls -la dist/
-        - echo "=== Criando diretório .amplify-hosting ==="
-        - mkdir -p .amplify-hosting
-        - echo "=== Copiando arquivos do dist para .amplify-hosting ==="
-        - cp -r dist/* .amplify-hosting/
-        - echo "=== Verificando arquivos copiados ==="
-        - ls -la .amplify-hosting/
+        - echo "=== Verificando assets ==="
+        - ls -la dist/assets/
         - echo "=== Processo de build finalizado ==="
   artifacts:
-    baseDirectory: .amplify-hosting
+    baseDirectory: dist
     files:
       - '**/*'
