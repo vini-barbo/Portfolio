@@ -32,8 +32,11 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
+            <Link href="/dashboard">
+              <Button size="lg">Enter in the demonstration</Button>
+            </Link>
             <Link href="/registrar">
-              <Button size="lg">Get started</Button>
+              <Button variant="outline" size="lg">Get started</Button>
             </Link>
             <Link href="/login">
               <Button variant="outline" size="lg">
