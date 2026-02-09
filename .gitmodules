@@ -1,0 +1,3 @@
+[submodule "applications/SBD"]
+	path = applications/SBD
+	url = git@github.com:vini-barbo/SBD.git
