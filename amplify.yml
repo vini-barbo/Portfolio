@@ -10,7 +10,7 @@ frontend:
         - ls -la questlab/quest-lab-fe/
         - echo "=== [Quest Lab] Instalando dependências ==="
         - cd questlab/quest-lab-fe
-        - npm ci
+        - npm ci --legacy-peer-deps
         - cd ../..
         - echo "=== [Quest Lab] Dependências instaladas com sucesso ==="
     build:
