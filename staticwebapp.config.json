@@ -1,9 +1,19 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/assets/*", "/*.{css,scss,js,png,jpg,jpeg,gif,ico,svg,woff,woff2,ttf,eot}"]
+    "exclude": ["/assets/*", "/demo/questlab/*", "/*.{css,scss,js,png,jpg,jpeg,gif,ico,svg,woff,woff2,ttf,eot}"]
   },
   "routes": [
+    {
+      "route": "/demo/questlab",
+      "serve": "/demo/questlab/index.html",
+      "statusCode": 200
+    },
+    {
+      "route": "/demo/questlab/*",
+      "serve": "/demo/questlab/index.html",
+      "statusCode": 200
+    },
     {
       "route": "/*",
       "serve": "/index.html",
