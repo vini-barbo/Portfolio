@@ -18,6 +18,7 @@ const translations = {
     "nav.tech": "Tecnologias",
     "nav.projects": "Projetos",
     "nav.experience": "Experiência",
+    "nav.certifications": "Certificações",
     "nav.contact": "Contato",
 
     // Hero Section
@@ -99,6 +100,15 @@ const translations = {
     "experience.desc5.3": "Tecnologias: React, Node.js",
     "experience.desc5.4": "Criou conteúdo educacional e mentorou estudantes em desenvolvimento web",
 
+    // Certifications Section
+    "certifications.title": "Certificações",
+    "certifications.subtitle": "Certificações e qualificações profissionais que comprovam minhas habilidades",
+    "certifications.viewCert": "Ver Certificação",
+    "certifications.cert1.name": "Microsoft Azure AI Fundamentals (AI-900)",
+    "certifications.cert1.issuer": "Microsoft",
+    "certifications.cert1.date": "2024",
+    "certifications.cert1.desc": "Certificação que valida conhecimentos fundamentais em inteligência artificial e machine learning usando Microsoft Azure AI.",
+
     // Contact Section
     "contact.title": "Contato",
     "contact.subtitle": "Interessado em trabalhar juntos? Entre em contato através de qualquer um dos canais abaixo",
@@ -112,6 +122,7 @@ const translations = {
     "nav.tech": "Technologies",
     "nav.projects": "Projects",
     "nav.experience": "Experience",
+    "nav.certifications": "Certifications",
     "nav.contact": "Contact",
 
     // Hero Section
@@ -193,6 +204,15 @@ const translations = {
     "experience.desc5.3": "Technologies: React, Node.js",
     "experience.desc5.4": "Created educational content and mentored students in web development",
 
+    // Certifications Section
+    "certifications.title": "Certifications",
+    "certifications.subtitle": "Professional certifications and qualifications that validate my skills",
+    "certifications.viewCert": "View Certification",
+    "certifications.cert1.name": "Microsoft Azure AI Fundamentals (AI-900)",
+    "certifications.cert1.issuer": "Microsoft",
+    "certifications.cert1.date": "2024",
+    "certifications.cert1.desc": "Certification that validates fundamental knowledge in artificial intelligence and machine learning using Microsoft Azure AI.",
+
     // Contact Section
     "contact.title": "Contact",
     "contact.subtitle": "Interested in working together? Get in touch through any of the channels below",
@@ -206,6 +226,7 @@ const translations = {
     "nav.tech": "Tecnologías",
     "nav.projects": "Proyectos",
     "nav.experience": "Experiencia",
+    "nav.certifications": "Certificaciones",
     "nav.contact": "Contacto",
 
     // Hero Section
@@ -273,6 +294,15 @@ const translations = {
     "experience.desc3.3": "Creación de panel administrativo con métricas en tiempo real",
     "experience.desc3.4": "Trabajo con metodología ágil (Scrum) en sprints de 2 semanas",
 
+    // Certifications Section
+    "certifications.title": "Certificaciones",
+    "certifications.subtitle": "Certificaciones y calificaciones profesionales que validan mis habilidades",
+    "certifications.viewCert": "Ver Certificación",
+    "certifications.cert1.name": "Microsoft Azure AI Fundamentals (AI-900)",
+    "certifications.cert1.issuer": "Microsoft",
+    "certifications.cert1.date": "2024",
+    "certifications.cert1.desc": "Certificación que valida conocimientos fundamentales en inteligencia artificial y machine learning usando Microsoft Azure AI.",
+
     // Contact Section
     "contact.title": "Contacto",
     "contact.subtitle": "¿Interesado en trabajar juntos? Ponte en contacto a través de cualquiera de los canales a continuación",
@@ -286,6 +316,7 @@ const translations = {
     "nav.tech": "Technologies",
     "nav.projects": "Projets",
     "nav.experience": "Expérience",
+    "nav.certifications": "Certifications",
     "nav.contact": "Contact",
 
     // Hero Section
@@ -352,6 +383,15 @@ const translations = {
     "experience.desc3.2": "Mise en œuvre du système d'authentification et d'autorisation avec JWT",
     "experience.desc3.3": "Création de tableau de bord administratif avec métriques en temps réel",
     "experience.desc3.4": "Travail avec méthodologie agile (Scrum) en sprints de 2 semaines",
+
+    // Certifications Section
+    "certifications.title": "Certifications",
+    "certifications.subtitle": "Certifications et qualifications professionnelles qui valident mes compétences",
+    "certifications.viewCert": "Voir Certification",
+    "certifications.cert1.name": "Microsoft Azure AI Fundamentals (AI-900)",
+    "certifications.cert1.issuer": "Microsoft",
+    "certifications.cert1.date": "2024",
+    "certifications.cert1.desc": "Certification qui valide les connaissances fondamentales en intelligence artificielle et machine learning utilisant Microsoft Azure AI.",
 
     // Contact Section
     "contact.title": "Contact",

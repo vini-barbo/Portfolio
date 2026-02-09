@@ -5,6 +5,7 @@ import { AboutSection } from "@/app/components/about-section";
 import { TechnologiesSection } from "@/app/components/technologies-section";
 import { ProjectsSection } from "@/app/components/projects-section";
 import { ExperienceSection } from "@/app/components/experience-section";
+import { CertificationsSection } from "@/app/components/certifications-section";
 import { ContactSection } from "@/app/components/contact-section";
 
 function PortfolioContent() {
@@ -46,6 +47,12 @@ function PortfolioContent() {
                 {t("nav.experience")}
               </a>
               <a
+                href="#certificacoes"
+                className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
+              >
+                {t("nav.certifications")}
+              </a>
+              <a
                 href="#contato"
                 className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/50"
               >
@@ -74,6 +81,7 @@ function PortfolioContent() {
         <TechnologiesSection />
         <ProjectsSection />
         <ExperienceSection />
+        <CertificationsSection />
         <ContactSection />
       </main>
     </div>
