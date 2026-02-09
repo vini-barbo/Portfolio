@@ -10,49 +10,9 @@ export function ProjectsSection() {
       id: 1,
       nameKey: "projects.project1.name",
       descKey: "projects.project1.desc",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 2,
-      nameKey: "projects.project2.name",
-      descKey: "projects.project2.desc",
-      technologies: ["Angular", "Spring Boot", "MySQL", "WebSocket"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 3,
-      nameKey: "projects.project3.name",
-      descKey: "projects.project3.desc",
-      technologies: ["Java", "Spring Cloud", "Redis", "Docker"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 4,
-      nameKey: "projects.project4.name",
-      descKey: "projects.project4.desc",
-      technologies: ["React", "Laravel", "MongoDB", "Chart.js"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 5,
-      nameKey: "projects.project5.name",
-      descKey: "projects.project5.desc",
-      technologies: ["Next.js", "Node.js", "GraphQL", "PostgreSQL"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      id: 6,
-      nameKey: "projects.project6.name",
-      descKey: "projects.project6.desc",
-      technologies: ["Python", "AWS", "Docker", "Kubernetes"],
-      github: "#",
-      demo: "#",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+      github: "https://github.com/vini-barbo/quest-lab-fe",
+      demo: "/demo/questlab",
     },
   ];
 
@@ -90,7 +50,7 @@ export function ProjectsSection() {
                 <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-blue-400 transition-colors">
                   {t(project.nameKey)}
                 </h3>
-                
+
                 <p className="text-gray-400 mb-4 flex-grow leading-relaxed">
                   {t(project.descKey)}
                 </p>
