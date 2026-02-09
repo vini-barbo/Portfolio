@@ -42,6 +42,30 @@ export function ExperienceSection() {
         "experience.desc3.4",
       ],
     },
+    {
+      id: 4,
+      companyKey: "experience.company4",
+      roleKey: "experience.role4",
+      periodKey: "experience.period4",
+      descriptionKeys: [
+        "experience.desc4.1",
+        "experience.desc4.2",
+        "experience.desc4.3",
+        "experience.desc4.4",
+      ],
+    },
+    {
+      id: 5,
+      companyKey: "experience.company5",
+      roleKey: "experience.role5",
+      periodKey: "experience.period5",
+      descriptionKeys: [
+        "experience.desc5.1",
+        "experience.desc5.2",
+        "experience.desc5.3",
+        "experience.desc5.4",
+      ],
+    },
   ];
 
   return (
@@ -75,9 +99,8 @@ export function ExperienceSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 {/* Timeline dot */}
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-background z-10" />

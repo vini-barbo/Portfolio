@@ -8,32 +8,32 @@ export function ContactSection() {
   const contactLinks = [
     {
       name: "Email",
-      value: "lucas.silva@email.com",
-      href: "mailto:lucas.silva@email.com",
+      value: "vinicius2508@hotmail.com",
+      href: "mailto:vinicius2508@hotmail.com",
       icon: Mail,
       color: "text-red-400",
       hoverColor: "hover:border-red-600/50",
     },
     {
       name: "LinkedIn",
-      value: "/in/lucassilva",
-      href: "https://linkedin.com/in/lucassilva",
+      value: "/in/vinicius-barbosa-8204604b",
+      href: "https://www.linkedin.com/in/vinicius-barbosa-8204604b/",
       icon: Linkedin,
       color: "text-blue-400",
       hoverColor: "hover:border-blue-600/50",
     },
     {
       name: "GitHub",
-      value: "/lucassilva",
-      href: "https://github.com/lucassilva",
+      value: "/vini-barbo",
+      href: "https://github.com/vini-barbo/",
       icon: Github,
       color: "text-purple-400",
       hoverColor: "hover:border-purple-600/50",
     },
     {
       name: "Portfólio",
-      value: "lucassilva.dev",
-      href: "https://lucassilva.dev",
+      value: "viniciusbarbosa.dev.br",
+      href: "https://www.viniciusbarbosa.dev.br",
       icon: ExternalLink,
       color: "text-green-400",
       hoverColor: "hover:border-green-600/50",
@@ -98,7 +98,7 @@ export function ContactSection() {
           className="text-center"
         >
           <a
-            href="mailto:lucas.silva@email.com"
+            href="mailto:vinicius2508@hotmail.com"
             className="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-600/50 text-lg font-medium"
           >
             {t("contact.cta")}

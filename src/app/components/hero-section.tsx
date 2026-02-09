@@ -19,7 +19,7 @@ export function HeroSection() {
     const cvUrl = "/curriculo.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Lucas_Silva_Curriculo.pdf";
+    link.download = "Vinicius_Barbosa_Curriculo.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
