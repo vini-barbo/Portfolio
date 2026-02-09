@@ -17,36 +17,36 @@ function PortfolioContent() {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="text-xl font-bold bg-gradient-to-r from-white to-blue-400 bg-clip-text text-transparent">
-              LS
+              VB
             </a>
-            
+
             <div className="hidden md:flex items-center gap-8">
-              <a 
-                href="#sobre" 
+              <a
+                href="#sobre"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
               >
                 {t("nav.about")}
               </a>
-              <a 
-                href="#tecnologias" 
+              <a
+                href="#tecnologias"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
               >
                 {t("nav.technologies")}
               </a>
-              <a 
-                href="#projetos" 
+              <a
+                href="#projetos"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
               >
                 {t("nav.projects")}
               </a>
-              <a 
-                href="#experiencia" 
+              <a
+                href="#experiencia"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
               >
                 {t("nav.experience")}
               </a>
-              <a 
-                href="#contato" 
+              <a
+                href="#contato"
                 className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-600/50"
               >
                 {t("nav.contact")}
