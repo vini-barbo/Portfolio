@@ -1,17 +1,23 @@
 version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - echo "=== Instalando dependências ==="
-        - npm ci --legacy-peer-deps
-        - echo "=== Dependências instaladas ==="
-    build:
-      commands:
-        - echo "=== Iniciando build ==="
-        - npm run build
-        - echo "=== Build concluído ==="
-  artifacts:
-    baseDirectory: dist
-    files:
-      - '**/*'
+applications:
+  - appRoot: questlab/quest-lab-fe
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "=== Instalando dependências do Quest Lab ==="
+            - npm ci
+            - echo "=== Dependências instaladas ==="
+        build:
+          commands:
+            - echo "=== Iniciando build do Next.js ==="
+            - npm run build
+            - echo "=== Build concluído ==="
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+          - .next/cache/**/*
