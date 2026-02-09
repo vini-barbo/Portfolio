@@ -34,43 +34,43 @@ const mockQuestions = [
   {
     id: 1,
     title: "Equação do segundo grau",
-    category: "Matemática",
-    difficulty: "Médio",
+    category: "Mathematics",
+    difficulty: "Medium",
     createdAt: "2023-10-15",
   },
   {
     id: 2,
     title: "Análise sintática",
-    category: "Português",
-    difficulty: "Difícil",
+    category: "Portuguese",
+    difficulty: "Hard",
     createdAt: "2023-10-12",
   },
   {
     id: 3,
     title: "Sistema solar",
-    category: "Ciências",
-    difficulty: "Fácil",
+    category: "Science",
+    difficulty: "Easy",
     createdAt: "2023-10-10",
   },
   {
     id: 4,
     title: "Segunda Guerra Mundial",
-    category: "História",
-    difficulty: "Médio",
+    category: "History",
+    difficulty: "Medium",
     createdAt: "2023-10-08",
   },
   {
     id: 5,
     title: "Capitais da Europa",
-    category: "Geografia",
-    difficulty: "Médio",
+    category: "Geography",
+    difficulty: "Medium",
     createdAt: "2023-10-05",
   },
   {
     id: 6,
     title: "Verbos irregulares",
-    category: "Português",
-    difficulty: "Difícil",
+    category: "Portuguese",
+    difficulty: "Hard",
     createdAt: "2023-10-03",
   },
 ];
@@ -108,27 +108,27 @@ export default function QuestionsPage() {
   const handleDelete = (id: number) => {
     setQuestions(questions.filter((q) => q.id !== id));
     toast({
-      title: "Questão excluída",
-      description: "A questão foi excluída com sucesso",
+      title: "Question deleted",
+      description: "The question was successfully deleted",
     });
   };
 
   const categories = Array.from(new Set(questions.map((q) => q.category)));
-  const difficulties = ["Fácil", "Médio", "Difícil"];
+  const difficulties = ["Easy", "Medium", "Hard"];
 
   return (
     <div className="app-main">
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Questões</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Questions</h1>
           <p className="text-muted-foreground">
-            Gerencie suas questões e crie novas.
+            Manage your questions and create new ones.
           </p>
         </div>
         <Link href="/questoes/create">
           <Button>
             <Plus className="mr-2 h-4 w-4" />
-            Nova Questão
+            New Question
           </Button>
         </Link>
       </div>
@@ -136,7 +136,7 @@ export default function QuestionsPage() {
       <div className="flex flex-col gap-4 md:flex-row">
         <div className="flex-1">
           <Input
-            placeholder="Buscar questões..."
+            placeholder="Search questions..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full"
@@ -144,10 +144,10 @@ export default function QuestionsPage() {
         </div>
         <Select value={categoryFilter} onValueChange={setCategoryFilter}>
           <SelectTrigger className="w-full md:w-[180px]">
-            <SelectValue placeholder="Categoria" />
+            <SelectValue placeholder="Category" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">Todas as categorias</SelectItem>
+            <SelectItem value="all">All categories</SelectItem>
             {categories.map((category) => (
               <SelectItem key={category} value={category}>
                 {category}
@@ -157,10 +157,10 @@ export default function QuestionsPage() {
         </Select>
         <Select value={difficultyFilter} onValueChange={setDifficultyFilter}>
           <SelectTrigger className="w-full md:w-[180px]">
-            <SelectValue placeholder="Dificuldade" />
+            <SelectValue placeholder="Difficulty" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">Todas as dificuldades</SelectItem>
+            <SelectItem value="all">All difficulties</SelectItem>
             {difficulties.map((difficulty) => (
               <SelectItem key={difficulty} value={difficulty}>
                 {difficulty}
@@ -205,7 +205,7 @@ export default function QuestionsPage() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuLabel>Ações</DropdownMenuLabel>
+                    <DropdownMenuLabel>Actions</DropdownMenuLabel>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem asChild>
                       <Link
@@ -213,7 +213,7 @@ export default function QuestionsPage() {
                         className="flex w-full cursor-pointer items-center"
                       >
                         <Eye className="mr-2 h-4 w-4" />
-                        Visualizar
+                        View
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -222,7 +222,7 @@ export default function QuestionsPage() {
                         className="flex w-full cursor-pointer items-center"
                       >
                         <Edit className="mr-2 h-4 w-4" />
-                        Editar
+                        Edit
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -231,7 +231,7 @@ export default function QuestionsPage() {
                         className="flex w-full cursor-pointer items-center"
                       >
                         <BarChart className="mr-2 h-4 w-4" />
-                        Estatísticas
+                        Statistics
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator />
@@ -240,14 +240,14 @@ export default function QuestionsPage() {
                       onClick={() => handleDelete(question.id)}
                     >
                       <Trash2 className="mr-2 h-4 w-4" />
-                      Excluir
+                      Delete
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
               <CardDescription>
-                Criada em{" "}
-                {new Date(question.createdAt).toLocaleDateString("pt-BR")}
+                Created on{" "}
+                {new Date(question.createdAt).toLocaleDateString("en-US")}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -271,13 +271,13 @@ export default function QuestionsPage() {
                 <Link href={`/questoes/${question.id}/visualizar`}>
                   <Button variant="outline" size="sm" className="h-8 px-2">
                     <Eye className="h-3.5 w-3.5 mr-1" />
-                    Ver
+                    View
                   </Button>
                 </Link>
                 <Link href={`/questoes/${question.id}/editar`}>
                   <Button variant="outline" size="sm" className="h-8 px-2">
                     <Edit className="h-3.5 w-3.5 mr-1" />
-                    Editar
+                    Edit
                   </Button>
                 </Link>
                 <Link href={`/questoes/${question.id}/dashboard`}>
@@ -295,12 +295,12 @@ export default function QuestionsPage() {
       {filteredQuestions.length === 0 && (
         <div className="flex h-[200px] w-full flex-col items-center justify-center rounded-md border border-dashed">
           <p className="text-sm text-muted-foreground">
-            Nenhuma questão encontrada. Tente ajustar os filtros ou{" "}
+            No questions found. Try adjusting the filters or{" "}
             <Link
               href="/questoes/create"
               className="text-primary hover:underline"
             >
-              crie uma nova questão
+              create a new question
             </Link>
             .
           </p>

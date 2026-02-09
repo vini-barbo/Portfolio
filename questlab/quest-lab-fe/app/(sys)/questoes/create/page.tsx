@@ -62,15 +62,15 @@ export default function CreateQuestionPage() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       toast({
-        title: "Questão criada com sucesso!",
-        description: "A questão foi adicionada ao banco de questões.",
+        title: "Question created successfully!",
+        description: "The question has been added to the question bank.",
       });
 
       router.push("/questoes");
     } catch (error) {
       toast({
-        title: "Erro ao criar questão",
-        description: "Ocorreu um erro ao tentar criar a questão.",
+        title: "Error creating question",
+        description: "An error occurred while trying to create the question.",
         variant: "destructive",
       });
     } finally {
@@ -82,28 +82,28 @@ export default function CreateQuestionPage() {
     <div className="app-main">
       <div className="mb-6">
         <h1 className="text-3xl font-bold tracking-tight">
-          Criar Nova Questão
+          Create New Question
         </h1>
         <p className="text-muted-foreground">
-          Preencha os campos abaixo para criar uma nova questão.
+          Fill in the fields below to create a new question.
         </p>
       </div>
 
       <form onSubmit={handleSubmit}>
         <Card>
           <CardHeader>
-            <CardTitle>Informações Básicas</CardTitle>
+            <CardTitle>Basic Information</CardTitle>
             <CardDescription>
-              Defina o título, categoria e dificuldade da questão.
+              Set the title, category, and difficulty of the question.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="title">Título da Questão</Label>
+              <Label htmlFor="title">Question Title</Label>
               <Input
                 id="title"
                 name="title"
-                placeholder="Ex: Equação do segundo grau"
+                placeholder="Ex: Quadratic equation"
                 required
                 value={formData.title}
                 onChange={handleChange}
@@ -111,7 +111,7 @@ export default function CreateQuestionPage() {
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="category">Categoria</Label>
+                <Label htmlFor="category">Category</Label>
                 <Select
                   value={formData.category}
                   onValueChange={(value) =>
@@ -119,19 +119,19 @@ export default function CreateQuestionPage() {
                   }
                 >
                   <SelectTrigger id="category">
-                    <SelectValue placeholder="Selecione uma categoria" />
+                    <SelectValue placeholder="Select a category" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Matemática">Matemática</SelectItem>
-                    <SelectItem value="Português">Português</SelectItem>
-                    <SelectItem value="Ciências">Ciências</SelectItem>
-                    <SelectItem value="História">História</SelectItem>
-                    <SelectItem value="Geografia">Geografia</SelectItem>
+                    <SelectItem value="Matemática">Mathematics</SelectItem>
+                    <SelectItem value="Português">Portuguese</SelectItem>
+                    <SelectItem value="Ciências">Science</SelectItem>
+                    <SelectItem value="História">History</SelectItem>
+                    <SelectItem value="Geografia">Geography</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="difficulty">Dificuldade</Label>
+                <Label htmlFor="difficulty">Difficulty</Label>
                 <Select
                   value={formData.difficulty}
                   onValueChange={(value) =>
@@ -139,12 +139,12 @@ export default function CreateQuestionPage() {
                   }
                 >
                   <SelectTrigger id="difficulty">
-                    <SelectValue placeholder="Selecione a dificuldade" />
+                    <SelectValue placeholder="Select difficulty" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Fácil">Fácil</SelectItem>
-                    <SelectItem value="Médio">Médio</SelectItem>
-                    <SelectItem value="Difícil">Difícil</SelectItem>
+                    <SelectItem value="Fácil">Easy</SelectItem>
+                    <SelectItem value="Médio">Medium</SelectItem>
+                    <SelectItem value="Difícil">Hard</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -154,18 +154,18 @@ export default function CreateQuestionPage() {
 
         <Card className="mt-6">
           <CardHeader>
-            <CardTitle>Conteúdo da Questão</CardTitle>
+            <CardTitle>Question Content</CardTitle>
             <CardDescription>
-              Defina o enunciado e as opções de resposta.
+              Define the question statement and answer options.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="question">Enunciado</Label>
+              <Label htmlFor="question">Statement</Label>
               <Textarea
                 id="question"
                 name="question"
-                placeholder="Digite o enunciado da questão..."
+                placeholder="Enter the question statement..."
                 required
                 className="min-h-[100px]"
                 value={formData.question}
@@ -174,7 +174,7 @@ export default function CreateQuestionPage() {
             </div>
 
             <div className="space-y-2">
-              <Label>Tipo de Questão</Label>
+              <Label>Question Type</Label>
               <RadioGroup
                 defaultValue={questionType}
                 onValueChange={setQuestionType}
@@ -186,13 +186,13 @@ export default function CreateQuestionPage() {
                     id="multiple-choice"
                   />
                   <Label htmlFor="multiple-choice" className="font-normal">
-                    Múltipla Escolha
+                    Multiple Choice
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="essay" id="essay" />
                   <Label htmlFor="essay" className="font-normal">
-                    Dissertativa
+                    Essay
                   </Label>
                 </div>
               </RadioGroup>
@@ -201,7 +201,7 @@ export default function CreateQuestionPage() {
             {questionType === "multiple-choice" ? (
               <div className="space-y-4">
                 <div className="space-y-2">
-                  <Label>Alternativas</Label>
+                  <Label>Alternatives</Label>
                   {formData.options.map((option, index) => (
                     <div key={index} className="flex items-center gap-2">
                       <RadioGroup
@@ -220,7 +220,7 @@ export default function CreateQuestionPage() {
                         />
                       </RadioGroup>
                       <Input
-                        placeholder={`Alternativa ${index + 1}`}
+                        placeholder={`Alternative ${index + 1}`}
                         value={option}
                         onChange={(e) =>
                           handleOptionChange(index, e.target.value)
@@ -231,16 +231,16 @@ export default function CreateQuestionPage() {
                   ))}
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Selecione o botão ao lado da alternativa correta.
+                  Select the button next to the correct alternative.
                 </p>
               </div>
             ) : (
               <div className="space-y-2">
-                <Label htmlFor="correctAnswer">Resposta Correta</Label>
+                <Label htmlFor="correctAnswer">Correct Answer</Label>
                 <Textarea
                   id="correctAnswer"
                   name="correctAnswer"
-                  placeholder="Digite a resposta correta para esta questão..."
+                  placeholder="Enter the correct answer for this question..."
                   className="min-h-[100px]"
                   value={formData.correctAnswer}
                   onChange={handleChange}
@@ -254,10 +254,10 @@ export default function CreateQuestionPage() {
               variant="outline"
               onClick={() => router.push("/questoes")}
             >
-              Cancelar
+              Cancel
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? "Salvando..." : "Salvar Questão"}
+              {isLoading ? "Saving..." : "Save Question"}
             </Button>
           </CardFooter>
         </Card>

@@ -13,11 +13,11 @@ export default function Home() {
         <nav className="flex items-center space-x-2">
           <Link href="/login">
             <Button variant="ghost" size="sm">
-              Entrar
+              Log in
             </Button>
           </Link>
           <Link href="/registrar">
-            <Button size="sm">Cadastrar</Button>
+            <Button size="sm">Sign up</Button>
           </Link>
         </nav>
       </header>
@@ -25,20 +25,19 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center space-y-4 text-center w-full py-12 md:py-24 lg:py-32">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Bem-vindo ao Quest Lab
+              Welcome to Quest Lab
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-              Plataforma educacional para criação, distribuição e avaliação de
-              questões
+              Educational platform for creating, distributing and evaluating questions
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
             <Link href="/registrar">
-              <Button size="lg">Começar agora</Button>
+              <Button size="lg">Get started</Button>
             </Link>
             <Link href="/login">
               <Button variant="outline" size="lg">
-                Já tenho uma conta
+                I already have an account
               </Button>
             </Link>
           </div>
@@ -51,10 +50,9 @@ export default function Home() {
                 <BookOpen className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">Para Professores</h3>
+                <h3 className="text-xl font-bold">For Teachers</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Crie questões, organize por categorias e acompanhe o
-                  desempenho dos alunos
+                  Create questions, organize by categories and track student performance
                 </p>
               </div>
             </div>
@@ -63,10 +61,9 @@ export default function Home() {
                 <GraduationCap className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">Para Alunos</h3>
+                <h3 className="text-xl font-bold">For Students</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Responda questões, receba feedback imediato e acompanhe seu
-                  progresso
+                  Answer questions, receive immediate feedback and track your progress
                 </p>
               </div>
             </div>
@@ -75,10 +72,9 @@ export default function Home() {
                 <Users className="h-6 w-6 text-primary-foreground" />
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">Gestão Simplificada</h3>
+                <h3 className="text-xl font-bold">Simplified Management</h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Interface intuitiva para gerenciar usuários, questões e
-                  resultados
+                  Intuitive interface to manage users, questions and results
                 </p>
               </div>
             </div>
@@ -88,8 +84,7 @@ export default function Home() {
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Quest Lab. Todos os direitos
-            reservados.
+            &copy; {new Date().getFullYear()} Quest Lab. All rights reserved.
           </p>
         </div>
       </footer>

@@ -87,7 +87,7 @@ export function AppSidebar() {
                   onClick={handleLogout}
                 >
                   <LogOut className="mr-2 h-4 w-4" />
-                  Sair
+                  Logout
                 </Button>
               )}
               <hr />
@@ -97,7 +97,7 @@ export function AppSidebar() {
               items-center
               justify-between text-sm font-medium transition-colors"
               >
-                Opções
+                Options
                 <Settings />
               </Link>
               <Link
@@ -108,7 +108,7 @@ export function AppSidebar() {
               rounded
               justify-between text-sm font-medium transition-colors"
               >
-                Sair
+                Logout
                 <LogOutIcon />
               </Link>
             </nav>
@@ -185,7 +185,7 @@ export function AppSidebar() {
               items-center
               justify-between text-sm font-medium transition-colors"
           >
-            Opções
+            Options
             <Settings />
           </Link>
           <Link
@@ -194,7 +194,7 @@ export function AppSidebar() {
               items-center
               justify-between text-sm font-medium transition-colors"
           >
-            Sair
+            Logout
             <LogOutIcon />
           </Link>
         </section>

@@ -22,8 +22,8 @@ const mockQuestions = [
   {
     id: 1,
     title: "Equação do segundo grau",
-    category: "Matemática",
-    difficulty: "Médio",
+    category: "Mathematics",
+    difficulty: "Medium",
     question:
       "Qual é a fórmula para resolver uma equação do segundo grau ax² + bx + c = 0?",
     options: [
@@ -37,8 +37,8 @@ const mockQuestions = [
   {
     id: 2,
     title: "Análise sintática",
-    category: "Português",
-    difficulty: "Difícil",
+    category: "Portuguese",
+    difficulty: "Hard",
     question: "Na frase 'O aluno estudou para a prova', qual é o sujeito?",
     options: ["O aluno", "estudou", "para a prova", "a prova"],
     correctOption: 0,
@@ -46,8 +46,8 @@ const mockQuestions = [
   {
     id: 3,
     title: "Sistema solar",
-    category: "Ciências",
-    difficulty: "Fácil",
+    category: "Science",
+    difficulty: "Easy",
     question: "Qual é o planeta mais próximo do Sol?",
     options: ["Vênus", "Terra", "Mercúrio", "Marte"],
     correctOption: 2,
@@ -55,8 +55,8 @@ const mockQuestions = [
   {
     id: 4,
     title: "Segunda Guerra Mundial",
-    category: "História",
-    difficulty: "Médio",
+    category: "History",
+    difficulty: "Medium",
     question: "Em que ano terminou a Segunda Guerra Mundial?",
     options: ["1943", "1944", "1945", "1946"],
     correctOption: 2,
@@ -64,8 +64,8 @@ const mockQuestions = [
   {
     id: 5,
     title: "Capitais da Europa",
-    category: "Geografia",
-    difficulty: "Médio",
+    category: "Geography",
+    difficulty: "Medium",
     question: "Qual é a capital da Espanha?",
     options: ["Lisboa", "Barcelona", "Madri", "Valência"],
     correctOption: 2,
@@ -89,8 +89,8 @@ export default function SolvePage() {
   const handleAnswer = () => {
     if (selectedOption === null) {
       toast({
-        title: "Selecione uma opção",
-        description: "Você precisa selecionar uma resposta antes de confirmar.",
+        title: "Select an option",
+        description: "You need to select an answer before confirming.",
         variant: "destructive",
       });
       return;
@@ -113,8 +113,8 @@ export default function SolvePage() {
     } else {
       setCurrentQuestion(0);
       toast({
-        title: "Parabéns!",
-        description: "Você completou todas as questões disponíveis.",
+        title: "Congratulations!",
+        description: "You have completed all available questions.",
       });
     }
   };
@@ -124,19 +124,19 @@ export default function SolvePage() {
   return (
     <div className="app-main">
       <div className="mb-6">
-        <h1 className="text-3xl font-bold tracking-tight">Resolver Questões</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Solve Questions</h1>
         <p className="text-muted-foreground">
-          Olá, {userName}! Responda as questões e receba feedback imediato.
+          Hello, {userName}! Answer the questions and get immediate feedback.
         </p>
       </div>
 
       <div className="mb-6 flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <div className="text-sm font-medium">
-            Questão {currentQuestion + 1} de {mockQuestions.length}
+            Question {currentQuestion + 1} of {mockQuestions.length}
           </div>
           <div className="text-sm font-medium">
-            Acertos: {correctAnswers}/{totalAnswered}
+            Correct: {correctAnswers}/{totalAnswered}
           </div>
         </div>
         <Progress
@@ -153,9 +153,9 @@ export default function SolvePage() {
               <Badge
                 variant="outline"
                 className={
-                  question.difficulty === "Fácil"
+                  question.difficulty === "Easy"
                     ? "border-green-500 text-green-500"
-                    : question.difficulty === "Médio"
+                    : question.difficulty === "Medium"
                     ? "border-yellow-500 text-yellow-500"
                     : "border-red-500 text-red-500"
                 }

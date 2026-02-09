@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Quest Lab - Sistema de Gestão de Questões",
-  description: "Plataforma educacional para criação e resolução de questões",
+  title: "Quest Lab - Question Management System",
+  description: "Educational platform for creating and solving questions",
   generator: "v0.dev",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

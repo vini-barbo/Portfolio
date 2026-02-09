@@ -81,13 +81,13 @@ export default function SettingsPage() {
       localStorage.setItem("userEmail", profileData.email);
 
       toast({
-        title: "Perfil atualizado",
-        description: "Suas informações foram atualizadas com sucesso.",
+        title: "Profile updated",
+        description: "Your information has been updated successfully.",
       });
     } catch (error) {
       toast({
-        title: "Erro ao atualizar perfil",
-        description: "Ocorreu um erro ao tentar atualizar suas informações.",
+        title: "Error updating profile",
+        description: "An error occurred while trying to update your information.",
         variant: "destructive",
       });
     } finally {
@@ -101,8 +101,8 @@ export default function SettingsPage() {
     try {
       if (passwordData.newPassword !== passwordData.confirmPassword) {
         toast({
-          title: "Senhas não coincidem",
-          description: "A nova senha e a confirmação devem ser iguais.",
+          title: "Passwords do not match",
+          description: "The new password and confirmation must be the same.",
           variant: "destructive",
         });
         setIsLoading(false);
@@ -112,8 +112,8 @@ export default function SettingsPage() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       toast({
-        title: "Senha atualizada",
-        description: "Sua senha foi atualizada com sucesso.",
+        title: "Password updated",
+        description: "Your password has been updated successfully.",
       });
 
       setPasswordData({
@@ -123,8 +123,8 @@ export default function SettingsPage() {
       });
     } catch (error) {
       toast({
-        title: "Erro ao atualizar senha",
-        description: "Ocorreu um erro ao tentar atualizar sua senha.",
+        title: "Error updating password",
+        description: "An error occurred while trying to update your password.",
         variant: "destructive",
       });
     } finally {
@@ -139,13 +139,13 @@ export default function SettingsPage() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       toast({
-        title: "Preferências atualizadas",
-        description: "Suas preferências foram atualizadas com sucesso.",
+        title: "Preferences updated",
+        description: "Your preferences have been updated successfully.",
       });
     } catch (error) {
       toast({
-        title: "Erro ao atualizar preferências",
-        description: "Ocorreu um erro ao tentar atualizar suas preferências.",
+        title: "Error updating preferences",
+        description: "An error occurred while trying to update your preferences.",
         variant: "destructive",
       });
     } finally {
@@ -156,25 +156,25 @@ export default function SettingsPage() {
   return (
     <div className="app-main">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight">Configurações</h1>
+        <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
         <p className="text-muted-foreground">
-          Gerencie suas informações pessoais e preferências.
+          Manage your personal information and preferences.
         </p>
       </div>
 
       <Tabs defaultValue="profile" className="w-full">
         <TabsList className="grid w-full grid-cols-3 mb-8">
-          <TabsTrigger value="profile">Perfil</TabsTrigger>
-          <TabsTrigger value="password">Senha</TabsTrigger>
-          <TabsTrigger value="preferences">Preferências</TabsTrigger>
+          <TabsTrigger value="profile">Profile</TabsTrigger>
+          <TabsTrigger value="password">Password</TabsTrigger>
+          <TabsTrigger value="preferences">Preferences</TabsTrigger>
         </TabsList>
 
         <TabsContent value="profile">
           <Card>
             <CardHeader>
-              <CardTitle>Informações do Perfil</CardTitle>
+              <CardTitle>Profile Information</CardTitle>
               <CardDescription>
-                Atualize suas informações pessoais.
+                Update your personal information.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -198,16 +198,16 @@ export default function SettingsPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="role">Tipo de conta</Label>
+                <Label htmlFor="role">Account Type</Label>
                 <Input
                   id="role"
                   value={
-                    profileData.role === "professor" ? "Professor" : "Aluno"
+                    profileData.role === "professor" ? "Teacher" : "Student"
                   }
                   disabled
                 />
                 <p className="text-sm text-muted-foreground">
-                  O tipo de conta não pode ser alterado.
+                  Account type cannot be changed.
                 </p>
               </div>
             </CardContent>
@@ -218,7 +218,7 @@ export default function SettingsPage() {
                 className="flex items-center gap-2"
               >
                 <Save className="h-4 w-4" />
-                {isLoading ? "Salvando..." : "Salvar alterações"}
+                {isLoading ? "Saving..." : "Save Changes"}
               </Button>
             </CardFooter>
           </Card>
@@ -227,14 +227,14 @@ export default function SettingsPage() {
         <TabsContent value="password">
           <Card>
             <CardHeader>
-              <CardTitle>Alterar Senha</CardTitle>
+              <CardTitle>Change Password</CardTitle>
               <CardDescription>
-                Atualize sua senha para manter sua conta segura.
+                Update your password to keep your account secure.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="currentPassword">Senha atual</Label>
+                <Label htmlFor="currentPassword">Current Password</Label>
                 <div className="relative">
                   <Input
                     id="currentPassword"
@@ -262,7 +262,7 @@ export default function SettingsPage() {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="newPassword">Nova senha</Label>
+                <Label htmlFor="newPassword">New Password</Label>
                 <div className="relative">
                   <Input
                     id="newPassword"
@@ -290,7 +290,7 @@ export default function SettingsPage() {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="confirmPassword">Confirmar nova senha</Label>
+                <Label htmlFor="confirmPassword">Confirm New Password</Label>
                 <div className="relative">
                   <Input
                     id="confirmPassword"
@@ -325,7 +325,7 @@ export default function SettingsPage() {
                 className="flex items-center gap-2"
               >
                 <Save className="h-4 w-4" />
-                {isLoading ? "Salvando..." : "Atualizar senha"}
+                {isLoading ? "Saving..." : "Update Password"}
               </Button>
             </CardFooter>
           </Card>
@@ -334,22 +334,22 @@ export default function SettingsPage() {
         <TabsContent value="preferences">
           <Card>
             <CardHeader>
-              <CardTitle>Preferências</CardTitle>
+              <CardTitle>Preferences</CardTitle>
               <CardDescription>
-                Personalize sua experiência na plataforma.
+                Customize your platform experience.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-lg font-medium">Notificações</h3>
+                <h3 className="text-lg font-medium">Notifications</h3>
                 <Separator />
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
                     <Label htmlFor="emailNotifications">
-                      Notificações por email
+                      Email Notifications
                     </Label>
                     <p className="text-sm text-muted-foreground">
-                      Receba atualizações sobre novas questões e resultados.
+                      Receive updates on new questions and results.
                     </p>
                   </div>
                   <Switch
@@ -363,13 +363,13 @@ export default function SettingsPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-lg font-medium">Aparência</h3>
+                <h3 className="text-lg font-medium">Appearance</h3>
                 <Separator />
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label htmlFor="darkMode">Modo escuro</Label>
+                    <Label htmlFor="darkMode">Dark Mode</Label>
                     <p className="text-sm text-muted-foreground">
-                      Ative o modo escuro para reduzir o cansaço visual.
+                      Enable dark mode to reduce eye strain.
                     </p>
                   </div>
                   <Switch
@@ -383,13 +383,13 @@ export default function SettingsPage() {
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-lg font-medium">Sons</h3>
+                <h3 className="text-lg font-medium">Sounds</h3>
                 <Separator />
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
-                    <Label htmlFor="soundEffects">Efeitos sonoros</Label>
+                    <Label htmlFor="soundEffects">Sound Effects</Label>
                     <p className="text-sm text-muted-foreground">
-                      Ative sons para feedback ao responder questões.
+                      Enable sounds for feedback when answering questions.
                     </p>
                   </div>
                   <Switch
@@ -409,7 +409,7 @@ export default function SettingsPage() {
                 className="flex items-center gap-2"
               >
                 <Save className="h-4 w-4" />
-                {isLoading ? "Salvando..." : "Salvar preferências"}
+                {isLoading ? "Saving..." : "Save Preferences"}
               </Button>
             </CardFooter>
           </Card>

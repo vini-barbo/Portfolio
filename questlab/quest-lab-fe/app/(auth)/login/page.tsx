@@ -59,15 +59,15 @@ export default function LoginPage() {
         router.push("/prova");
       } else {
         toast({
-          title: "Erro de autenticação",
-          description: "Email ou senha incorretos",
+          title: "Authentication error",
+          description: "Incorrect email or password",
           variant: "destructive",
         });
       }
     } catch (error) {
       toast({
-        title: "Erro ao fazer login",
-        description: "Ocorreu um erro ao tentar fazer login",
+        title: "Error logging in",
+        description: "An error occurred while trying to log in",
         variant: "destructive",
       });
     } finally {
@@ -83,9 +83,9 @@ export default function LoginPage() {
       </Link>
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold">Entrar</CardTitle>
+          <CardTitle className="text-2xl font-bold">Sign In</CardTitle>
           <CardDescription>
-            Entre com seu email e senha para acessar sua conta
+            Enter your email and password to access your account
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
@@ -96,7 +96,7 @@ export default function LoginPage() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="seu@email.com"
+                placeholder="your@email.com"
                 required
                 value={formData.email}
                 onChange={handleChange}
@@ -104,9 +104,9 @@ export default function LoginPage() {
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <Label htmlFor="password">Senha</Label>
+                <Label htmlFor="password">Password</Label>
                 <Link href="#" className="text-xs text-primary hover:underline">
-                  Esqueceu a senha?
+                  Forgot password?
                 </Link>
               </div>
               <div className="relative">
@@ -132,7 +132,7 @@ export default function LoginPage() {
                     <Eye className="h-4 w-4 text-muted-foreground" />
                   )}
                   <span className="sr-only">
-                    {showPassword ? "Esconder senha" : "Mostrar senha"}
+                    {showPassword ? "Hide password" : "Show password"}
                   </span>
                 </Button>
               </div>
@@ -140,21 +140,21 @@ export default function LoginPage() {
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">
             <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? "Entrando..." : "Entrar"}
+              {isLoading ? "Signing in..." : "Sign In"}
             </Button>
             <div className="text-center text-sm">
-              Não tem uma conta?{" "}
+              Don't have an account?{" "}
               <Link href="/registrar" className="text-primary hover:underline">
-                Cadastre-se
+                Sign up
               </Link>
             </div>
           </CardFooter>
         </form>
       </Card>
       <div className="mt-4 text-center text-sm text-muted-foreground">
-        <p>Contas de demonstração:</p>
-        <p>Professor: professor@example.com / password</p>
-        <p>Aluno: aluno@example.com / password</p>
+        <p>Demo accounts:</p>
+        <p>Teacher: professor@example.com / password</p>
+        <p>Student: aluno@example.com / password</p>
       </div>
     </div>
   );

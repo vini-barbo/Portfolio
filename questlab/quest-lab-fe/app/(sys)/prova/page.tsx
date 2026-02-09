@@ -63,31 +63,31 @@ const mockPendingExams = [
   {
     id: 1,
     title: "Simulado Nacional de Matemática",
-    subject: "Matemática",
+    subject: "Mathematics",
     dueDate: "2024-06-15",
     duration: 120,
     questionsCount: 30,
-    difficulty: "Médio",
+    difficulty: "Medium",
     status: "pending",
   },
   {
     id: 2,
     title: "Avaliação Trimestral de Português",
-    subject: "Português",
+    subject: "Portuguese",
     dueDate: "2024-06-10",
     duration: 90,
     questionsCount: 25,
-    difficulty: "Difícil",
+    difficulty: "Hard",
     status: "pending",
   },
   {
     id: 3,
     title: "Simulado de Ciências Naturais",
-    subject: "Ciências",
+    subject: "Science",
     dueDate: "2024-06-20",
     duration: 60,
     questionsCount: 20,
-    difficulty: "Fácil",
+    difficulty: "Easy",
     status: "pending",
   },
 ];
@@ -96,7 +96,7 @@ const mockCompletedExams = [
   {
     id: 4,
     title: "Avaliação Bimestral de História",
-    subject: "História",
+    subject: "History",
     completedDate: "2024-05-20",
     duration: 90,
     questionsCount: 25,
@@ -107,7 +107,7 @@ const mockCompletedExams = [
   {
     id: 5,
     title: "Simulado de Geografia",
-    subject: "Geografia",
+    subject: "Geography",
     completedDate: "2024-05-15",
     duration: 60,
     questionsCount: 20,
@@ -118,7 +118,7 @@ const mockCompletedExams = [
   {
     id: 6,
     title: "Avaliação de Física",
-    subject: "Física",
+    subject: "Physics",
     completedDate: "2024-05-10",
     duration: 75,
     questionsCount: 15,
@@ -129,7 +129,7 @@ const mockCompletedExams = [
   {
     id: 7,
     title: "Simulado de Química",
-    subject: "Química",
+    subject: "Chemistry",
     completedDate: "2024-05-05",
     duration: 60,
     questionsCount: 20,
@@ -143,12 +143,12 @@ const mockTeacherExams = [
   {
     id: 1,
     title: "Simulado Nacional de Matemática",
-    subject: "Matemática",
+    subject: "Mathematics",
     createdDate: "2024-05-01",
     dueDate: "2024-06-15",
     duration: 120,
     questionsCount: 30,
-    difficulty: "Médio",
+    difficulty: "Medium",
     classes: [
       { id: 1, name: "3º Ano A", studentsCount: 28, completedCount: 20 },
       { id: 2, name: "3º Ano B", studentsCount: 25, completedCount: 18 },
@@ -158,12 +158,12 @@ const mockTeacherExams = [
   {
     id: 2,
     title: "Avaliação Trimestral de Português",
-    subject: "Português",
+    subject: "Portuguese",
     createdDate: "2024-05-05",
     dueDate: "2024-06-10",
     duration: 90,
     questionsCount: 25,
-    difficulty: "Difícil",
+    difficulty: "Hard",
     classes: [
       { id: 3, name: "2º Ano A", studentsCount: 30, completedCount: 25 },
       { id: 4, name: "2º Ano B", studentsCount: 28, completedCount: 22 },
@@ -173,12 +173,12 @@ const mockTeacherExams = [
   {
     id: 3,
     title: "Simulado de Ciências Naturais",
-    subject: "Ciências",
+    subject: "Science",
     createdDate: "2024-05-10",
     dueDate: "2024-06-20",
     duration: 60,
     questionsCount: 20,
-    difficulty: "Fácil",
+    difficulty: "Easy",
     classes: [
       { id: 6, name: "1º Ano A", studentsCount: 32, completedCount: 28 },
       { id: 7, name: "1º Ano B", studentsCount: 30, completedCount: 25 },
@@ -188,12 +188,12 @@ const mockTeacherExams = [
   {
     id: 4,
     title: "Avaliação Bimestral de História",
-    subject: "História",
+    subject: "History",
     createdDate: "2024-04-15",
     dueDate: "2024-05-20",
     duration: 90,
     questionsCount: 25,
-    difficulty: "Médio",
+    difficulty: "Medium",
     classes: [
       { id: 8, name: "3º Ano A", studentsCount: 28, completedCount: 28 },
       { id: 9, name: "3º Ano B", studentsCount: 25, completedCount: 25 },
@@ -204,12 +204,12 @@ const mockTeacherExams = [
   {
     id: 5,
     title: "Simulado de Geografia",
-    subject: "Geografia",
+    subject: "Geography",
     createdDate: "2024-04-10",
     dueDate: "2024-05-15",
     duration: 60,
     questionsCount: 20,
-    difficulty: "Médio",
+    difficulty: "Medium",
     classes: [
       { id: 10, name: "2º Ano A", studentsCount: 30, completedCount: 30 },
       { id: 11, name: "2º Ano B", studentsCount: 28, completedCount: 28 },
@@ -220,16 +220,16 @@ const mockTeacherExams = [
 ];
 
 const subjects = [
-  "Todas",
-  "Matemática",
-  "Português",
-  "Ciências",
-  "História",
-  "Geografia",
-  "Física",
-  "Química",
-  "Biologia",
-  "Inglês",
+  "All",
+  "Mathematics",
+  "Portuguese",
+  "Science",
+  "History",
+  "Geography",
+  "Physics",
+  "Chemistry",
+  "Biology",
+  "English",
 ];
 
 export default function ExamsPage() {
@@ -276,7 +276,7 @@ export default function ExamsPage() {
         );
       }
 
-      if (subjectFilter !== "Todas") {
+      if (subjectFilter !== "All") {
         filteredPending = filteredPending.filter(
           (exam) => exam.subject === subjectFilter
         );
@@ -303,7 +303,7 @@ export default function ExamsPage() {
         );
       }
 
-      if (subjectFilter !== "Todas") {
+      if (subjectFilter !== "All") {
         filtered = filtered.filter((exam) => exam.subject === subjectFilter);
       }
 
@@ -327,8 +327,8 @@ export default function ExamsPage() {
     setShowStartExamDialog(false);
 
     toast({
-      title: "Prova iniciada",
-      description: `Você iniciou a prova: ${selectedExam?.title}`,
+      title: "Exam started",
+      description: `You started the exam: ${selectedExam?.title}`,
     });
     router.push(`/prova/1`);
   };
@@ -346,8 +346,8 @@ export default function ExamsPage() {
     );
 
     toast({
-      title: "Prova excluída",
-      description: `A prova "${selectedExamToDelete?.title}" foi excluída com sucesso.`,
+      title: "Exam deleted",
+      description: `The exam "${selectedExamToDelete?.title}" was successfully deleted.`,
     });
   };
 
@@ -373,11 +373,11 @@ export default function ExamsPage() {
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case "Fácil":
+      case "Easy":
         return "border-green-500 text-green-500";
-      case "Médio":
+      case "Medium":
         return "border-yellow-500 text-yellow-500";
-      case "Difícil":
+      case "Hard":
         return "border-red-500 text-red-500";
       default:
         return "";
@@ -395,11 +395,10 @@ export default function ExamsPage() {
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">
-            Provas e Simulados
+            Exams and Tests
           </h1>
           <p className="text-muted-foreground">
-            Gerencie suas avaliações pendentes e veja seu histórico de provas
-            realizadas.
+            Manage your pending assessments and view your exam history.
           </p>
         </div>
       </div>
@@ -433,11 +432,11 @@ export default function ExamsPage() {
         <TabsList className="grid w-full grid-cols-2 mb-8">
           <TabsTrigger value="pending" className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            Pendentes
+            Pending
           </TabsTrigger>
           <TabsTrigger value="completed" className="flex items-center gap-2">
             <CheckCircle className="h-4 w-4" />
-            Concluídas
+            Completed
           </TabsTrigger>
         </TabsList>
 
@@ -465,7 +464,7 @@ export default function ExamsPage() {
                     <CardDescription>
                       <div className="flex items-center gap-1 mt-1">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span>Data limite: {formatDate(exam.dueDate)}</span>
+                        <span>Due date: {formatDate(exam.dueDate)}</span>
                       </div>
                     </CardDescription>
                   </CardHeader>
@@ -477,7 +476,7 @@ export default function ExamsPage() {
                           {formatDuration(exam.duration)}
                         </span>
                         <span className="text-xs text-muted-foreground">
-                          Duração
+                          Duration
                         </span>
                       </div>
                       <div className="flex flex-col items-center justify-center rounded-md border p-3">
@@ -486,7 +485,7 @@ export default function ExamsPage() {
                           {exam.questionsCount}
                         </span>
                         <span className="text-xs text-muted-foreground">
-                          Questões
+                          Questions
                         </span>
                       </div>
                     </div>
@@ -497,7 +496,7 @@ export default function ExamsPage() {
                       onClick={() => handleStartExam(exam)}
                     >
                       <Play className="h-4 w-4" />
-                      Iniciar Prova
+                      Start Exam
                     </Button>
                   </CardFooter>
                 </Card>
@@ -507,7 +506,7 @@ export default function ExamsPage() {
             <div className="flex h-[200px] w-full flex-col items-center justify-center rounded-md border border-dashed">
               <Calendar className="h-10 w-10 text-muted-foreground mb-2" />
               <p className="text-sm text-muted-foreground">
-                Nenhuma prova pendente encontrada.
+                No pending exams found.
               </p>
             </div>
           )}
@@ -530,7 +529,7 @@ export default function ExamsPage() {
                         variant="outline"
                         className="border-blue-500 text-blue-500"
                       >
-                        Concluída
+                        Completed
                       </Badge>
                     </div>
                     <CardTitle className="mt-2">{exam.title}</CardTitle>
@@ -538,7 +537,7 @@ export default function ExamsPage() {
                       <div className="flex items-center gap-1 mt-1">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
                         <span>
-                          Realizada em: {formatDate(exam.completedDate)}
+                          Completed on: {formatDate(exam.completedDate)}
                         </span>
                       </div>
                     </CardDescription>
@@ -555,7 +554,7 @@ export default function ExamsPage() {
                           {exam.score}%
                         </span>
                         <span className="text-xs text-muted-foreground">
-                          Pontuação
+                          Score
                         </span>
                       </div>
                       <div className="flex flex-col items-center justify-center rounded-md border p-3">
@@ -564,13 +563,13 @@ export default function ExamsPage() {
                           {exam.correctAnswers}/{exam.questionsCount}
                         </span>
                         <span className="text-xs text-muted-foreground">
-                          Acertos
+                          Correct
                         </span>
                       </div>
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-1">
-                        <span className="text-sm">Desempenho</span>
+                        <span className="text-sm">Performance</span>
                         <span
                           className={`text-sm font-medium ${getScoreColor(
                             exam.score
@@ -588,12 +587,12 @@ export default function ExamsPage() {
                       className="w-full"
                       onClick={() => {
                         toast({
-                          title: "Revisão de prova",
-                          description: `Você está revisando a prova: ${exam.title}`,
+                          title: "Exam review",
+                          description: `You are reviewing the exam: ${exam.title}`,
                         });
                       }}
                     >
-                      Ver Detalhes
+                      View Details
                     </Button>
                   </CardFooter>
                 </Card>
@@ -603,7 +602,7 @@ export default function ExamsPage() {
             <div className="flex h-[200px] w-full flex-col items-center justify-center rounded-md border border-dashed">
               <CheckCircle className="h-10 w-10 text-muted-foreground mb-2" />
               <p className="text-sm text-muted-foreground">
-                Nenhuma prova concluída encontrada.
+                No completed exams found.
               </p>
             </div>
           )}
@@ -613,10 +612,9 @@ export default function ExamsPage() {
       <Dialog open={showStartExamDialog} onOpenChange={setShowStartExamDialog}>
         <DialogContent className="!bg-white">
           <DialogHeader>
-            <DialogTitle>Iniciar Prova</DialogTitle>
+            <DialogTitle>Start Exam</DialogTitle>
             <DialogDescription>
-              Você está prestes a iniciar a prova. Certifique-se de que tem
-              tempo suficiente para concluí-la.
+              You are about to start the exam. Make sure you have enough time to complete it.
             </DialogDescription>
           </DialogHeader>
 
@@ -633,7 +631,7 @@ export default function ExamsPage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-sm font-medium">Duração</p>
+                  <p className="text-sm font-medium">Duration</p>
                   <div className="flex items-center gap-2 mt-1">
                     <Timer className="h-4 w-4 text-muted-foreground" />
                     <span className="text-sm">
@@ -642,11 +640,11 @@ export default function ExamsPage() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm font-medium">Questões</p>
+                  <p className="text-sm font-medium">Questions</p>
                   <div className="flex items-center gap-2 mt-1">
                     <FileText className="h-4 w-4 text-muted-foreground" />
                     <span className="text-sm">
-                      {selectedExam.questionsCount} questões
+                      {selectedExam.questionsCount} questions
                     </span>
                   </div>
                 </div>
@@ -669,12 +667,10 @@ export default function ExamsPage() {
                     <line x1="12" y1="17" x2="12.01" y2="17" />
                   </svg>
                   <div>
-                    <p className="font-medium">Atenção</p>
+                    <p className="font-medium">Warning</p>
                     <p className="mt-1">
-                      Uma vez iniciada, a prova não poderá ser pausada.
-                      Certifique-se de que tem{" "}
-                      {formatDuration(selectedExam.duration)} disponíveis para
-                      concluí-la.
+                      Once started, the exam cannot be paused. Make sure you have{" "}
+                      {formatDuration(selectedExam.duration)} available to complete it.
                     </p>
                   </div>
                 </div>
@@ -687,9 +683,9 @@ export default function ExamsPage() {
               variant="outline"
               onClick={() => setShowStartExamDialog(false)}
             >
-              Cancelar
+              Cancel
             </Button>
-            <Button onClick={confirmStartExam}>Iniciar Agora</Button>
+            <Button onClick={confirmStartExam}>Start Now</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
@@ -701,16 +697,16 @@ export default function ExamsPage() {
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">
-            Provas e Simulados
+            Exams and Tests
           </h1>
           <p className="text-muted-foreground">
-            Gerencie as provas que você criou e veja o desempenho dos alunos.
+            Manage the exams you created and view student performance.
           </p>
         </div>
         <Link href="/prova/criar">
           <Button className="flex items-center gap-2">
             <Plus className="h-4 w-4" />
-            Nova Prova
+            New Exam
           </Button>
         </Link>
       </div>
@@ -743,9 +739,9 @@ export default function ExamsPage() {
             <SelectValue placeholder="Status" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">Todos os status</SelectItem>
-            <SelectItem value="active">Ativas</SelectItem>
-            <SelectItem value="completed">Encerradas</SelectItem>
+            <SelectItem value="all">All statuses</SelectItem>
+            <SelectItem value="active">Active</SelectItem>
+            <SelectItem value="completed">Closed</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -769,7 +765,7 @@ export default function ExamsPage() {
                           variant="outline"
                           className="border-blue-500 text-blue-500"
                         >
-                          Encerrada
+                          Closed
                         </Badge>
                       ) : (
                         <Badge
@@ -784,11 +780,11 @@ export default function ExamsPage() {
                     <CardDescription>
                       <div className="flex items-center gap-1 mt-1">
                         <Calendar className="h-4 w-4 text-muted-foreground" />
-                        <span>Criada em: {formatDate(exam.createdDate)}</span>
+                        <span>Created on: {formatDate(exam.createdDate)}</span>
                       </div>
                       <div className="flex items-center gap-1 mt-1">
                         <Clock className="h-4 w-4 text-muted-foreground" />
-                        <span>Data limite: {formatDate(exam.dueDate)}</span>
+                        <span>Due date: {formatDate(exam.dueDate)}</span>
                       </div>
                     </CardDescription>
                   </div>
@@ -803,7 +799,7 @@ export default function ExamsPage() {
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                      <DropdownMenuLabel>Ações</DropdownMenuLabel>
+                      <DropdownMenuLabel>Actions</DropdownMenuLabel>
                       <DropdownMenuSeparator />
                       <DropdownMenuItem asChild>
                         <Link
@@ -811,7 +807,7 @@ export default function ExamsPage() {
                           className="flex w-full cursor-pointer items-center"
                         >
                           <Users className="mr-2 h-4 w-4" />
-                          Ver Resultados
+                          View Results
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
@@ -820,12 +816,12 @@ export default function ExamsPage() {
                           className="flex w-full cursor-pointer items-center"
                         >
                           <Edit className="mr-2 h-4 w-4" />
-                          Editar
+                          Edit
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem className="flex cursor-pointer items-center">
                         <Copy className="mr-2 h-4 w-4" />
-                        Duplicar
+                        Duplicate
                       </DropdownMenuItem>
                       <DropdownMenuSeparator />
                       <DropdownMenuItem
@@ -833,7 +829,7 @@ export default function ExamsPage() {
                         onClick={() => handleDeleteExam(exam)}
                       >
                         <Trash2 className="mr-2 h-4 w-4" />
-                        Excluir
+                        Delete
                       </DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
@@ -876,7 +872,7 @@ export default function ExamsPage() {
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-medium mb-2">Turmas</h4>
+                    <h4 className="text-sm font-medium mb-2">Classes</h4>
                     <div className="space-y-2">
                       {exam.classes.map((cls) => (
                         <div
@@ -889,7 +885,7 @@ export default function ExamsPage() {
                           </div>
                           <div className="flex items-center gap-2">
                             <span className="text-sm text-muted-foreground">
-                              {cls.completedCount}/{cls.studentsCount} alunos
+                              {cls.completedCount}/{cls.studentsCount} students
                             </span>
                             <Progress
                               value={
@@ -906,11 +902,11 @@ export default function ExamsPage() {
               </CardContent>
               <CardFooter className="flex justify-end gap-2">
                 <Button variant="outline" asChild>
-                  <Link href={`/prova/${exam.id}/editar`}>Editar</Link>
+                  <Link href={`/prova/${exam.id}/editar`}>Edit</Link>
                 </Button>
                 <Button asChild>
                   <Link href={`/prova/${exam.id}/resultado`}>
-                    Ver Resultados
+                    View Results
                   </Link>
                 </Button>
               </CardFooter>
@@ -921,12 +917,12 @@ export default function ExamsPage() {
         <div className="flex h-[200px] w-full flex-col items-center justify-center rounded-md border border-dashed">
           <FileText className="h-10 w-10 text-muted-foreground mb-2" />
           <p className="text-sm text-muted-foreground">
-            Nenhuma prova encontrada. Crie uma nova prova para começar.
+            No exams found. Create a new exam to get started.
           </p>
           <Link href="/prova/criar" className="mt-4">
             <Button>
               <Plus className="mr-2 h-4 w-4" />
-              Nova Prova
+              New Exam
             </Button>
           </Link>
         </div>
@@ -935,10 +931,9 @@ export default function ExamsPage() {
       <Dialog open={showDeleteDialog} onOpenChange={setShowDeleteDialog}>
         <DialogContent className="!bg-white">
           <DialogHeader>
-            <DialogTitle>Excluir Prova</DialogTitle>
+            <DialogTitle>Delete Exam</DialogTitle>
             <DialogDescription>
-              Tem certeza que deseja excluir esta prova? Esta ação não pode ser
-              desfeita.
+              Are you sure you want to delete this exam? This action cannot be undone.
             </DialogDescription>
           </DialogHeader>
 
@@ -956,10 +951,10 @@ export default function ExamsPage() {
               variant="outline"
               onClick={() => setShowDeleteDialog(false)}
             >
-              Cancelar
+              Cancel
             </Button>
             <Button variant="destructive" onClick={confirmDeleteExam}>
-              Excluir
+              Delete
             </Button>
           </DialogFooter>
         </DialogContent>

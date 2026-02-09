@@ -14,46 +14,46 @@ import { AppHeader } from "@/components/layout/app-header";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const mockCategoryProgress = [
-  { id: 1, name: "Matemática", total: 15, completed: 12, correct: 9 },
-  { id: 2, name: "Português", total: 12, completed: 10, correct: 7 },
-  { id: 3, name: "Ciências", total: 10, completed: 8, correct: 6 },
-  { id: 4, name: "História", total: 8, completed: 5, correct: 3 },
-  { id: 5, name: "Geografia", total: 7, completed: 6, correct: 5 },
+  { id: 1, name: "Mathematics", total: 15, completed: 12, correct: 9 },
+  { id: 2, name: "Portuguese", total: 12, completed: 10, correct: 7 },
+  { id: 3, name: "Science", total: 10, completed: 8, correct: 6 },
+  { id: 4, name: "History", total: 8, completed: 5, correct: 3 },
+  { id: 5, name: "Geography", total: 7, completed: 6, correct: 5 },
 ];
 
 const mockRecentActivity = [
   {
     id: 1,
     title: "Equação do segundo grau",
-    category: "Matemática",
+    category: "Mathematics",
     date: "2025-10-15",
     correct: true,
   },
   {
     id: 2,
     title: "Análise sintática",
-    category: "Português",
+    category: "Portuguese",
     date: "2025-10-14",
     correct: false,
   },
   {
     id: 3,
     title: "Sistema solar",
-    category: "Ciências",
+    category: "Science",
     date: "2025-10-13",
     correct: true,
   },
   {
     id: 4,
     title: "Segunda Guerra Mundial",
-    category: "História",
+    category: "History",
     date: "2025-10-12",
     correct: false,
   },
   {
     id: 5,
     title: "Capitais da Europa",
-    category: "Geografia",
+    category: "Geography",
     date: "2025-10-11",
     correct: true,
   },
@@ -97,9 +97,9 @@ export default function ProfilePage() {
         <div className="app-main">
           <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
             <div>
-              <h1 className="text-3xl font-bold tracking-tight">Meu Perfil</h1>
+              <h1 className="text-3xl font-bold tracking-tight">My Profile</h1>
               <p className="text-muted-foreground">
-                Acompanhe seu progresso e atividades recentes.
+                Track your progress and recent activities.
               </p>
             </div>
           </div>
@@ -108,21 +108,21 @@ export default function ProfilePage() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Questões Respondidas
+                  Questions Answered
                 </CardTitle>
                 <BookOpen className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">{completedQuestions}</div>
                 <p className="text-xs text-muted-foreground">
-                  De um total de {totalQuestions} questões
+                  Out of {totalQuestions} total questions
                 </p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Taxa de Conclusão
+                  Completion Rate
                 </CardTitle>
                 <CheckCircle className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
@@ -134,7 +134,7 @@ export default function ProfilePage() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Taxa de Acerto
+                  Accuracy Rate
                 </CardTitle>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,14 +157,14 @@ export default function ProfilePage() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">
-                  Tempo de Estudo
+                  Study Time
                 </CardTitle>
                 <Clock className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">4h 32m</div>
                 <p className="text-xs text-muted-foreground">
-                  Nos últimos 7 dias
+                  In the last 7 days
                 </p>
               </CardContent>
             </Card>
@@ -173,8 +173,8 @@ export default function ProfilePage() {
           <div className="grid gap-4 md:grid-cols-3">
             <Card className="md:col-span-1">
               <CardHeader>
-                <CardTitle>Informações do Usuário</CardTitle>
-                <CardDescription>Seus dados pessoais</CardDescription>
+                <CardTitle>User Information</CardTitle>
+                <CardDescription>Your personal data</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-4">
@@ -192,9 +192,9 @@ export default function ProfilePage() {
 
             <Card className="md:col-span-2">
               <CardHeader>
-                <CardTitle>Progresso por Categoria</CardTitle>
+                <CardTitle>Progress by Category</CardTitle>
                 <CardDescription>
-                  Seu desempenho em cada categoria de questões
+                  Your performance in each question category
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -205,7 +205,7 @@ export default function ProfilePage() {
                         <span className="font-medium">{category.name}</span>
                       </div>
                       <span className="text-sm text-muted-foreground">
-                        {category.correct}/{category.completed} acertos
+                        {category.correct}/{category.completed} correct
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -228,17 +228,17 @@ export default function ProfilePage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Atividades Recentes</CardTitle>
+              <CardTitle>Recent Activities</CardTitle>
               <CardDescription>
-                Suas últimas questões respondidas
+                Your latest answered questions
               </CardDescription>
             </CardHeader>
             <CardContent>
               <Tabs defaultValue="all">
                 <TabsList className="mb-4">
-                  <TabsTrigger value="all">Todas</TabsTrigger>
-                  <TabsTrigger value="correct">Corretas</TabsTrigger>
-                  <TabsTrigger value="incorrect">Incorretas</TabsTrigger>
+                  <TabsTrigger value="all">All</TabsTrigger>
+                  <TabsTrigger value="correct">Correct</TabsTrigger>
+                  <TabsTrigger value="incorrect">Incorrect</TabsTrigger>
                 </TabsList>
                 <TabsContent value="all" className="space-y-4">
                   {mockRecentActivity.map((activity) => (

@@ -54,8 +54,8 @@ export default function RegisterPage() {
       localStorage.setItem("isLoggedIn", "true");
 
       toast({
-        title: "Cadastro realizado com sucesso!",
-        description: "Você foi cadastrado e já está logado.",
+        title: "Registration successful!",
+        description: "You have been registered and are now logged in.",
       });
 
       if (formData.role === "professor") {
@@ -65,8 +65,8 @@ export default function RegisterPage() {
       }
     } catch (error) {
       toast({
-        title: "Erro ao cadastrar",
-        description: "Ocorreu um erro ao tentar criar sua conta",
+        title: "Registration error",
+        description: "An error occurred while trying to create your account",
         variant: "destructive",
       });
     } finally {
@@ -82,19 +82,19 @@ export default function RegisterPage() {
       </Link>
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold">Criar conta</CardTitle>
+          <CardTitle className="text-2xl font-bold">Create Account</CardTitle>
           <CardDescription>
-            Preencha os dados abaixo para criar sua conta
+            Fill in the information below to create your account
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Nome completo</Label>
+              <Label htmlFor="name">Full Name</Label>
               <Input
                 id="name"
                 name="name"
-                placeholder="Seu nome completo"
+                placeholder="Your full name"
                 required
                 value={formData.name}
                 onChange={handleChange}
@@ -106,14 +106,14 @@ export default function RegisterPage() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="seu@email.com"
+                placeholder="your@email.com"
                 required
                 value={formData.email}
                 onChange={handleChange}
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">Senha</Label>
+              <Label htmlFor="password">Password</Label>
               <div className="relative">
                 <Input
                   id="password"
@@ -137,13 +137,13 @@ export default function RegisterPage() {
                     <Eye className="h-4 w-4 text-muted-foreground" />
                   )}
                   <span className="sr-only">
-                    {showPassword ? "Esconder senha" : "Mostrar senha"}
+                    {showPassword ? "Hide password" : "Show password"}
                   </span>
                 </Button>
               </div>
             </div>
             <div className="space-y-2">
-              <Label>Tipo de conta</Label>
+              <Label>Account Type</Label>
               <RadioGroup
                 defaultValue={formData.role}
                 onValueChange={handleRoleChange}
@@ -152,13 +152,13 @@ export default function RegisterPage() {
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="aluno" id="aluno" />
                   <Label htmlFor="aluno" className="font-normal">
-                    Aluno
+                    Student
                   </Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem value="professor" id="professor" />
                   <Label htmlFor="professor" className="font-normal">
-                    Professor
+                    Teacher
                   </Label>
                 </div>
               </RadioGroup>
@@ -166,12 +166,12 @@ export default function RegisterPage() {
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">
             <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? "Criando conta..." : "Criar conta"}
+              {isLoading ? "Creating account..." : "Create Account"}
             </Button>
             <div className="text-center text-sm">
-              Já tem uma conta?{" "}
+              Already have an account?{" "}
               <Link href="/login" className="text-primary hover:underline">
-                Entrar
+                Sign in
               </Link>
             </div>
           </CardFooter>

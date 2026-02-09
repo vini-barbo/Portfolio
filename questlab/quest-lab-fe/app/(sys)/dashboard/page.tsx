@@ -23,11 +23,11 @@ const mockStudentData = [
 ];
 
 const mockCategoryData = [
-  { id: 1, name: "Matemática", questionsCount: 15, averageScore: 72 },
-  { id: 2, name: "Português", questionsCount: 12, averageScore: 68 },
-  { id: 3, name: "Ciências", questionsCount: 10, averageScore: 75 },
-  { id: 4, name: "História", questionsCount: 8, averageScore: 65 },
-  { id: 5, name: "Geografia", questionsCount: 7, averageScore: 70 },
+  { id: 1, name: "Mathematics", questionsCount: 15, averageScore: 72 },
+  { id: 2, name: "Portuguese", questionsCount: 12, averageScore: 68 },
+  { id: 3, name: "Science", questionsCount: 10, averageScore: 75 },
+  { id: 4, name: "History", questionsCount: 8, averageScore: 65 },
+  { id: 5, name: "Geography", questionsCount: 7, averageScore: 70 },
 ];
 
 export default function DashboardPage() {
@@ -44,13 +44,13 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">
-            Bem-vindo, {userName}! Aqui está o desempenho dos seus alunos.
+            Welcome, {userName}! Here is your students' performance.
           </p>
         </div>
         <Link href="/questoes/create">
           <Button>
             <Plus className="mr-2 h-4 w-4" />
-            Nova Questão
+            New Question
           </Button>
         </Link>
       </div>
@@ -59,31 +59,31 @@ export default function DashboardPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Total de Alunos
+              Total Students
             </CardTitle>
             <Users className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">12</div>
-            <p className="text-xs text-muted-foreground">+2 no último mês</p>
+            <p className="text-xs text-muted-foreground">+2 in the last month</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Questões Criadas
+              Questions Created
             </CardTitle>
             <BookOpen className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">52</div>
-            <p className="text-xs text-muted-foreground">+8 na última semana</p>
+            <p className="text-xs text-muted-foreground">+8 in the last week</p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Taxa de Acerto
+              Accuracy Rate
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,14 +101,14 @@ export default function DashboardPage() {
           <CardContent>
             <div className="text-2xl font-bold">73%</div>
             <p className="text-xs text-muted-foreground">
-              +5% desde o mês passado
+              +5% since last month
             </p>
           </CardContent>
         </Card>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">
-              Questões Respondidas
+              Questions Answered
             </CardTitle>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export default function DashboardPage() {
           <CardContent>
             <div className="text-2xl font-bold">248</div>
             <p className="text-xs text-muted-foreground">
-              +42 na última semana
+              +42 in the last week
             </p>
           </CardContent>
         </Card>
@@ -135,8 +135,8 @@ export default function DashboardPage() {
 
       <Tabs defaultValue="students">
         <TabsList>
-          <TabsTrigger value="students">Desempenho por Aluno</TabsTrigger>
-          <TabsTrigger value="categories">Desempenho por Categoria</TabsTrigger>
+          <TabsTrigger value="students">Performance by Student</TabsTrigger>
+          <TabsTrigger value="categories">Performance by Category</TabsTrigger>
         </TabsList>
         <TabsContent value="students" className="space-y-4">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -145,13 +145,13 @@ export default function DashboardPage() {
                 <CardHeader className="pb-2">
                   <CardTitle>{student.name}</CardTitle>
                   <CardDescription>
-                    {student.questionsAnswered} questões respondidas
+                    {student.questionsAnswered} questions answered
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium">
-                      Taxa de acerto:{" "}
+                      Accuracy rate:{" "}
                       {Math.round(
                         (student.correctAnswers / student.questionsAnswered) *
                           100
@@ -180,13 +180,13 @@ export default function DashboardPage() {
                 <CardHeader className="pb-2">
                   <CardTitle>{category.name}</CardTitle>
                   <CardDescription>
-                    {category.questionsCount} questões
+                    {category.questionsCount} questions
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium">
-                      Média de acertos: {category.averageScore}%
+                      Average score: {category.averageScore}%
                     </span>
                   </div>
                   <Progress value={category.averageScore} className="mt-2" />
