@@ -28,7 +28,7 @@ const translations = {
     "hero.viewProjects": "Ver Projetos",
     "hero.contact": "Entrar em Contato",
     "hero.downloadCV": "Baixar Currículo",
-    
+
     // About Section
     "about.title": "Sobre Mim",
     "about.paragraph1": "Desenvolvedor Fullstack com mais de 5 anos de experiência na criação de aplicações web modernas e escaláveis. Apaixonado por tecnologia e por resolver problemas complexos através de código limpo e eficiente.",
@@ -40,7 +40,7 @@ const translations = {
     "about.innovationDesc": "Sempre atualizado com as últimas tecnologias e tendências do mercado de desenvolvimento.",
     "about.collaboration": "Colaboração",
     "about.collaborationDesc": "Experiência em trabalho em equipe, metodologias ágeis e comunicação efetiva.",
-    
+
     // Technologies Section
     "tech.title": "Tecnologias & Skills",
     "tech.subtitle": "Ferramentas e tecnologias que domino para criar soluções completas e robustas",
@@ -51,7 +51,7 @@ const translations = {
     "tech.category.devops": "DevOps",
     "tech.category.cloud": "Cloud",
     "tech.category.tools": "Tools",
-    
+
     // Projects Section
     "projects.title": "Projetos",
     "projects.subtitle": "Alguns dos meus trabalhos mais recentes e relevantes",
@@ -69,7 +69,7 @@ const translations = {
     "projects.project5.desc": "Sistema de gestão de conteúdo headless com API GraphQL, autenticação JWT e painel administrativo customizável.",
     "projects.project6.name": "DevOps Automation Tool",
     "projects.project6.desc": "Ferramenta de automação de deploy e CI/CD com integração AWS, monitoramento e rollback automático.",
-    
+
     // Experience Section
     "experience.title": "Experiência Profissional",
     "experience.subtitle": "Minha trajetória profissional e contribuições em diferentes organizações",
@@ -94,7 +94,7 @@ const translations = {
     "experience.desc3.2": "Implementação de sistema de autenticação e autorização com JWT",
     "experience.desc3.3": "Criação de dashboard administrativo com métricas em tempo real",
     "experience.desc3.4": "Trabalho com metodologia ágil (Scrum) em sprints de 2 semanas",
-    
+
     // Contact Section
     "contact.title": "Contato",
     "contact.subtitle": "Interessado em trabalhar juntos? Entre em contato através de qualquer um dos canais abaixo",
@@ -118,7 +118,7 @@ const translations = {
     "hero.viewProjects": "View Projects",
     "hero.contact": "Get in Touch",
     "hero.downloadCV": "Download Resume",
-    
+
     // About Section
     "about.title": "About Me",
     "about.paragraph1": "Fullstack Developer with over 5 years of experience creating modern and scalable web applications. Passionate about technology and solving complex problems through clean and efficient code.",
@@ -130,7 +130,7 @@ const translations = {
     "about.innovationDesc": "Always updated with the latest technologies and development market trends.",
     "about.collaboration": "Collaboration",
     "about.collaborationDesc": "Experience in teamwork, agile methodologies, and effective communication.",
-    
+
     // Technologies Section
     "tech.title": "Technologies & Skills",
     "tech.subtitle": "Tools and technologies I master to create complete and robust solutions",
@@ -141,7 +141,7 @@ const translations = {
     "tech.category.devops": "DevOps",
     "tech.category.cloud": "Cloud",
     "tech.category.tools": "Tools",
-    
+
     // Projects Section
     "projects.title": "Projects",
     "projects.subtitle": "Some of my most recent and relevant works",
@@ -159,7 +159,7 @@ const translations = {
     "projects.project5.desc": "Headless content management system with GraphQL API, JWT authentication, and customizable admin panel.",
     "projects.project6.name": "DevOps Automation Tool",
     "projects.project6.desc": "Deploy automation and CI/CD tool with AWS integration, monitoring, and automatic rollback.",
-    
+
     // Experience Section
     "experience.title": "Professional Experience",
     "experience.subtitle": "My professional journey and contributions in different organizations",
@@ -184,7 +184,7 @@ const translations = {
     "experience.desc3.2": "Implementation of authentication and authorization system with JWT",
     "experience.desc3.3": "Creation of administrative dashboard with real-time metrics",
     "experience.desc3.4": "Work with agile methodology (Scrum) in 2-week sprints",
-    
+
     // Contact Section
     "contact.title": "Contact",
     "contact.subtitle": "Interested in working together? Get in touch through any of the channels below",
@@ -208,7 +208,7 @@ const translations = {
     "hero.viewProjects": "Ver Proyectos",
     "hero.contact": "Ponerse en Contacto",
     "hero.downloadCV": "Descargar Currículum",
-    
+
     // About Section
     "about.title": "Acerca de Mí",
     "about.paragraph1": "Desarrollador Fullstack con más de 5 años de experiencia en la creación de aplicaciones web modernas y escalables. Apasionado por la tecnología y por resolver problemas complejos a través de código limpio y eficiente.",
@@ -220,7 +220,7 @@ const translations = {
     "about.innovationDesc": "Siempre actualizado con las últimas tecnologías y tendencias del mercado de desarrollo.",
     "about.collaboration": "Colaboración",
     "about.collaborationDesc": "Experiencia en trabajo en equipo, metodologías ágiles y comunicación efectiva.",
-    
+
     // Technologies Section
     "tech.title": "Tecnologías & Habilidades",
     "tech.subtitle": "Herramientas y tecnologías que domino para crear soluciones completas y robustas",
@@ -231,7 +231,7 @@ const translations = {
     "tech.category.devops": "DevOps",
     "tech.category.cloud": "Nube",
     "tech.category.tools": "Herramientas",
-    
+
     // Projects Section
     "projects.title": "Proyectos",
     "projects.subtitle": "Algunos de mis trabajos más recientes y relevantes",
@@ -249,7 +249,7 @@ const translations = {
     "projects.project5.desc": "Sistema de gestión de contenido headless con API GraphQL, autenticación JWT y panel administrativo personalizable.",
     "projects.project6.name": "Herramienta de Automatización DevOps",
     "projects.project6.desc": "Herramienta de automatización de despliegue y CI/CD con integración AWS, monitoreo y rollback automático.",
-    
+
     // Experience Section
     "experience.title": "Experiencia Profesional",
     "experience.subtitle": "Mi trayectoria profesional y contribuciones en diferentes organizaciones",
@@ -274,7 +274,7 @@ const translations = {
     "experience.desc3.2": "Implementación de sistema de autenticación y autorización con JWT",
     "experience.desc3.3": "Creación de panel administrativo con métricas en tiempo real",
     "experience.desc3.4": "Trabajo con metodología ágil (Scrum) en sprints de 2 semanas",
-    
+
     // Contact Section
     "contact.title": "Contacto",
     "contact.subtitle": "¿Interesado en trabajar juntos? Ponte en contacto a través de cualquiera de los canales a continuación",
@@ -298,7 +298,7 @@ const translations = {
     "hero.viewProjects": "Voir les Projets",
     "hero.contact": "Me Contacter",
     "hero.downloadCV": "Télécharger le CV",
-    
+
     // About Section
     "about.title": "À Propos de Moi",
     "about.paragraph1": "Développeur Fullstack avec plus de 5 ans d'expérience dans la création d'applications web modernes et évolutives. Passionné par la technologie et la résolution de problèmes complexes grâce à un code propre et efficace.",
@@ -310,7 +310,7 @@ const translations = {
     "about.innovationDesc": "Toujours à jour avec les dernières technologies et tendances du marché du développement.",
     "about.collaboration": "Collaboration",
     "about.collaborationDesc": "Expérience en travail d'équipe, méthodologies agiles et communication efficace.",
-    
+
     // Technologies Section
     "tech.title": "Technologies & Compétences",
     "tech.subtitle": "Outils et technologies que je maîtrise pour créer des solutions complètes et robustes",
@@ -321,7 +321,7 @@ const translations = {
     "tech.category.devops": "DevOps",
     "tech.category.cloud": "Cloud",
     "tech.category.tools": "Outils",
-    
+
     // Projects Section
     "projects.title": "Projets",
     "projects.subtitle": "Certains de mes travaux les plus récents et pertinents",
@@ -339,7 +339,7 @@ const translations = {
     "projects.project5.desc": "Système de gestion de contenu headless avec API GraphQL, authentification JWT et panneau d'administration personnalisable.",
     "projects.project6.name": "Outil d'Automatisation DevOps",
     "projects.project6.desc": "Outil d'automatisation de déploiement et CI/CD avec intégration AWS, surveillance et rollback automatique.",
-    
+
     // Experience Section
     "experience.title": "Expérience Professionnelle",
     "experience.subtitle": "Mon parcours professionnel et contributions dans différentes organisations",
@@ -364,7 +364,7 @@ const translations = {
     "experience.desc3.2": "Mise en œuvre du système d'authentification et d'autorisation avec JWT",
     "experience.desc3.3": "Création de tableau de bord administratif avec métriques en temps réel",
     "experience.desc3.4": "Travail avec méthodologie agile (Scrum) en sprints de 2 semaines",
-    
+
     // Contact Section
     "contact.title": "Contact",
     "contact.subtitle": "Intéressé par une collaboration? Contactez-moi via l'un des canaux ci-dessous",
@@ -374,7 +374,7 @@ const translations = {
 };
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("pt");
+  const [language, setLanguage] = useState<Language>("en");
 
   const t = (key: string): string => {
     return translations[language][key] || key;
