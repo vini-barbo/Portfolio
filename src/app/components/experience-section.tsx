@@ -11,7 +11,7 @@ export function ExperienceSection() {
       companyKey: "experience.company1",
       roleKey: "experience.role1",
       periodKey: "experience.period1",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Avanade_logo.svg/320px-Avanade_logo.svg.png",
+      logo: "/logos/avanade-logo.png",
       descriptionKeys: [
         "experience.desc1.1",
         "experience.desc1.2",
@@ -24,7 +24,7 @@ export function ExperienceSection() {
       companyKey: "experience.company2",
       roleKey: "experience.role2",
       periodKey: "experience.period2",
-      logo: "/logos/cesar-logo.png",
+      logo: "/logos/senai-logo.png",
       descriptionKeys: [
         "experience.desc2.1",
         "experience.desc2.2",
