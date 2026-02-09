@@ -5,18 +5,28 @@ frontend:
       commands:
         - echo "=== [Portfolio] Instalando dependências ==="
         - npm ci --legacy-peer-deps
+        - echo "=== [Portfolio] Dependências instaladas com sucesso ==="
+        - echo "=== [Quest Lab] Verificando diretório ==="
+        - ls -la questlab/quest-lab-fe/
         - echo "=== [Quest Lab] Instalando dependências ==="
-        - cd questlab/quest-lab-fe && npm ci && cd ../..
+        - cd questlab/quest-lab-fe
+        - npm ci
+        - cd ../..
+        - echo "=== [Quest Lab] Dependências instaladas com sucesso ==="
     build:
       commands:
         - echo "=== [Portfolio] Build do projeto principal ==="
         - npm run build
+        - echo "=== [Portfolio] Build concluído ==="
         - echo "=== [Quest Lab] Build do Next.js ==="
-        - cd questlab/quest-lab-fe && npm run build && cd ../..
+        - cd questlab/quest-lab-fe
+        - npm run build
+        - cd ../..
+        - echo "=== [Quest Lab] Build concluído ==="
         - echo "=== Copiando Quest Lab para dist/demo/questlab ==="
         - mkdir -p dist/demo/questlab
         - cp -r questlab/quest-lab-fe/out/* dist/demo/questlab/
-        - echo "=== Builds concluídos ==="
+        - echo "=== Builds concluídos com sucesso ==="
   artifacts:
     baseDirectory: dist
     files:
