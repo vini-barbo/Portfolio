@@ -46,8 +46,8 @@ export function HeroSection() {
               {/* Photo container */}
               <div className="relative w-80 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden border-4 border-background bg-card shadow-2xl">
                 <ImageWithFallback
-                  src="/profile.jpg"
-                  alt="Foto de perfil"
+                  src="/profile.png"
+                  alt="Foto de perfil "
                   className="w-full h-full object-cover"
                 />
               </div>
