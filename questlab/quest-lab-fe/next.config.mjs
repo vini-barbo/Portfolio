@@ -9,6 +9,8 @@ try {
 const nextConfig = {
   basePath: '/demo/questlab',
   output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
