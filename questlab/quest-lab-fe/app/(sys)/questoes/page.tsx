@@ -259,8 +259,8 @@ export default function QuestionsPage() {
                     question.difficulty === "Fácil"
                       ? "border-green-500 text-green-500"
                       : question.difficulty === "Médio"
-                      ? "border-yellow-500 text-yellow-500"
-                      : "border-red-500 text-red-500"
+                        ? "border-yellow-500 text-yellow-500"
+                        : "border-red-500 text-red-500"
                   }
                 >
                   {question.difficulty}

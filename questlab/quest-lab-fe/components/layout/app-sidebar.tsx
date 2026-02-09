@@ -70,11 +70,10 @@ export function AppSidebar() {
                   href={item.href}
                   className={`flex gap-1 hover:!text-primary  hover:!bg-white !text-white rounded p-2
               items-center
-              justify-between text-sm font-medium transition-colors hover:text-foreground/80 ${
-                pathname === item.href
-                  ? "text-foreground"
-                  : "text-foreground/60"
-              }`}
+              justify-between text-sm font-medium transition-colors hover:text-foreground/80 ${pathname === item.href
+                      ? "text-foreground"
+                      : "text-foreground/60"
+                    }`}
                 >
                   {item.name}
                   {item.icon}
@@ -166,11 +165,10 @@ export function AppSidebar() {
               href={item.href}
               className={`flex gap-1 hover:!text-primary  hover:!bg-white !text-white rounded p-2
               items-center
-              justify-between text-sm font-medium transition-colors hover:text-foreground/80 ${
-                pathname === item.href
+              justify-between text-sm font-medium transition-colors hover:text-foreground/80 ${pathname === item.href
                   ? "text-foreground"
                   : "text-foreground/60"
-              }`}
+                }`}
             >
               {item.name}
               {item.icon}

@@ -21,7 +21,7 @@ export function useNavItems() {
   }, []);
 
   const commonNavItems = [
-    { name: "Provas", href: "/prova", icon: <Paperclip /> },
+    { name: "Exams", href: "/prova", icon: <Paperclip /> },
   ];
 
   const navItems = [
@@ -29,11 +29,11 @@ export function useNavItems() {
       ? [
           ...commonNavItems,
           { name: "Dashboard", href: "/dashboard", icon: <Home /> },
-          { name: "Questões", href: "/questoes", icon: <FileText /> },
+          { name: "Questions", href: "/questoes", icon: <FileText /> },
         ]
       : []),
     ...(userRole === "aluno"
-      ? [...commonNavItems, { name: "perfil", href: "/perfil", icon: <User /> }]
+      ? [...commonNavItems, { name: "Profile", href: "/perfil", icon: <User /> }]
       : []),
   ];
 

@@ -154,7 +154,7 @@ export default function DashboardPage() {
                       Accuracy rate:{" "}
                       {Math.round(
                         (student.correctAnswers / student.questionsAnswered) *
-                          100
+                        100
                       )}
                       %
                     </span>

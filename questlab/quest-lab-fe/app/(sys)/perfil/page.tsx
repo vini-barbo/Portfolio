@@ -248,11 +248,10 @@ export default function ProfilePage() {
                     >
                       <div className="flex items-center gap-3">
                         <div
-                          className={`rounded-full p-1 ${
-                            activity.correct
+                          className={`rounded-full p-1 ${activity.correct
                               ? "bg-green-100 text-green-600"
                               : "bg-red-100 text-red-600"
-                          }`}
+                            }`}
                         >
                           {activity.correct ? (
                             <CheckCircle className="h-5 w-5" />

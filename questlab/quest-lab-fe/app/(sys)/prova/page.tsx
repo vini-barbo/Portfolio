@@ -406,7 +406,7 @@ export default function ExamsPage() {
       <div className="flex flex-col gap-4 md:flex-row">
         <div className="flex-1">
           <Input
-            placeholder="Buscar provas..."
+            placeholder="Search exams..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full"
@@ -416,7 +416,7 @@ export default function ExamsPage() {
         <Select value={subjectFilter} onValueChange={setSubjectFilter}>
           <SelectTrigger className="w-full md:w-[200px]">
             <Filter className="mr-2 h-4 w-4" />
-            <SelectValue placeholder="Disciplina" />
+            <SelectValue placeholder="Subject" />
           </SelectTrigger>
           <SelectContent>
             {subjects.map((subject) => (
@@ -714,7 +714,7 @@ export default function ExamsPage() {
       <div className="flex flex-col gap-4 md:flex-row">
         <div className="flex-1">
           <Input
-            placeholder="Buscar provas..."
+            placeholder="Search exams..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full"
@@ -724,7 +724,7 @@ export default function ExamsPage() {
         <Select value={subjectFilter} onValueChange={setSubjectFilter}>
           <SelectTrigger className="w-full md:w-[180px]">
             <Filter className="mr-2 h-4 w-4" />
-            <SelectValue placeholder="Disciplina" />
+            <SelectValue placeholder="Subject" />
           </SelectTrigger>
           <SelectContent>
             {subjects.map((subject) => (
@@ -853,7 +853,7 @@ export default function ExamsPage() {
                         {exam.questionsCount}
                       </span>
                       <span className="text-xs text-muted-foreground">
-                        Questões
+                        Questions
                       </span>
                     </div>
                     <div className="flex flex-col items-center justify-center rounded-md border p-3">
@@ -866,7 +866,7 @@ export default function ExamsPage() {
                         {exam.averageScore}%
                       </span>
                       <span className="text-xs text-muted-foreground">
-                        Média
+                        Average
                       </span>
                     </div>
                   </div>

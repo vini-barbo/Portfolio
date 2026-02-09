@@ -156,8 +156,8 @@ export default function SolvePage() {
                   question.difficulty === "Easy"
                     ? "border-green-500 text-green-500"
                     : question.difficulty === "Medium"
-                    ? "border-yellow-500 text-yellow-500"
-                    : "border-red-500 text-red-500"
+                      ? "border-yellow-500 text-yellow-500"
+                      : "border-red-500 text-red-500"
                 }
               >
                 {question.difficulty}
@@ -177,15 +177,14 @@ export default function SolvePage() {
             {question.options.map((option, index) => (
               <div
                 key={index}
-                className={`flex items-center space-x-2 rounded-md border p-3 ${
-                  isAnswered && index === question.correctOption
+                className={`flex items-center space-x-2 rounded-md border p-3 ${isAnswered && index === question.correctOption
                     ? "border-green-500 bg-green-50 dark:bg-green-950/20"
                     : isAnswered &&
                       index === selectedOption &&
                       index !== question.correctOption
-                    ? "border-red-500 bg-red-50 dark:bg-red-950/20"
-                    : ""
-                }`}
+                      ? "border-red-500 bg-red-50 dark:bg-red-950/20"
+                      : ""
+                  }`}
               >
                 <RadioGroupItem
                   value={index.toString()}
@@ -212,12 +211,12 @@ export default function SolvePage() {
         </CardContent>
         <CardFooter className="flex justify-between">
           {!isAnswered ? (
-            <Button onClick={handleAnswer}>Responder</Button>
+            <Button onClick={handleAnswer}>Answer</Button>
           ) : (
             <Button onClick={handleNext}>
               {currentQuestion < mockQuestions.length - 1
-                ? "Próxima Questão"
-                : "Recomeçar"}
+                ? "Next Question"
+                : "Restart"}
               <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
           )}
@@ -226,7 +225,7 @@ export default function SolvePage() {
 
       <div className="mt-6 flex justify-center">
         <Link href="/perfil">
-          <Button variant="outline">Ver Meu Progresso</Button>
+          <Button variant="outline">View My Progress</Button>
         </Link>
       </div>
     </div>
