@@ -11,6 +11,7 @@ export function ExperienceSection() {
       companyKey: "experience.company1",
       roleKey: "experience.role1",
       periodKey: "experience.period1",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Avanade_logo.svg/320px-Avanade_logo.svg.png",
       descriptionKeys: [
         "experience.desc1.1",
         "experience.desc1.2",
@@ -23,6 +24,7 @@ export function ExperienceSection() {
       companyKey: "experience.company2",
       roleKey: "experience.role2",
       periodKey: "experience.period2",
+      logo: "/logos/cesar-logo.png",
       descriptionKeys: [
         "experience.desc2.1",
         "experience.desc2.2",
@@ -35,6 +37,7 @@ export function ExperienceSection() {
       companyKey: "experience.company3",
       roleKey: "experience.role3",
       periodKey: "experience.period3",
+      logo: "/logos/arena-logo.jpeg",
       descriptionKeys: [
         "experience.desc3.1",
         "experience.desc3.2",
@@ -47,6 +50,7 @@ export function ExperienceSection() {
       companyKey: "experience.company4",
       roleKey: "experience.role4",
       periodKey: "experience.period4",
+      logo: "/logos/datapriority-logo.png",
       descriptionKeys: [
         "experience.desc4.1",
         "experience.desc4.2",
@@ -59,6 +63,7 @@ export function ExperienceSection() {
       companyKey: "experience.company5",
       roleKey: "experience.role5",
       periodKey: "experience.period5",
+      logo: "/logos/UFRPE-logo.png",
       descriptionKeys: [
         "experience.desc5.1",
         "experience.desc5.2",
@@ -122,6 +127,17 @@ export function ExperienceSection() {
                           <span>{t(exp.periodKey)}</span>
                         </div>
                       </div>
+                      {exp.logo && (
+                        <div className="ml-4 flex-shrink-0">
+                          <div className="w-16 h-16 bg-white rounded-lg p-2 flex items-center justify-center">
+                            <img
+                              src={exp.logo}
+                              alt={t(exp.companyKey)}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        </div>
+                      )}
                     </div>
 
                     <ul className="space-y-2">

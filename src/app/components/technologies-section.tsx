@@ -1,38 +1,24 @@
 import { motion } from "motion/react";
 import { useLanguage } from "@/app/contexts/language-context";
-import {
-  Code2,
-  Database,
-  Cloud,
-  GitBranch,
-  Container,
-  Server,
-  FileCode,
-  Braces,
-  Box,
-  Hexagon,
-} from "lucide-react";
 
 const featuredTechnologies = [
-  { name: "React", icon: Braces, category: "frontend", description: "Library for building user interfaces", color: "#61DAFB" },
-  { name: "Node.js", icon: Hexagon, category: "backend", description: "JavaScript runtime for backend development", color: "#339933" },
-  { name: "Java", icon: Code2, category: "backend", description: "Enterprise-grade backend development", color: "#007396" },
-  { name: "PostgreSQL", icon: Database, category: "database", description: "Advanced relational database system", color: "#336791" },
+  { name: "React", icon: "/icons/react.svg", category: "frontend", description: "Library for building user interfaces", color: "#61DAFB" },
+  { name: "Node.js", icon: "/icons/nodejs.svg", category: "backend", description: "JavaScript runtime for backend development", color: "#339933" },
+  { name: "Java", icon: "/icons/java.svg", category: "backend", description: "Enterprise-grade backend development", color: "#007396" },
+  { name: "PostgreSQL", icon: "/icons/postgresql.svg", category: "database", description: "Advanced relational database system", color: "#336791" },
 ];
 
 const technologies = [
-  { name: "JavaScript", icon: FileCode, category: "frontend", color: "#F7DF1E" },
-  { name: "TypeScript", icon: FileCode, category: "frontend", color: "#3178C6" },
-  { name: "Angular", icon: Code2, category: "frontend", color: "#DD0031" },
-  { name: "Spring Boot", icon: Server, category: "backend", color: "#6DB33F" },
-  { name: "PHP", icon: Code2, category: "backend", color: "#777BB4" },
-  { name: "Laravel", icon: Server, category: "backend", color: "#FF2D20" },
-  { name: "MySQL", icon: Database, category: "database", color: "#4479A1" },
-  { name: "MongoDB", icon: Database, category: "database", color: "#47A248" },
-  { name: "Docker", icon: Container, category: "devops", color: "#2496ED" },
-  { name: "AWS", icon: Cloud, category: "cloud", color: "#FF9900" },
-  { name: "Git", icon: GitBranch, category: "tools", color: "#F05032" },
-  { name: "REST API", icon: Box, category: "backend", color: "#0096D6" },
+  { name: "TypeScript", icon: "/icons/typescript.svg", category: "frontend", color: "#3178C6" },
+  { name: "Vue.js", icon: "/icons/vue.svg", category: "frontend", color: "#4FC08D" },
+  { name: "Nuxt.js", icon: "/icons/nuxt.svg", category: "frontend", color: "#00DC82" },
+  { name: "Spring Boot", icon: "/icons/spring.svg", category: "backend", color: "#6DB33F" },
+  { name: "Tailwind CSS", icon: "/icons/tailwind.svg", category: "frontend", color: "#06B6D4" },
+  { name: "Prisma", icon: "/icons/prisma.svg", category: "database", color: "#2D3748" },
+  { name: "Docker", icon: "/icons/docker.svg", category: "devops", color: "#2496ED" },
+  { name: "AWS", icon: "/icons/aws.svg", category: "cloud", color: "#FF9900" },
+  { name: "Git", icon: "/icons/github.svg", category: "tools", color: "#F05032" },
+  { name: "Python", icon: "/icons/python.svg", category: "backend", color: "#3776AB" },
 ];
 
 export function TechnologiesSection() {
@@ -60,7 +46,6 @@ export function TechnologiesSection() {
         {/* Featured Technologies */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           {featuredTechnologies.map((tech, index) => {
-            const Icon = tech.icon;
             return (
               <motion.div
                 key={tech.name}
@@ -73,10 +58,10 @@ export function TechnologiesSection() {
               >
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 <div className="relative z-10 flex flex-col items-center gap-4">
                   <div className="w-20 h-20 bg-blue-600/20 rounded-2xl flex items-center justify-center group-hover:bg-blue-600/30 transition-all duration-300 group-hover:scale-110">
-                    <Icon className="w-10 h-10" style={{ color: tech.color }} />
+                    <img src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" />
                   </div>
                   <div className="text-center">
                     <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
@@ -96,7 +81,6 @@ export function TechnologiesSection() {
         {/* Other Technologies */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {technologies.map((tech, index) => {
-            const Icon = tech.icon;
             return (
               <motion.div
                 key={tech.name}
@@ -109,7 +93,7 @@ export function TechnologiesSection() {
               >
                 <div className="flex flex-col items-center gap-3">
                   <div className="w-12 h-12 bg-blue-600/10 rounded-lg flex items-center justify-center group-hover:bg-blue-600/20 transition-colors duration-300">
-                    <Icon className="w-6 h-6" style={{ color: tech.color }} />
+                    <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain" />
                   </div>
                   <div className="text-center">
                     <h3 className="font-semibold text-white mb-1">{tech.name}</h3>
