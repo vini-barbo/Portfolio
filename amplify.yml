@@ -11,14 +11,6 @@ frontend:
         - echo "=== Iniciando build ==="
         - npm run build
         - echo "=== Build concluído ==="
-        - echo "=== Verificando diretório dist ==="
-        - ls -la dist/
-        - echo "=== Criando deploy-manifest.json ==="
-        - echo '{"version":1,"framework":{"name":"react","version":"vite"}}' > dist/deploy-manifest.json
-        - echo "=== Verificando arquivos ==="
-        - ls -la dist/
-        - cat dist/deploy-manifest.json
-        - echo "=== Processo de build finalizado ==="
   artifacts:
     baseDirectory: dist
     files:
