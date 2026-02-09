@@ -3,6 +3,7 @@ import { useLanguage } from "@/app/contexts/language-context";
 
 const featuredTechnologies = [
   { name: "React", icon: "/icons/react.svg", category: "frontend", description: "Library for building user interfaces", color: "#61DAFB" },
+  { name: "Angular", icon: "/icons/angular.svg", category: "frontend", description: "Platform for building web applications", color: "#DD0031" },
   { name: "Node.js", icon: "/icons/nodejs.svg", category: "backend", description: "JavaScript runtime for backend development", color: "#339933" },
   { name: "Java", icon: "/icons/java.svg", category: "backend", description: "Enterprise-grade backend development", color: "#007396" },
   { name: "PostgreSQL", icon: "/icons/postgresql.svg", category: "database", description: "Advanced relational database system", color: "#336791" },
@@ -44,7 +45,7 @@ export function TechnologiesSection() {
         </motion.div>
 
         {/* Featured Technologies */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featuredTechnologies.map((tech, index) => {
             return (
               <motion.div
