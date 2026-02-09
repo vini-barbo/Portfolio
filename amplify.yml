@@ -3,10 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - echo "=== Habilitando corepack ==="
-        - corepack enable
         - echo "=== Instalando dependências ==="
-        - npx --yes nypm i
+        - npm ci --legacy-peer-deps
         - echo "=== Dependências instaladas ==="
     build:
       commands:
