@@ -178,12 +178,12 @@ export default function SolvePage() {
               <div
                 key={index}
                 className={`flex items-center space-x-2 rounded-md border p-3 ${isAnswered && index === question.correctOption
-                    ? "border-green-500 bg-green-50 dark:bg-green-950/20"
-                    : isAnswered &&
-                      index === selectedOption &&
-                      index !== question.correctOption
-                      ? "border-red-500 bg-red-50 dark:bg-red-950/20"
-                      : ""
+                  ? "border-green-500 bg-green-50 dark:bg-green-950/20"
+                  : isAnswered &&
+                    index === selectedOption &&
+                    index !== question.correctOption
+                    ? "border-red-500 bg-red-50 dark:bg-red-950/20"
+                    : ""
                   }`}
               >
                 <RadioGroupItem

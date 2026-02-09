@@ -27,10 +27,10 @@ export function useNavItems() {
   const navItems = [
     ...(userRole === "professor"
       ? [
-          ...commonNavItems,
-          { name: "Dashboard", href: "/dashboard", icon: <Home /> },
-          { name: "Questions", href: "/questoes", icon: <FileText /> },
-        ]
+        ...commonNavItems,
+        { name: "Dashboard", href: "/dashboard", icon: <Home /> },
+        { name: "Questions", href: "/questoes", icon: <FileText /> },
+      ]
       : []),
     ...(userRole === "aluno"
       ? [...commonNavItems, { name: "Profile", href: "/perfil", icon: <User /> }]
