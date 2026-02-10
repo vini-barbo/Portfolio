@@ -15,7 +15,7 @@ const translations = {
     // General
     "nav.home": "Início",
     "nav.about": "Sobre",
-    "nav.tech": "Tecnologias",
+    "nav.technologies": "Tecnologias",
     "nav.projects": "Projetos",
     "nav.experience": "Experiência",
     "nav.certifications": "Certificações",
@@ -119,7 +119,7 @@ const translations = {
     // General
     "nav.home": "Home",
     "nav.about": "About",
-    "nav.tech": "Technologies",
+    "nav.technologies": "Technologies",
     "nav.projects": "Projects",
     "nav.experience": "Experience",
     "nav.certifications": "Certifications",
@@ -128,7 +128,7 @@ const translations = {
     // Hero Section
     "hero.available": "Available for new projects",
     "hero.name": "Vinicius Barbosa",
-    "hero.role": "Mid-level Full Stack Developer",
+    "hero.role": "Full Stack Developer",
     "hero.description": "Building web applications using React, Node.js, and Java. Delivering scalable solutions in enterprise and innovation-driven environments.",
     "hero.viewProjects": "View Projects",
     "hero.contact": "Get in Touch",
@@ -223,7 +223,7 @@ const translations = {
     // General
     "nav.home": "Inicio",
     "nav.about": "Acerca de",
-    "nav.tech": "Tecnologías",
+    "nav.technologies": "Tecnologías",
     "nav.projects": "Proyectos",
     "nav.experience": "Experiencia",
     "nav.certifications": "Certificaciones",
@@ -313,7 +313,7 @@ const translations = {
     // General
     "nav.home": "Accueil",
     "nav.about": "À propos",
-    "nav.tech": "Technologies",
+    "nav.technologies": "Technologies",
     "nav.projects": "Projets",
     "nav.experience": "Expérience",
     "nav.certifications": "Certifications",

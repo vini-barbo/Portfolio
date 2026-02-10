@@ -15,10 +15,10 @@ export function HeroSection() {
   };
 
   const downloadCV = () => {
-    const cvUrl = "/curriculum_Vinicius_Barbosa.pdf";
+    const cvUrl = "/resume_vinicius_barbosa.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "Vinicius_Barbosa_Curriculo.pdf";
+    link.download = "Vinicius_Barbosa_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -126,7 +126,7 @@ export function HeroSection() {
             >
               <button
                 onClick={downloadCV}
-                className="inline-flex items-center gap-2 px-6 py-2.5 bg-transparent border border-blue-600/50 hover:bg-blue-600/10 text-blue-400 rounded-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-transparent border border-blue-600/50 hover:bg-blue-600/10 text-blue-400 rounded-lg transition-all duration-300 hover:scale-105 cursor-pointer"
               >
                 <Download className="w-4 h-4" />
                 {t("hero.downloadCV")}
