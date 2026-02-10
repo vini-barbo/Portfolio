@@ -15,7 +15,7 @@ export function HeroSection() {
   };
 
   const downloadCV = () => {
-    const cvUrl = "/resume_vinicius_barbosa.pdf";
+    const cvUrl = "/DOCS/resume_vinicius_barbosa.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
     link.download = "Vinicius_Barbosa_Resume.pdf";

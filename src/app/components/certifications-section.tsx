@@ -5,6 +5,15 @@ import { useLanguage } from "@/app/contexts/language-context";
 export function CertificationsSection() {
     const { t } = useLanguage();
 
+    const downloadCertificate = (certPath: string, fileName: string) => {
+        const link = document.createElement("a");
+        link.href = certPath;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     const certifications = [
         {
             id: 1,
@@ -12,7 +21,8 @@ export function CertificationsSection() {
             issuerKey: "certifications.cert1.issuer",
             dateKey: "certifications.cert1.date",
             descKey: "certifications.cert1.desc",
-            link: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
+            pdfPath: "/DOCS/Credencial - ViniciusBarbosa-8466 _ Microsoft Learn-ai-900.pdf",
+            pdfName: "Microsoft_AI-900_ViniciusBarbosa.pdf",
             icon: "🤖",
         },
     ];
@@ -65,15 +75,13 @@ export function CertificationsSection() {
                                     {t(cert.descKey)}
                                 </p>
 
-                                <a
-                                    href={cert.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 px-4 py-2 bg-blue-600/10 border border-blue-600/20 hover:border-blue-600 text-blue-400 rounded-lg transition-all duration-300 text-sm mt-auto"
+                                <button
+                                    onClick={() => downloadCertificate(cert.pdfPath, cert.pdfName)}
+                                    className="flex items-center justify-center gap-2 px-4 py-2 bg-blue-600/10 border border-blue-600/20 hover:border-blue-600 text-blue-400 rounded-lg transition-all duration-300 text-sm mt-auto cursor-pointer"
                                 >
                                     <ExternalLink className="w-4 h-4" />
                                     {t("certifications.viewCert")}
-                                </a>
+                                </button>
                             </div>
                         </motion.div>
                     ))}
