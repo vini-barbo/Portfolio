@@ -60,6 +60,8 @@ const translations = {
     "projects.viewDemo": "Demo",
     "projects.project1.name": "Quest Lab",
     "projects.project1.desc": "Plataforma educacional moderna para gerenciamento de questões, provas e resoluções. Sistema completo com autenticação, dashboard analítico, criação de questões e acompanhamento de desempenho dos estudantes.",
+    "projects.project2.name": "Portfólio Profissional",
+    "projects.project2.desc": "Portfólio pessoal desenvolvido com React, TypeScript e Motion para animações. Interface moderna e responsiva com suporte a múltiplos idiomas (PT, EN, ES, FR) e seções interativas.",
 
     // Experience Section
     "experience.title": "Experiência Profissional",
@@ -164,6 +166,8 @@ const translations = {
     "projects.viewDemo": "Demo",
     "projects.project1.name": "Quest Lab",
     "projects.project1.desc": "Modern educational platform for managing questions, exams, and solutions. Complete system with authentication, analytical dashboard, question creation, and student performance tracking.",
+    "projects.project2.name": "Professional Portfolio",
+    "projects.project2.desc": "Personal portfolio built with React, TypeScript and Motion for animations. Modern and responsive interface with multi-language support (PT, EN, ES, FR) and interactive sections.",
 
     // Experience Section
     "experience.title": "Professional Experience",
@@ -268,6 +272,8 @@ const translations = {
     "projects.viewDemo": "Demo",
     "projects.project1.name": "Quest Lab",
     "projects.project1.desc": "Plataforma educativa moderna para gestión de preguntas, exámenes y soluciones. Sistema completo con autenticación, panel analítico, creación de preguntas y seguimiento del rendimiento de los estudiantes.",
+    "projects.project2.name": "Portafolio Profesional",
+    "projects.project2.desc": "Portafolio personal desarrollado con React, TypeScript y Motion para animaciones. Interfaz moderna y responsiva con soporte multiidioma (PT, EN, ES, FR) y secciones interactivas.",
 
     // Experience Section
     "experience.title": "Experiencia Profesional",
@@ -358,6 +364,8 @@ const translations = {
     "projects.viewDemo": "Démo",
     "projects.project1.name": "Quest Lab",
     "projects.project1.desc": "Plateforme éducative moderne pour la gestion de questions, examens et solutions. Système complet avec authentification, tableau de bord analytique, création de questions et suivi des performances des étudiants.",
+    "projects.project2.name": "Portfolio Professionnel",
+    "projects.project2.desc": "Portfolio personnel développé avec React, TypeScript et Motion pour les animations. Interface moderne et responsive avec support multilingue (PT, EN, ES, FR) et sections interactives.",
 
     // Experience Section
     "experience.title": "Expérience Professionnelle",

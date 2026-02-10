@@ -14,6 +14,14 @@ export function ProjectsSection() {
       github: "https://github.com/vini-barbo/quest-lab-fe",
       demo: "/demo/questlab",
     },
+    {
+      id: 2,
+      nameKey: "projects.project2.name",
+      descKey: "projects.project2.desc",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Motion"],
+      github: "https://github.com/vini-barbo/Portfolio",
+      demo: null,
+    },
   ];
 
   return (
@@ -69,18 +77,22 @@ export function ProjectsSection() {
                 <div className="flex gap-3 mt-auto pt-4 border-t border-border">
                   <a
                     href={project.github}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-transparent border border-gray-700 hover:border-blue-600 text-gray-300 hover:text-blue-400 rounded-lg transition-all duration-300 text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-transparent border border-gray-700 hover:border-blue-600 text-gray-300 hover:text-blue-400 rounded-lg transition-all duration-300 text-sm cursor-pointer"
                   >
                     <Github className="w-4 h-4" />
                     {t("projects.viewCode")}
                   </a>
-                  <a
-                    href={project.demo}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 text-sm"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    {t("projects.viewDemo")}
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 text-sm cursor-pointer"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      {t("projects.viewDemo")}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
