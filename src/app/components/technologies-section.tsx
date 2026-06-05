@@ -2,23 +2,23 @@ import { motion } from "motion/react";
 import { useLanguage } from "@/app/contexts/language-context";
 
 const featuredTechnologies = [
+  { name: "Java", icon: "/icons/java.svg", category: "backend", description: "Enterprise-grade backend development", color: "#007396" },
+  { name: "Angular", icon: "/icons/angular.svg", category: "frontend", description: "Enterprise frontend framework", color: "#DD0031" },
   { name: "React", icon: "/icons/react.svg", category: "frontend", description: "Library for building user interfaces", color: "#61DAFB" },
   { name: "Node.js", icon: "/icons/nodejs.svg", category: "backend", description: "JavaScript runtime for backend development", color: "#339933" },
-  { name: "Java", icon: "/icons/java.svg", category: "backend", description: "Enterprise-grade backend development", color: "#007396" },
-  { name: "PostgreSQL", icon: "/icons/postgresql.svg", category: "database", description: "Advanced relational database system", color: "#336791" },
 ];
 
 const technologies = [
   { name: "TypeScript", icon: "/icons/typescript.svg", category: "frontend", color: "#3178C6" },
-  { name: "Vue.js", icon: "/icons/vue.svg", category: "frontend", color: "#4FC08D" },
-  { name: "Nuxt.js", icon: "/icons/nuxt.svg", category: "frontend", color: "#00DC82" },
   { name: "Spring Boot", icon: "/icons/spring.svg", category: "backend", color: "#6DB33F" },
-  { name: "Tailwind CSS", icon: "/icons/tailwind.svg", category: "frontend", color: "#06B6D4" },
-  { name: "Prisma", icon: "/icons/prisma.svg", category: "database", color: "#2D3748" },
+  { name: "NestJS", icon: "/icons/nestjs.svg", category: "backend", color: "#E0234E" },
+  { name: "Next.js", icon: "/icons/nextjs.svg", category: "frontend", color: "#000000" },
+  { name: "PostgreSQL", icon: "/icons/postgresql.svg", category: "database", color: "#336791" },
+  { name: "MySQL", icon: "/icons/mysql.svg", category: "database", color: "#4479A1" },
   { name: "Docker", icon: "/icons/docker.svg", category: "devops", color: "#2496ED" },
   { name: "AWS", icon: "/icons/aws.svg", category: "cloud", color: "#FF9900" },
   { name: "Git", icon: "/icons/github.svg", category: "tools", color: "#F05032" },
-  { name: "Python", icon: "/icons/python.svg", category: "backend", color: "#3776AB" },
+  { name: "Azure DevOps", icon: "/icons/azure.svg", category: "tools", color: "#0078D4" },
 ];
 
 export function TechnologiesSection() {

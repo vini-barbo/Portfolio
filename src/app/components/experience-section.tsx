@@ -16,7 +16,6 @@ export function ExperienceSection() {
         "experience.desc1.1",
         "experience.desc1.2",
         "experience.desc1.3",
-        "experience.desc1.4",
       ],
     },
     {
@@ -29,7 +28,6 @@ export function ExperienceSection() {
         "experience.desc2.1",
         "experience.desc2.2",
         "experience.desc2.3",
-        "experience.desc2.4",
       ],
     },
     {
@@ -37,38 +35,11 @@ export function ExperienceSection() {
       companyKey: "experience.company3",
       roleKey: "experience.role3",
       periodKey: "experience.period3",
-      logo: "/logos/arena-logo.jpeg",
+      logo: "/logos/datapriority-logo.png",
       descriptionKeys: [
         "experience.desc3.1",
         "experience.desc3.2",
         "experience.desc3.3",
-        "experience.desc3.4",
-      ],
-    },
-    {
-      id: 4,
-      companyKey: "experience.company4",
-      roleKey: "experience.role4",
-      periodKey: "experience.period4",
-      logo: "/logos/datapriority-logo.png",
-      descriptionKeys: [
-        "experience.desc4.1",
-        "experience.desc4.2",
-        "experience.desc4.3",
-        "experience.desc4.4",
-      ],
-    },
-    {
-      id: 5,
-      companyKey: "experience.company5",
-      roleKey: "experience.role5",
-      periodKey: "experience.period5",
-      logo: "/logos/UFRPE-logo.png",
-      descriptionKeys: [
-        "experience.desc5.1",
-        "experience.desc5.2",
-        "experience.desc5.3",
-        "experience.desc5.4",
       ],
     },
   ];
